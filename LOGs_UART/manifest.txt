@@ -1,0 +1,40 @@
+information: Saving firmware via SD card.
+
+https://github.com/OpenIPC/wiki/blob/master/en/help-uboot.md#prepare-the-enviroment
+
+NOTES:
+
+the flash name is ZB25VQ128  (16Mb  -->  setenv flashsize 0x1000000 )
+
+
+Comands:
+setenv baseaddr 0x80600000
+
+
+setenv flashsize 0x1000000
+saveenv
+
+mmc dev 0
+mmc erase 0x10 0x8000
+
+mw.b ${baseaddr} ff ${flashsize}
+sf probe 0
+sf read ${baseaddr} 0x0 ${flashsize}
+
+mmc write ${baseaddr} 0x10 0x8000
+
+
+
+
+
+
+mmc dev 0
+
+mmc erase 0x10 0x8000
+mw.b 0x80600000 ff 0x1000000
+sf probe 0
+sf read 0x80600000 0x0 0x1000000
+mmc write 0x80600000 0x10 0x8000
+
+
+

@@ -1,0 +1,548 @@
+
+U-Boot SPL 2013.07 (Sep 13 2021 - 17:24:15)
+Timer init
+
+CLK stop
+
+PLL init
+
+pll_init:366
+
+pll_cfg.pdiv = 10, pll_cfg.h2div = 5, pll_cfg.h0div = 5, pll_cfg.cdiv = 1, pll_cfg.l2div = 2
+
+nf=116 nr = 1 od0 = 1 od1 = 2
+
+cppcr is 07405100
+
+CPM_CPAPCR 0740510d
+
+nf=100 nr = 1 od0 = 1 od1 = 2
+
+cppcr is 06405100
+
+CPM_CPMPCR 0640510d
+
+nf=100 nr = 1 od0 = 1 od1 = 2
+
+cppcr is 06405100
+
+CPM_CPVPCR 0640510d
+
+cppcr 0x9a7b5510
+
+apll_freq 1392000000 
+
+mpll_freq 1200000000 
+
+vpll_freq = 1200000000
+
+ddr sel mpll, cpu sel apll
+
+ddrfreq 600000000
+
+cclk  1392000000
+
+l2clk 696000000
+
+h0clk 240000000
+
+h2clk 240000000
+
+pclk  120000000
+
+CLK init
+
+SDRAM init
+
+sdram init start
+
+ddr_inno_phy_init ..!
+
+phy reg = 0x00000007, CL = 0x00000007
+
+ddr_inno_phy_init ..! 11:  00000004
+
+ddr_inno_phy_init ..! 22:  00000006
+
+ddr_inno_phy_init ..! 33:  00000006
+
+REG_DDR_LMR: 00000210
+
+REG_DDR_LMR: 00000310
+
+REG_DDR_LMR: 00000110
+
+REG_DDR_LMR, MR0: 00f73011
+
+T31_0x5: 00000007
+
+T31_0x15: 0000000c
+
+T31_0x4: 00000000
+
+T31_0x14: 00000002
+
+INNO_TRAINING_CTRL 1: 00000000
+
+INNO_TRAINING_CTRL 2: 000000a1
+
+T31_cc: 00000003
+
+INNO_TRAINING_CTRL 3: 000000a0
+
+T31_118: 0000003c
+
+T31_158: 0000003c
+
+T31_190: 0000001f
+
+T31_194: 0000001d
+
+jz-04 :  0x00000051 
+
+jz-08 :  0x000000a0 
+
+jz-28 :  0x00000024 
+
+DDR PHY init OK
+
+INNO_DQ_WIDTH   :00000003
+
+INNO_PLL_FBDIV  :00000014
+
+INNO_PLL_PDIV   :00000005
+
+INNO_MEM_CFG    :00000051
+
+INNO_PLL_CTRL   :00000018
+
+INNO_CHANNEL_EN :0000000d
+
+INNO_CWL        :00000006
+
+INNO_CL         :00000007
+
+DDR Controller init
+
+DDRC_STATUS         0x80000001
+
+DDRC_CFG            0x0aa88a42
+
+DDRC_CTRL           0x0000011c
+
+DDRC_LMR            0x00400008
+
+DDRC_DLP            0x00000000
+
+DDRC_TIMING1        0x050f0a06
+
+DDRC_TIMING2        0x021c0a07
+
+DDRC_TIMING3        0x200a0722
+
+DDRC_TIMING4        0x26240031
+
+DDRC_TIMING5        0xff060405
+
+DDRC_TIMING6        0x321c0505
+
+DDRC_REFCNT         0x00910603
+
+DDRC_MMAP0          0x000020f8
+
+DDRC_MMAP1          0x00002800
+
+DDRC_REMAP1         0x030e0d0c
+
+DDRC_REMAP2         0x07060504
+
+DDRC_REMAP3         0x0b0a0908
+
+DDRC_REMAP4         0x0f020100
+
+DDRC_REMAP5         0x13121110
+
+DDRC_AUTOSR_EN      0x00000000
+
+sdram init finished
+
+SDRAM init ok
+
+board_init_r
+
+image entry point: 0x80100000
+
+
+
+U-Boot 2013.07 (Sep 13 2021 - 17:24:15)
+
+Board: ISVP (Ingenic XBurst T31 SoC)
+DRAM:  128 MiB
+Top of RAM usable for U-Boot at: 84000000
+Reserving 436k for U-Boot at: 83f90000
+Reserving 32772k for malloc() at: 81f8f000
+Reserving 32 Bytes for Board Info at: 81f8efe0
+Reserving 124 Bytes for Global Data at: 81f8ef64
+Reserving 128k for boot params() at: 81f6ef64
+Stack Pointer at: 81f6ef48
+Now running in RAM - U-Boot at: 83f90000
+MMC:   msc: 0
+the manufacturer 5e
+SF: Detected ZB25VQ128
+
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+misc_init_r before change the wifi_enable_gpio
+gpio_request lable = wifi_enable_gpio gpio = 57
+misc_init_r after gpio_request the wifi_enable_gpio ret is 57
+misc_init_r after change the wifi_enable_gpio ret is 0
+misc_init_r before change the yello_gpio
+gpio_request lable = yello_gpio gpio = 47
+misc_init_r after gpio_request the yello_gpio ret is 47
+misc_init_r after change the yello_gpio ret is 0
+misc_init_r before change the blue_gpio
+gpio_request lable = blue_gpio gpio = 48
+misc_init_r after gpio_request the blue_gpio ret is 48
+misc_init_r after change the blue_gpio ret is 1
+gpio_request lable = motor gpio 57 gpio = 57
+gpio_request lable = motor gpio 49 gpio = 49
+gpio_request lable = motor gpio 51 gpio = 51
+gpio_request lable = motor gpio 54 gpio = 54
+gpio_request lable = motor gpio 63 gpio = 63
+gpio_request lable = motor gpio 62 gpio = 62
+gpio_request lable = motor gpio 61 gpio = 61
+gpio_request lable = motor gpio 60 gpio = 60
+gpio_get_value(57); 0
+gpio_get_value(49); 0
+gpio_get_value(51); 0
+gpio_get_value(54); 0
+gpio_get_value(63); 0
+gpio_get_value(62); 0
+gpio_get_value(61); 0
+gpio_get_value(60); 0
+gpio_request lable = night_gpio gpio = 14
+misc_init_r after gpio_request the night_gpio ret is 14
+misc_init_r after change the night_gpio ret is 0
+gpio_request lable = USB_able_gpio gpio = 38
+misc_init_r after gpio_request the USB_able_gpio ret is 38
+misc_init_r after change the USB_able_gpio ret is 1
+gpio_request lable = SPK_able_gpio gpio = 63
+misc_init_r after gpio_request the SPK_able_gpio ret is 63
+misc_init_r after change the SPK_able_gpio ret is 0
+gpio_request lable = TF_en_gpio gpio = 50
+misc_init_r after gpio_request the TF_en_gpio ret is 50
+misc_init_r after change the TF_en_gpio ret is 0
+gpio_request lable = TF_cd_gpio gpio = 59
+misc_init_r after gpio_request the TF_cd_gpio ret is 59
+misc_init_r after change the TF_cd_gpio ret is 0
+gpio_request lable = SD_able_gpio gpio = 39
+misc_init_r after gpio_request the SD_able_gpio ret is 39
+misc_init_r after change the SD_able_gpio ret is 1
+Hit any key to stop autoboot:  0 
+Card did not respond to voltage select!
+SD card is not insert
+gpio_request lable = sdupgrade gpio = 7
+the manufacturer 5e
+SF: Detected ZB25VQ128
+
+The upgrade flag could not be found!
+the manufacturer 5e
+SF: Detected ZB25VQ128
+
+--->probe spend 4 ms
+*⸮'d&L⸮LS&$⸮^⸮Y.HА0x40000 Read: OK
+--->read spend 653 ms
+## Booting kernel from Legacy Image at 80600000 ...
+   Image Name:   Linux-3.10.14__isvp_swan_1.0__
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    1800265 Bytes = 1.7 MiB
+   Load Address: 80010000
+   Entry Point:  803e1240
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+
+Starting kernel ...
+
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.14__isvp_swan_1.0__ (meiyang@ps) (gcc version 4.7.2 (Ingenic r2.3.3 2016.12) ) #9 PREEMPT Fri Feb 10 14:55:47 CST 2023
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 RESET ERROR PC:10C824FA
+[    0.000000] CPU0 revision is: 00d00100 (Ingenic Xburst)
+[    0.000000] FPU revision is: 00b70000
+[    0.000000] CCLK:1392MHz L2CLK:696Mhz H0CLK:200MHz H2CLK:200Mhz PCLK:100Mhz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 00516000 @ 00010000 (usable)
+[    0.000000]  memory: 0003a000 @ 00526000 (usable after init)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 06000000 @ 00000000 (usable)
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x05ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x05ffffff]
+[    0.000000] Primary instruction cache 32kB, 8-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 8-way, VIPT, no aliases, linesize 32 bytes
+[    0.000000] pls check processor_id[0x00d00100],sc_jz not support!
+[    0.000000] MIPS secondary cache 128kB, 8-way, linesize 32 bytes.
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 24384
+[    0.000000] Kernel command line: console=ttyS1,115200n8 mem=96M@0x0 rmem=32M@0x6000000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock2 rw mtdparts=jz_sfc:256K(boot),1984K(kernel),3904K(rootfs),3904K(app),1984K(kback),3904K(aback),384K(cfg),64K(para)
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 91236k/98304k available (3944k kernel code, 7068k reserved, 1263k data, 232k init, 0k highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:358
+[    0.000000] clockevents_config_and_register success.
+[    0.000014] Calibrating delay loop... 1391.00 BogoMIPS (lpj=6955008)
+[    0.087832] pid_max: default: 32768 minimum: 301
+[    0.092687] Mount-cache hash table entries: 512
+[    0.097598] Initializing cgroup subsys debug
+[    0.101854] Initializing cgroup subsys freezer
+[    0.108036] regulator-dummy: no parameters
+[    0.112223] NET: Registered protocol family 16
+[    0.126893] bio: create slab <bio-0> at 0
+[    0.132344] jz-dma jz-dma: JZ SoC DMA initialized
+[    0.137418] SCSI subsystem initialized
+[    0.141275] usbcore: registered new interface driver usbfs
+[    0.146820] usbcore: registered new interface driver hub
+[    0.152234] usbcore: registered new device driver usb
+[    0.157417]  (null): set:249  hold:250 dev=100000000 h=500 l=500
+[    0.163495] media: Linux media interface: v0.10
+[    0.168077] Linux video capture interface: v2.00
+[    0.174090] Switching to clocksource jz_clocksource
+[    0.179022] cfg80211: Calling CRDA to update world regulatory domain
+[    0.185890] jz-dwc2 jz-dwc2: cgu clk gate get error
+[    0.190770] DWC IN OTG MODE
+[    0.194199] dwc2 dwc2: Keep PHY ON
+[    0.197606] dwc2 dwc2: Using Buffer DMA mode
+[    0.201892] dwc2 dwc2: Core Release: 3.00a
+[    0.206086] dwc2 dwc2: DesignWare USB2.0 High-Speed Host Controller
+[    0.212410] dwc2 dwc2: new USB bus registered, assigned bus number 1
+[    0.219467] hub 1-0:1.0: USB hub found
+[    0.223201] hub 1-0:1.0: 1 port detected
+[    0.227284] dwc2 dwc2: DWC2 Host Initialized
+[    0.231703] NET: Registered protocol family 2
+[    0.236465] TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.243474] TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.249948] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.256397] TCP: reno registered
+[    0.259613] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.265555] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.272068] NET: Registered protocol family 1
+[    0.276680] RPC: Registered named UNIX socket transport module.
+[    0.282608] RPC: Registered udp transport module.
+[    0.287424] RPC: Registered tcp transport module.
+[    0.292144] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.299008] freq_udelay_jiffys[0].max_num = 10
+[    0.303432] cpufreq 	udelay 	loops_per_jiffy	
+[    0.307888] dwc2 dwc2: ID PIN CHANGED!
+[    0.311692] 12000	 59956	 59956	
+[    0.314910] 24000	 119913	 119913	
+[    0.318367] 60000	 299784	 299784	
+[    0.321798] 120000	 599569	 599569	
+[    0.325329] 200000	 999282	 999282	
+[    0.328944] 300000	 1498924	 1498924	
+[    0.332572] 600000	 2997848	 2997848	
+[    0.336356] 792000	 3957159	 3957159	
+[    0.339988] 1008000	 5036385	 5036385	
+[    0.343784] 1200000	 5995696	 5995696	
+[    0.351223] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.357782] jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+[    0.363511] msgmni has been set to 178
+[    0.368228] io scheduler noop registered
+[    0.372150] io scheduler cfq registered (default)
+[    0.378056] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+[    0.385655] console [ttyS1] enabled, bootconsole disabled
+[    0.385655] console [ttyS1] enabled, bootconsole disabled
+[    0.399309] brd: module loaded
+[    0.403800] loop: module loaded
+[    0.407590] zram: Created 2 device(s) ...
+[    0.411784] logger: created 256K log 'log_main'
+[    0.417015] jz TCU driver register completed
+[    0.421801] the id code = 5e4018, the flash name is ZB25VQ128
+[    0.427788] JZ SFC Controller for SFC channel 0 driver register
+[    0.433908] 8 cmdlinepart partitions found on MTD device jz_sfc
+[    0.440037] Creating 8 MTD partitions on "jz_sfc":
+[    0.444979] 0x000000000000-0x000000040000 : "boot"
+[    0.450326] 0x000000040000-0x000000230000 : "kernel"
+[    0.455838] 0x000000230000-0x000000600000 : "rootfs"
+[    0.461297] 0x000000600000-0x0000009d0000 : "app"
+[    0.466548] 0x0000009d0000-0x000000bc0000 : "kback"
+[    0.471936] 0x000000bc0000-0x000000f90000 : "aback"
+[    0.477373] 0x000000f90000-0x000000ff0000 : "cfg"
+[    0.482578] 0x000000ff0000-0x000001000000 : "para"
+[    0.487926] SPI NOR MTD LOAD OK
+[    0.491214] tun: Universal TUN/TAP device driver, 1.6
+[    0.496460] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.502930] usbcore: registered new interface driver zd1201
+[    0.508718] usbcore: registered new interface driver r8152
+[    0.514415] usbcore: registered new interface driver asix
+[    0.520084] usbcore: registered new interface driver usb-storage
+[    0.526398] usbcore: registered new interface driver usbserial
+[    0.532461] usbcore: registered new interface driver usb_ch34x
+[    0.538500] ch34x: USB to serial driver for USB to serial chip ch340, ch341, etc.
+[    0.546229] ch34x: V1.16 On 2020.12.23
+[    0.550122] usbcore: registered new interface driver ch37x
+[    0.555807] usbcore: registered new interface driver pl2303
+[    0.561574] usbserial: USB Serial support registered for pl2303
+[    0.567934] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+[    0.573966] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+[    0.579389] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+[    0.585324] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+[    0.590784] hidraw: raw HID events driver (C) Jiri Kosina
+[    0.596532] usbcore: registered new interface driver usbhid
+[    0.602280] usbhid: USB HID core driver
+[    0.606437] TCP: cubic registered
+[    0.609856] NET: Registered protocol family 17
+[    0.615058] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.622195] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    0.632524] VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+[    0.640203] Freeing unused kernel memory: 232K (80526000 - 80560000)
+mdev is ok......
+[    1.065496] jzmmc_v1.2 jzmmc_v1.2.0: card inserted, state=0
+
+
+Ingenic login: [    1.419230] @@@@ tx-isp-probe ok(version H20211020a-noeprint), compiler date=Oct 20 2021 @@@@@
+[    1.436268] exFAT: Version 1.2.9
+[    1.513368] jz_codec_register: probe() successful!
+[    1.925766] dma dma0chan24: Channel 24 have been requested.(phy id 7,type 0x06 desc a4939000)
+[    1.934866] dma dma0chan25: Channel 25 have been requested.(phy id 6,type 0x06 desc a4938000)
+[    1.944044] dma dma0chan26: Channel 26 have been requested.(phy id 5,type 0x04 desc a4937000)
+[    1.975448] jz_pwm_probe[212] d_name = tcu_chn0
+[    1.981769] The version of PWM driver is H20180309a
+[    1.992485] request pwm channel 0 successfully
+[    1.998811] pwm-jz pwm-jz: jz_pwm_probe register ok !
+[    2.009513] __init
+-------- T31 gpio status --------
+PxINT= 0x08000000
+PxMSK= 0xfe7f80c0
+PxPAT1=0x04340000
+PxPAT0=0x0800efc0
+INT  MSK  PAT1  PAT0
+ 0    0    0     0
+gpio status is func 0
+Pull up disable
+Pull down disable
+Drive strength is 2mA
+-------------------------------
+[    2.186189] mmc1: new SDIO card at address 0001
+a[    2.225469] jzmmc_v1.2 jzmmc_v1.2.0: card removed, state=0
+#############[vendor: 0x007a] atbm603x wifi ############
+[    2.459616] [atbm_log]:SVN_VER=18363,DPLL_CLOCK=24,BUILD_TIME=[===== =====]
+[    2.468205] [atbm_log]:----drvier RATEPOLCIY=OLD
+[    2.473052] [atbm_log]:Probe called
+[    2.476748] [atbm_log]:atbm_sdio_probe:v12
+[    2.480996] [atbm_log]:Allocated hw_priv @ 8409ed20
+[    2.486199] [atbm_log]:[BH] register.
+[    2.490060] [atbm_log]:atbmwifi INIT_WORK enable
+[    2.494876] [atbm_log]:atbmwifi INIT_WORK enable
+[    2.499778] [atbm_log]:atbm_before_load_firmware++
+[    2.504811] [atbm_log]:atbm_before_load_firmware:0xab0016c = [34800000]
+[    2.511663] [atbm_log]:atbm_sdio_rx_thread
+[    2.516062] [atbm_log]:atbm_before_load_firmware:0xab0016c = [34800000]
+[    2.522967] [atbm_log]:atbm_before_load_firmware:do not set config to smu
+[    2.545457] [atbm_log]:rx timeout
+a[    2.633727] [atbm_log]:atbm_before_load_firmware:read [0x16100074]=[0],ret(0)
+[    2.641173] [atbm_log]:atbm_before_load_firmware:write [0x16100074]=[1],ret(0)
+[    2.748704] [atbm_log]:atbm_start_load_firmware++
+[    2.753555] [atbm_log]:used firmware.h=
+[    2.757533] [atbm_log]:START DOWNLOAD ICCM=========
+[    2.762569] [atbm_log]:atbm_load_firmware_generic: addr 10000: len 22000
+[    2.813710] [atbm_log]:START DOWNLOAD DCCM=========
+[    2.818793] [atbm_log]:atbm_load_firmware_generic: addr 800000: len 9000
+[    2.837680] [atbm_log]:atbm_after_load_firmware++
+[    2.855842] [atbm_log]:firmwareCap f5ad
+[    2.859802] [atbm_log]:firmwareCap2 51a4
+[    2.863842] [atbm_log]:wsm_caps.firmwareCap 51a4f5ad
+[    2.868807] [atbm_log]:apollo wifi WSM init done.
+[    2.868807]    Input buffers: 42 x 1728 bytes
+[    2.868807]    Hardware: 7.1280
+[    2.868807]    WSM firmware [=MODEM=RF=Ares_AX  2GHZ May  6 2021 18:33:52NOTXConfrim], ver: 12040, build: 2749, api: 1060, cap: 0x51A4F5AD Config[30008]  expection 900b80c, ep0 cmd addr 901d3f8 NumOfStations[8] NumOfInterfaces[3]
+[    2.902570] [atbm_log]:EFUSE(8)				[0]
+[    2.906435] [atbm_log]:EFUSE(I)					[1]
+[    2.910380] [atbm_log]:EFUSE(B)			[0]
+[    2.914157] [atbm_log]:CAPABILITIES_ATBM_PRIVATE_IE      [0]
+[    2.919996] [atbm_log]:CAPABILITIES_NVR_IPC              [1]
+[    2.925847] [atbm_log]:CAPABILITIES_NO_CONFIRM           [1]
+[    2.931678] [atbm_log]:CAPABILITIES_SDIO_PATCH           [0]
+[    2.937515] [atbm_log]:CAPABILITIES_NO_BACKOFF           [1]
+[    2.943358] [atbm_log]:CAPABILITIES_CFO                  [0]
+[    2.949206] [atbm_log]:CAPABILITIES_AGC                  [1]
+[    2.955044] [atbm_log]:CAPABILITIES_TXCAL                [1]
+[    2.960881] [atbm_log]:CAPABILITIES_MONITOR              [0]
+[    2.966732] [atbm_log]:CAPABILITIES_CUSTOM               [1]
+[    2.972570] [atbm_log]:CAPABILITIES_SMARTCONFIG          [0]
+[    2.978407] [atbm_log]:CAPABILITIES_ETF                  [1]
+[    2.984245] [atbm_log]:CAPABILITIES_LMAC_RATECTL         [1]
+[    2.990082] [atbm_log]:CAPABILITIES_LMAC_TPC             [1]
+[    2.995928] [atbm_log]:CAPABILITIES_LMAC_TEMPC           [1]
+[    3.001760] [atbm_log]:CAPABILITIES_CTS_BUG              [0]
+[    3.007609] [atbm_log]:CAPABILITIES_USB_RECOVERY_BUG     [0]
+[    3.013450] [atbm_log]:CAPABILITIES_USE_IPC              [0]
+[    3.019287] [atbm_log]:CAPABILITIES_OUTER_PA             [0]
+[    3.025126] [atbm_log]:CAPABILITIES_POWER_CONSUMPTION    [1]
+[    3.030975] [atbm_log]:CAPABILITIES_RSSI_DECIDE_TXPOWER  [0]
+[    3.036819] [atbm_log]:CAPABILITIES_RTS_LONG_DURATION    [1]
+[    3.042655] [atbm_log]:CAPABILITIES_TX_CFO_PPM_CORRECTION[1]
+[    3.048493] [atbm_log]:CAPABILITIES_SHARE_CRYSTAL       [0]
+[    3.054245] [atbm_log]:CAPABILITIES_HW_CHECKSUM          [0]
+[    3.060083] [atbm_log]:CAPABILITIES_SINGLE_CHANNEL_MULRX [0]
+[    3.065929] [atbm_log]:CAPABILITIES_CFO_DCXO_CORRECTION  [1]
+[    3.071758] [atbm_log]:CONFIG_PRODUCT_TEST_USE_FEATURE_ID [1]
+[    3.077694] [atbm_log]:CONFIG_PRODUCT_TEST_USE_GOLDEN_LED [1]
+a[    3.091158] [atbm_log]:set_block_size=256
+[    3.095294] [atbm_log]:mdelay wait wsm_startup_done  !!
+[    3.100728] [atbm_log]:atbm_sdio_tx_thread
+[    3.105298] [atbm_log]:wsm_generic_confirm:status(2)
+[    3.110478] [atbm_log]:<WARNING> wsm_write_mib fail !!! mibId=4132
+[    3.117082] [atbm_log]:apollo wifi : can't open /data/.mac.info
+[    3.123493] [atbm_log]:efuse data is [0x1,0x3b,0x17,0x16,0x19,0x8,0x0,0x0,0xa4:0xef:0x15:0x5f:0xf1:0x32]
+[    3.133337] [atbm_log]:param:delta_gain1:-1 delta_gain2:-1 delta_gain3:-1 dcxo:-1
+b_delta_gain1:10 b_delta_gain2:12 b_delta_gain3:15
+gn_delta_gain1:10 gn_delta_gain2:8 gn_delta_gain3:12
+[    3.150629] [atbm_log]:cmd: set_txpwr_and_dcxo,-1,-1,-1,-1,10,12,15,10,8,12 
+[    3.158413] [atbm_log]:0,b_1M_2M=0⸮b_5_5M_11M=0⸮g_6M_n_6_5M=0⸮g_9M=0⸮g_12M_n_13M=0⸮g_18M_n_19_5M=0⸮g_24M_n_26M=0⸮g_36M_n_39M=0⸮g_48M_n_52M=0⸮g_54M_n_58_5M=0⸮n_65M=2
+[    3.173614] [atbm_log]:1,b_5_5M_11M=0⸮g_6M_n_6_5M=0⸮g_9M=0⸮g_12M_n_13M=0⸮g_18M_n_19_5M=0⸮g_24M_n_26M=0⸮g_36M_n_39M=0⸮g_48M_n_52M=0⸮g_54M_n_58_5M=0⸮n_65M=2
+[    3.187947] [atbm_log]:2,g_6M_n_6_5M=0⸮g_9M=0⸮g_12M_n_13M=0⸮g_18M_n_19_5M=0⸮g_24M_n_26M=0⸮g_36M_n_39M=0⸮g_48M_n_52M=0⸮g_54M_n_58_5M=0⸮n_65M=2
+[    3.201080] [atbm_log]:3,g_9M=0⸮g_12M_n_13M=0⸮g_18M_n_19_5M=0⸮g_24M_n_26M=0⸮g_36M_n_39M=0⸮g_48M_n_52M=0⸮g_54M_n_58_5M=0⸮n_65M=2
+[    3.212937] [atbm_log]:4,g_12M_n_13M=0⸮g_18M_n_19_5M=0⸮g_24M_n_26M=0⸮g_36M_n_39M=0⸮g_48M_n_52M=0⸮g_54M_n_58_5M=0⸮n_65M=2
+[    3.224199] [atbm_log]:5,g_18M_n_19_5M=0⸮g_24M_n_26M=0⸮g_36M_n_39M=0⸮g_48M_n_52M=0⸮g_54M_n_58_5M=0⸮n_65M=2
+[    3.234170] [atbm_log]:6,g_24M_n_26M=0⸮g_36M_n_39M=0⸮g_48M_n_52M=0⸮g_54M_n_58_5M=0⸮n_65M=2
+[    3.242708] [atbm_log]:7,g_36M_n_39M=0⸮g_48M_n_52M=0⸮g_54M_n_58_5M=0⸮n_65M=2
+[    3.250021] [atbm_log]:8,g_48M_n_52M=0⸮g_54M_n_58_5M=0⸮n_65M=2
+[    3.256042] [atbm_log]:9,g_54M_n_58_5M=0⸮n_65M=2
+[    3.260797] [atbm_log]:10,n_65M=2
+[    3.264820] [atbm_log]:enable sg
+[    3.276588] [atbm_log]:enable sg
+[    3.288276] [atbm_log]:[atbm_wtd]:set wtd_probe = 1
+[    3.605749] [atbm_log]:mmc1 has been attached
+===========welcome to ver-comp tool=========
+[ver-comp]dbg: appver:  3.17.0.51
+[ver-comp]dbg: rootver: 3.17.0.0
+[ver-comp]exec cmd: cp -rf /system/bin/app.ver /configs/
+a
+===========welcome to assis process=========
+[Build date] May 18 2023 (08:45:09)
+[threadpool,0142](init_job_node) jobNodeNumMin:6 jobNodeNumMax:9
+[exec-assis:151]: msgSndId:0
+[exec-assis:166]: msgRcvId:32769
+dbg: turn on watchdog success!
+[watchdog.c|assis,0050](assis_wdg_init) OK!
+hlcloud_init,89:[assis] hl_cloud_info.domain: device-api.smarthome.personal.com.ar
+hlcloud_init,90:[assis] hl_cloud_info.cacert: /tmp/cacert.pem
+hlcloud_init,91:[assis] hl_cloud_info.port  : 443
+hlcloud_init,124:hlcloud initialized success
+
+[FC] Test.tar no exist
+[FC] In [user] mode!
+[    4.420504] motor_probe [ChenX @ Hualai Technologies]
+[    4.427183] motor_probe [YuanWP offset = 0 hmax = 2130,vmax = 1600]
+[    4.433706] Hualai motor driver version: MT20180918g
+
+===========welcome to hl_client===========
+[Build date] May 18 2023 (08:45:13)

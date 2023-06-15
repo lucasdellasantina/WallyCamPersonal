@@ -1,0 +1,140 @@
+ngenic login: [watchdog]dbg: watchdog_snd_msg_feLogin incorrect
+Ingenic login: ed [time:750]
+[assis]WDG_CMD_FEED_DOG!!Password:
+tchdog]dbg: watchdog_snd_msg_feed [time:780]
+[assis]WDG_CMD_FEED_DOG!!!!
+
+Login timed out after 60 seconds
+Ingenic login: [sdk,0839][sdkdevice.c]dbg: g_mmcMonitorState: [NOCARD]=>[JUDGE]
+[  799.765489] jzmmc_v1.2 jzmmc_v1.2.0: card inserted, state=0
+[sdk,0867][sdkdevice.c]dbg: mmc Insert...
+[sdk,0880][sdkdevice.c]dbg: g_mmcMonitorState: [JUDGE]=>[HAVECARD]
+[mmc.c,0018] *** [mmc_insert_worker] ***
+[msg:493]log: (msg_queue_send_motor_done_msg_to_p2p) doing...
+[mmc.c,0025][mmc_insert_worker]dbg: initTime:790, reason is:2
+[sdevice.c,0551]sdevice open handler...
+[  801.145601] mmc0: new SDXC card at address aaaa
+[  801.153135] mmcblk0: mmc0:aaaa SC64G 59.4 GiB
+[  801.163303]  mmcblk0: p1
+[sdk,1106][sdkdevice.c]dbg: Found dev:/dev/mmcblk0p1, mpoint:/media/mmc (retry:1)
+[sdk,0586](sdk_device_mmc_health_test) cmd:[tf_prepare --blkdev /dev/mmcblk0p1 --strategy=0 --samplecnt=32]
+[exec-iCame,0468](no.100000) cmd:[tf_prepare --blkdev /dev/mmcblk0p1 --strategy=0 --samplecnt=32]
+version 20201026a
+blkdev: /dev/mmcblk0p1
+g_strategy: 0
+The filetype is exfat!
+[exec-iCame,0471](no.100000) msgque ret:[1536]
+[sdk,0590](sdk_device_mmc_health_test) res:[status:1536][runTime:1]
+[sdk,0599][sdk_device_mmc_health_test]err: run: tf_prepare failed! exit(6)
+[sdk,1163][sdk_device_mmc_open:1163]war: (health_test) is exfat fs!
+[exec-iCame,0428](no.100000) cmd:[blkid /dev/mmcblk0p1]
+[exec-assis:263]: (no.100000) popen  ret:[/dev/mmcblk0p1: TYPE="[  802.092880] [EXFAT] trying to mount...
+exfat"
+]
+[exec-iCame,0433](no.100000) msgque ret:[/dev/mmcblk0p1: TYPE="exfat"]
+[  802.173038] [EXFAT] mounted successfully
+[sdk,0175]dbg: /dev/mmcblk0p1 mount success! point: /media/mmc
+[sdk,1238][sdk_device_mmc_open:1238]dbg: mmc mount ok (retry:1)
+[exec-iCame,0468](no.100000) cmd:[rm -rf /tmp/www/SDPath]
+[exec-iCame,0471](no.100000) msgque ret:[0]
+[exec-iCame,0468](no.100000) cmd:[ln -s /media/mmc /tmp/www/SDPath]
+[exec-iCame,0471](no.100000) msgque ret:[0]
+[sdevice.c,0092]### (sdevice_get_space) [total:63831015424][free:61245489152][used:2585526272] ###
+[sdevice.c,0437]sdevice0|spaceTolal:62334976 kB (59.45 GiB)
+[sdevice.c,0438]sdevice0|spaceLeft :59810048 kB (57.04 GiB)
+[sdevice.c,0439]sdevice0|spaceUsed :4 %
+[sdevice.c,0443]sdevice0|mountpoint:/media/mmc
+[sdevice.c,0450]sdevice0|available!:@@@ >_< @@@
+[sdevice.c,0576]sdevice start localstorage work...
+[sd_sync_time.c,0119](sd_sync_time_start) path:[/media/mmc]
+[sd_sync_time.c,0076][ST] Get tm = 1686443354 from profile file
+[sd_sync_time.c,0083]<______ _ __DEV Set SysTime To 1686443354__ _ ______>
+[msg:246]log: (msg_queue_send_dev_info_to_assisstant) doing...
+[synclog.c,0074]dbg: logFilePath: /media/mmc/log/log_E4AAECA69937_20230611002914_s.txt
+[msg:292]log: (msg_queue_send_create_logfile_msg_to_assisstant) doing...
+[sync_log_work]dbg: sd used reason is:2
+[SDK-ALARM]dbg: Clear alarm_state Callback Doing...
+[sdevice.c,0092]### (sdevice_get_space) [total:63831015424][free:61245489152][used:2585526272] ###
+[continueRec]dbg: rolldel success!
+[timelapsefunc.c,1508]dbg: (time_lapse_sdev_work_cb) sd_path:[/media/mmc]
+[record.c,0977]dbg:(record_file_open) curRelFileName: /media/mmc/record/20230611/00/29.mp4
+[mp4] mp4write_start_handler  v fps:20
+[mp4] mp4write_start_handler  v enc:H.264
+[mp4] mp4write_start_handler  v vp.maxstreamsize:327680
+[mp4] mp4write_start_handler  a sampleRate:8000
+[mp4] mp4write_start_handler  a enc:G711
+[continueRec]dbg: recordAudio switch:1 (before)
+[log_upload.h,0879]assist create log doing! [fileName:/media/mmc/log/log_E4AAECA69937_20230611002914_s.txt]
+[exec-assis,0428](no.200000) cmd:[rm -rf /tmp/log.txt]
+[nas.c,0541]name is
+[nas.c,0542]passwd is
+[nas.c,0545]ip:
+[nas.c,0548]dir:
+[nas.c,0564]fourth path is :record
+[nas.c,0567]device:
+[nas.c,0570]samba switch: 0
+[nas.c,0573]samba nStorageMode: 7
+[nas.c,0576]samba nStorageTimeInterval: 1
+[exec-assis:263]: (no.200000) popen  ret:[]
+[exec-assis,0437](no.200000) msgque ret:[0]
+[assist]dbg: (create_log_file_job) to mk_sd_log_dir[/media/mmc/log/log_E4AAECA69937_202306Login incorrect
+Ingenic login: 11002914_s.txt]...
+[assist]dbg: (create_log_Password:
+ec-assis,0428](no.200000) cmd:[CountFile /tmp/log.txt /media/mmc/log/log.tmp;sync;sync]
+[exec-assis:263]: (no.200000) popen  ret:[!!!Hello World!!!
+]
+[exec-assis,0437](no.200000) msgque ret:[0]
+[exec-assis,0428](no.200000) cmd:[rm -rf /tmp/log.txt]
+[exec-assis:263]: (no.200000) popen  ret:[]
+[exec-assis,0437](no.200000) msgque ret:[0]
+[exec-assis,0428](no.200000) cmd:[mv /media/mmc/log/log.tmp /media/mmc/log/log_E4AAECA69937_20230611002914_s.txt;sync;sync]
+[exec-assis:263]: (no.200000) popen  ret:[]
+[exec-assis,0437](no.200000) msgque ret:[0]
+[assist]dbg: (create_log_file_job) end save log to sd...
+[log_upload.h,0841]assist create log file ok! [curtime:1686443354]
+[synclog.c,0087]=====================================[  803.067150] SPEAKER CTL MODE3 !
+
+[synclog.c,0088]==   SAVE LOG TO SD-CARD SUCCESS!  ==
+[synclog.c,0089]=====================================
+[prompt]dbg: === SPK READY PLAY === [/usr/share/notify/binbin.wav]
+[sdk,0647]log: set speaker ap mode 3 ok...
+[prompt]dbg: === SPK[  803.089732] SPEAKER CTL MODE1 !
+ START PLAY === [/usr/share/notify/binbin.wav]
+mode =1
+[sdk,0647]log: set speaker ap mode 1 ok...
+[prompt]log: fread len(28) wrong...
+[prompt]dbg: feed buf finish...
+[sdk,1003]dbg: (local_sdk_speaker_finish_buf_data) in...
+[sdk,1030]dbg: (local_sdk_speaker_finish_buf_data) out..
+[prompt]dbg: === SPK END PLAY === [/usr/share/notify/binbin.wav]
+mode =0
+[  806.206819] SPEAKER CTL MODE0 !
+[sdk,0647]log: set speaker ap mode 0 ok...
+[watchdog]dbg: watchdog_snd_msg_feed [time:1686443362]
+[assis]WDG_CMD_FEED_DOG!!!!
+
+Login incorrect
+Jun 11 00:29:50 login[1368]: inv
+Ingenic login: [watchdog]dbg: watchdog_snd_msg_feed [time:1686443392]
+[assis]WDG_CMD_FEED_DOG!!!!
+[continueRec]dbg: (continue_record_task_worker) time full, break...
+[continueRec]dbg: recordAudio switch:1 (after)
+[mp4]1dbg: mp4write_stop_handler ret:0, id = 0
+[mp4]dbg: mp4write_stop_handler endCallbackFn doing...
+(record_stop_finish_callback) in...
+[exec-iCame,0468](no.100000) cmd:[mv /tmp/29.mp4 /media/mmc/record/20230611/00/29.mp4;sync;echo 1 > /proc/sys/vm/drop_caches]
+[mp4]2dbg: mp4write_stop_handler ret:0
+[mp4]3dbg: mp4write_stop_handler ret:0
+[sdevice.c,0092]### (sdevice_get_space) [total:63831015424][free:61243785216][used:2587230208] ###
+[continueRec]dbg: rolldel success!
+[record.c,0977]dbg:(record_file_open) curRelFileName: /media/mmc/record/20230611/00/30.mp4
+[mp4] mp4write_start_handler  v fps:20
+[mp4] mp4write_start_handler  v enc:H.264
+[mp4] mp4write_start_handler  v vp.maxstreamsize:327680
+[mp4] mp4write_start_handler  a sampleRate:8000
+[mp4] mp4write_start_handler  a enc:G711
+[continueRec]dbg: recordAudio switch:1 (before)
+[exec-iCame,0471](no.100000) msgque ret:[0]
+[watchdog]dbg: watchdog_snd_msg_feed [time:1686443422]
+[assis]WDG_CMD_FEED_DOG!!!!
+

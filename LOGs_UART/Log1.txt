@@ -1,0 +1,1035 @@
+
+U-Boot SPL 2013.07 (Sep 13 2021 - 17:24:15)
+Timer init
+CLK stop
+PLL init
+pll_init:366
+pll_cfg.pdiv = 10, pll_cfg.h2div = 5, pll_cfg.h0div = 5, pll_cfg.cdiv = 1, pll_cfg.l2div = 2
+nf=116 nr = 1 od0 = 1 od1 = 2
+cppcr is 07405100
+CPM_CPAPCR 0740510d
+nf=100 nr = 1 od0 = 1 od1 = 2
+cppcr is 06405100
+CPM_CPMPCR 0640510d
+nf=100 nr = 1 od0 = 1 od1 = 2
+cppcr is 06405100
+CPM_CPVPCR 0640510d
+cppcr 0x9a7b5510
+apll_freq 1392000000
+mpll_freq 1200000000
+vpll_freq = 1200000000
+ddr sel mpll, cpu sel apll
+ddrfreq 600000000
+cclk  1392000000
+l2clk 696000000
+h0clk 240000000
+h2clk 240000000
+pclk  120000000
+CLK init
+SDRAM init
+sdram init start
+ddr_inno_phy_init ..!
+phy reg = 0x00000007, CL = 0x00000007
+ddr_inno_phy_init ..! 11:  00000004
+ddr_inno_phy_init ..! 22:  00000006
+ddr_inno_phy_init ..! 33:  00000006
+REG_DDR_LMR: 00000210
+REG_DDR_LMR: 00000310
+REG_DDR_LMR: 00000110
+REG_DDR_LMR, MR0: 00f73011
+T31_0x5: 00000007
+T31_0x15: 0000000c
+T31_0x4: 00000000
+T31_0x14: 00000002
+INNO_TRAINING_CTRL 1: 00000000
+INNO_TRAINING_CTRL 2: 000000a1
+T31_cc: 00000003
+INNO_TRAINING_CTRL 3: 000000a0
+T31_118: 0000003c
+T31_158: 0000003c
+T31_190: 0000001f
+T31_194: 0000001d
+jz-04 :  0x00000051
+jz-08 :  0x000000a0
+jz-28 :  0x00000024
+DDR PHY init OK
+INNO_DQ_WIDTH   :00000003
+INNO_PLL_FBDIV  :00000014
+INNO_PLL_PDIV   :00000005
+INNO_MEM_CFG    :00000051
+INNO_PLL_CTRL   :00000018
+INNO_CHANNEL_EN :0000000d
+INNO_CWL        :00000006
+INNO_CL         :00000007
+DDR Controller init
+DDRC_STATUS         0x80000001
+DDRC_CFG            0x0aa88a42
+DDRC_CTRL           0x0000011c
+DDRC_LMR            0x00400008
+DDRC_DLP            0x00000000
+DDRC_TIMING1        0x050f0a06
+DDRC_TIMING2        0x021c0a07
+DDRC_TIMING3        0x200a0722
+DDRC_TIMING4        0x26240031
+DDRC_TIMING5        0xff060405
+DDRC_TIMING6        0x321c0505
+DDRC_REFCNT         0x00910603
+DDRC_MMAP0          0x000020f8
+DDRC_MMAP1          0x00002800
+DDRC_REMAP1         0x030e0d0c
+DDRC_REMAP2         0x07060504
+DDRC_REMAP3         0x0b0a0908
+DDRC_REMAP4         0x0f020100
+DDRC_REMAP5         0x13121110
+DDRC_AUTOSR_EN      0x00000000
+sdram init finished
+SDRAM init ok
+board_init_r
+image entry point: 0x80100000
+
+
+U-Boot 2013.07 (Sep 13 2021 - 17:24:15)
+
+Board: ISVP (Ingenic XBurst T31 SoC)
+DRAM:  128 MiB
+Top of RAM usable for U-Boot at: 84000000
+Reserving 436k for U-Boot at: 83f90000
+Reserving 32772k for malloc() at: 81f8f000
+Reserving 32 Bytes for Board Info at: 81f8efe0
+Reserving 124 Bytes for Global Data at: 81f8ef64
+Reserving 128k for boot params() at: 81f6ef64
+Stack Pointer at: 81f6ef48
+Now running in RAM - U-Boot at: 83f90000
+MMC:   msc: 0
+the manufacturer 5e
+SF: Detected ZB25VQ128
+
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+misc_init_r before change the wifi_enable_gpio
+gpio_request lable = wifi_enable_gpio gpio = 57
+misc_init_r after gpio_request the wifi_enable_gpio ret is 57
+misc_init_r after change the wifi_enable_gpio ret is 0
+misc_init_r before change the yello_gpio
+gpio_request lable = yello_gpio gpio = 47
+misc_init_r after gpio_request the yello_gpio ret is 47
+misc_init_r after change the yello_gpio ret is 0
+misc_init_r before change the blue_gpio
+gpio_request lable = blue_gpio gpio = 48
+misc_init_r after gpio_request the blue_gpio ret is 48
+misc_init_r after change the blue_gpio ret is 1
+gpio_request lable = motor gpio 57 gpio = 57
+gpio_request lable = motor gpio 49 gpio = 49
+gpio_request lable = motor gpio 51 gpio = 51
+gpio_request lable = motor gpio 54 gpio = 54
+gpio_request lable = motor gpio 63 gpio = 63
+gpio_request lable = motor gpio 62 gpio = 62
+gpio_request lable = motor gpio 61 gpio = 61
+gpio_request lable = motor gpio 60 gpio = 60
+gpio_get_value(57); 0
+gpio_get_value(49); 0
+gpio_get_value(51); 0
+gpio_get_value(54); 0
+gpio_get_value(63); 0
+gpio_get_value(62); 0
+gpio_get_value(61); 0
+gpio_get_value(60); 0
+gpio_request lable = night_gpio gpio = 14
+misc_init_r after gpio_request the night_gpio ret is 14
+misc_init_r after change the night_gpio ret is 0
+gpio_request lable = USB_able_gpio gpio = 38
+misc_init_r after gpio_request the USB_able_gpio ret is 38
+misc_init_r after change the USB_able_gpio ret is 1
+gpio_request lable = SPK_able_gpio gpio = 63
+misc_init_r after gpio_request the SPK_able_gpio ret is 63
+misc_init_r after change the SPK_able_gpio ret is 0
+gpio_request lable = TF_en_gpio gpio = 50
+misc_init_r after gpio_request the TF_en_gpio ret is 50
+misc_init_r after change the TF_en_gpio ret is 0
+gpio_request lable = TF_cd_gpio gpio = 59
+misc_init_r after gpio_request the TF_cd_gpio ret is 59
+misc_init_r after change the TF_cd_gpio ret is 0
+gpio_request lable = SD_able_gpio gpio = 39
+misc_init_r after gpio_request the SD_able_gpio ret is 39
+misc_init_r after change the SD_able_gpio ret is 1
+Hit any key to stop autoboot:  0
+Card did not respond to voltage select!
+SD card is not insert
+gpio_request lable = sdupgrade gpio = 7
+the manufacturer 5e
+SF: Detected ZB25VQ128
+
+The upgrade flag could not be found!
+the manufacturer 5e
+SF: Detected ZB25VQ128
+
+--->probe spend 4 ms
+SF: 2031616 bytes @ 0x40000 Read: OK
+--->read spend 653 ms
+## Booting kernel from Legacy Image at 80600000 ...
+   Image Name:   Linux-3.10.14__isvp_swan_1.0__
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    1800265 Bytes = 1.7 MiB
+   Load Address: 80010000
+   Entry Point:  803e1240
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+
+Starting kernel ...
+
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.14__isvp_swan_1.0__ (meiyang@ps) (gcc version 4.7.2 (Ingenic r2.3.3 2016.12) ) #9 PREEMPT Fri Feb 10 14:55:47 CST 2023
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 RESET ERROR PC:16CB4EFB
+[    0.000000] CPU0 revision is: 00d00100 (Ingenic Xburst)
+[    0.000000] FPU revision is: 00b70000
+[    0.000000] CCLK:1392MHz L2CLK:696Mhz H0CLK:200MHz H2CLK:200Mhz PCLK:100Mhz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 00516000 @ 00010000 (usable)
+[    0.000000]  memory: 0003a000 @ 00526000 (usable after init)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 06000000 @ 00000000 (usable)
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x05ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x05ffffff]
+[    0.000000] Primary instruction cache 32kB, 8-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 8-way, VIPT, no aliases, linesize 32 bytes
+[    0.000000] pls check processor_id[0x00d00100],sc_jz not support!
+[    0.000000] MIPS secondary cache 128kB, 8-way, linesize 32 bytes.
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 24384
+[    0.000000] Kernel command line: console=ttyS1,115200n8 mem=96M@0x0 rmem=32M@0x6000000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock2 rw mtdparts=jz_sfc:256K(boot),1984K(kernel),3904K(rootfs),3904K(app),1984K(kback),3904K(aback),384K(cfg),64K(para)
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 91236k/98304k available (3944k kernel code, 7068k reserved, 1263k data, 232k init, 0k highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:358
+[    0.000000] clockevents_config_and_register success.
+[    0.000014] Calibrating delay loop... 1391.00 BogoMIPS (lpj=6955008)
+[    0.087832] pid_max: default: 32768 minimum: 301
+[    0.092688] Mount-cache hash table entries: 512
+[    0.097598] Initializing cgroup subsys debug
+[    0.101853] Initializing cgroup subsys freezer
+[    0.108036] regulator-dummy: no parameters
+[    0.112222] NET: Registered protocol family 16
+[    0.126890] bio: create slab <bio-0> at 0
+[    0.132336] jz-dma jz-dma: JZ SoC DMA initialized
+[    0.137409] SCSI subsystem initialized
+[    0.141268] usbcore: registered new interface driver usbfs
+[    0.146813] usbcore: registered new interface driver hub
+[    0.152226] usbcore: registered new device driver usb
+[    0.157410]  (null): set:249  hold:250 dev=100000000 h=500 l=500
+[    0.163490] media: Linux media interface: v0.10
+[    0.168071] Linux video capture interface: v2.00
+[    0.174082] Switching to clocksource jz_clocksource
+[    0.179014] cfg80211: Calling CRDA to update world regulatory domain
+[    0.185881] jz-dwc2 jz-dwc2: cgu clk gate get error
+[    0.190761] DWC IN OTG MODE
+[    0.194191] dwc2 dwc2: Keep PHY ON
+[    0.197598] dwc2 dwc2: Using Buffer DMA mode
+[    0.201884] dwc2 dwc2: Core Release: 3.00a
+[    0.206078] dwc2 dwc2: DesignWare USB2.0 High-Speed Host Controller
+[    0.212402] dwc2 dwc2: new USB bus registered, assigned bus number 1
+[    0.219460] hub 1-0:1.0: USB hub found
+[    0.223194] hub 1-0:1.0: 1 port detected
+[    0.227276] dwc2 dwc2: DWC2 Host Initialized
+[    0.231696] NET: Registered protocol family 2
+[    0.236458] TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.243467] TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.249940] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.256390] TCP: reno registered
+[    0.259606] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.265548] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.272062] NET: Registered protocol family 1
+[    0.276676] RPC: Registered named UNIX socket transport module.
+[    0.282603] RPC: Registered udp transport module.
+[    0.287420] RPC: Registered tcp transport module.
+[    0.292138] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.299000] freq_udelay_jiffys[0].max_num = 10
+[    0.303424] cpufreq  udelay  loops_per_jiffy
+[    0.307880] dwc2 dwc2: ID PIN CHANGED!
+[    0.311685] 12000     59956   59956
+[    0.314903] 24000     119913  119913
+[    0.318360] 60000     299784  299784
+[    0.321790] 120000    599569  599569
+[    0.325322] 200000    999282  999282
+[    0.328936] 300000    1498924         1498924
+[    0.332565] 600000    2997848         2997848
+[    0.336348] 792000    3957159         3957159
+[    0.339981] 1008000   5036385         5036385
+[    0.343777] 1200000   5995696         5995696
+[    0.351214] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.357772] jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+[    0.363500] msgmni has been set to 178
+[    0.368218] io scheduler noop registered
+[    0.372140] io scheduler cfq registered (default)
+[    0.378046] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+[    0.385645] console [ttyS1] enabled, bootconsole disabled
+[    0.385645] console [ttyS1] enabled, bootconsole disabled
+[    0.399302] brd: module loaded
+[    0.403802] loop: module loaded
+[    0.407587] zram: Created 2 device(s) ...
+[    0.411782] logger: created 256K log 'log_main'
+[    0.417012] jz TCU driver register completed
+[    0.421800] the id code = 5e4018, the flash name is ZB25VQ128
+[    0.427789] JZ SFC Controller for SFC channel 0 driver register
+[    0.433915] 8 cmdlinepart partitions found on MTD device jz_sfc
+[    0.440036] Creating 8 MTD partitions on "jz_sfc":
+[    0.444982] 0x000000000000-0x000000040000 : "boot"
+[    0.450328] 0x000000040000-0x000000230000 : "kernel"
+[    0.455828] 0x000000230000-0x000000600000 : "rootfs"
+[    0.461285] 0x000000600000-0x0000009d0000 : "app"
+[    0.466538] 0x0000009d0000-0x000000bc0000 : "kback"
+[    0.471921] 0x000000bc0000-0x000000f90000 : "aback"
+[    0.477366] 0x000000f90000-0x000000ff0000 : "cfg"
+[    0.482568] 0x000000ff0000-0x000001000000 : "para"
+[    0.487917] SPI NOR MTD LOAD OK
+[    0.491204] tun: Universal TUN/TAP device driver, 1.6
+[    0.496446] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.502906] usbcore: registered new interface driver zd1201
+[    0.508703] usbcore: registered new interface driver r8152
+[    0.514409] usbcore: registered new interface driver asix
+[    0.520074] usbcore: registered new interface driver usb-storage
+[    0.526382] usbcore: registered new interface driver usbserial
+[    0.532450] usbcore: registered new interface driver usb_ch34x
+[    0.538499] ch34x: USB to serial driver for USB to serial chip ch340, ch341, etc.
+[    0.546229] ch34x: V1.16 On 2020.12.23
+[    0.550124] usbcore: registered new interface driver ch37x
+[    0.555815] usbcore: registered new interface driver pl2303
+[    0.561585] usbserial: USB Serial support registered for pl2303
+[    0.567950] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+[    0.573974] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+[    0.579405] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+[    0.585343] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+[    0.590808] hidraw: raw HID events driver (C) Jiri Kosina
+[    0.596559] usbcore: registered new interface driver usbhid
+[    0.602310] usbhid: USB HID core driver
+[    0.606468] TCP: cubic registered
+[    0.609887] NET: Registered protocol family 17
+[    0.615088] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.622230] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    0.632568] VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+[    0.640255] Freeing unused kernel memory: 232K (80526000 - 80560000)
+mdev is ok......
+[    1.065493] jzmmc_v1.2 jzmmc_v1.2.0: card inserted, state=0
+
+Ingenic login: [    1.408593] @@@@ tx-isp-probe ok(version H20211020a-noeprint), compiler date=Oct 20 2021 @@@@@
+[    1.425656] exFAT: Version 1.2.9
+[    1.502736] jz_codec_register: probe() successful!
+[    1.915754] dma dma0chan24: Channel 24 have been requested.(phy id 7,type 0x06 desc a493a000)
+[    1.924850] dma dma0chan25: Channel 25 have been requested.(phy id 6,type 0x06 desc a4939000)
+[    1.934026] dma dma0chan26: Channel 26 have been requested.(phy id 5,type 0x04 desc a4938000)
+[    1.965403] jz_pwm_probe[212] d_name = tcu_chn0
+[    1.971720] The version of PWM driver is H20180309a
+[    1.982448] request pwm channel 0 successfully
+[    1.988795] pwm-jz pwm-jz: jz_pwm_probe register ok !
+[    1.999516] __init
+-------- T31 gpio status --------
+PxINT= 0x08000000
+PxMSK= 0xfe7f80c0
+PxPAT1=0x04340000
+PxPAT0=0x0800efc0
+INT  MSK  PAT1  PAT0
+ 0    0    0     0
+gpio status is func 0
+Pull up disable
+Pull down disable
+Drive strength is 2mA
+-------------------------------
+[    2.176180] mmc1: new SDIO card at address 0001
+[    2.215459] jzmmc_v1.2 jzmmc_v1.2.0: card removed, state=0
+#############[vendor: 0x007a] atbm603x wifi ############
+[    2.449719] [atbm_log]:SVN_VER=18363,DPLL_CLOCK=24,BUILD_TIME=[===== =====]
+[    2.458307] [atbm_log]:----drvier RATEPOLCIY=OLD
+[    2.463166] [atbm_log]:Probe called
+[    2.466851] [atbm_log]:atbm_sdio_probe:v12
+[    2.471090] [atbm_log]:Allocated hw_priv @ 8409ed20
+[    2.476299] [atbm_log]:[BH] register.
+[    2.480167] [atbm_log]:atbmwifi INIT_WORK enable
+[    2.484988] [atbm_log]:atbmwifi INIT_WORK enable
+[    2.489893] [atbm_log]:atbm_before_load_firmware++
+[    2.494923] [atbm_log]:atbm_before_load_firmware:0xab0016c = [34800000]
+[    2.501784] [atbm_log]:atbm_sdio_rx_thread
+[    2.506181] [atbm_log]:atbm_before_load_firmware:0xab0016c = [34800000]
+[    2.513079] [atbm_log]:atbm_before_load_firmware:do not set config to smu
+[    2.535449] [atbm_log]:rx timeout
+[    2.623749] [atbm_log]:atbm_before_load_firmware:read [0x16100074]=[0],ret(0)
+[    2.631185] [atbm_log]:atbm_before_load_firmware:write [0x16100074]=[1],ret(0)
+[    2.738716] [atbm_log]:atbm_start_load_firmware++
+[    2.743561] [atbm_log]:used firmware.h=
+[    2.747542] [atbm_log]:START DOWNLOAD ICCM=========
+[    2.752579] [atbm_log]:atbm_load_firmware_generic: addr 10000: len 22000
+[    2.803690] [atbm_log]:START DOWNLOAD DCCM=========
+[    2.808774] [atbm_log]:atbm_load_firmware_generic: addr 800000: len 9000
+[    2.827677] [atbm_log]:atbm_after_load_firmware++
+[    2.845880] [atbm_log]:firmwareCap f5ad
+[    2.849830] [atbm_log]:firmwareCap2 51a4
+[    2.853874] [atbm_log]:wsm_caps.firmwareCap 51a4f5ad
+[    2.858839] [atbm_log]:apollo wifi WSM init done.
+[    2.858839]    Input buffers: 42 x 1728 bytes
+[    2.858839]    Hardware: 7.1280
+[    2.858839]    WSM firmware [=MODEM=RF=Ares_AX  2GHZ May  6 2021 18:33:52NOTXConfrim], ver: 12040, build: 2749, api: 1060, cap: 0x51A4F5AD Config[30008]  expection 900b80c, ep0 cmd addr 901d3f8 NumOfStations[8] NumOfInterfaces[3]
+[    2.892606] [atbm_log]:EFUSE(8)                              [0]
+[    2.896479] [atbm_log]:EFUSE(I)                                      [1]
+[    2.900428] [atbm_log]:EFUSE(B)                      [0]
+[    2.904206] [atbm_log]:CAPABILITIES_ATBM_PRIVATE_IE      [0]
+[    2.910044] [atbm_log]:CAPABILITIES_NVR_IPC              [1]
+[    2.915888] [atbm_log]:CAPABILITIES_NO_CONFIRM           [1]
+[    2.921726] [atbm_log]:CAPABILITIES_SDIO_PATCH           [0]
+[    2.927564] [atbm_log]:CAPABILITIES_NO_BACKOFF           [1]
+[    2.933406] [atbm_log]:CAPABILITIES_CFO                  [0]
+[    2.939242] [atbm_log]:CAPABILITIES_AGC                  [1]
+[    2.945084] [atbm_log]:CAPABILITIES_TXCAL                [1]
+[    2.950934] [atbm_log]:CAPABILITIES_MONITOR              [0]
+[    2.956782] [atbm_log]:CAPABILITIES_CUSTOM               [1]
+[    2.962620] [atbm_log]:CAPABILITIES_SMARTCONFIG          [0]
+[    2.968470] [atbm_log]:CAPABILITIES_ETF                  [1]
+[    2.974304] [atbm_log]:CAPABILITIES_LMAC_RATECTL         [1]
+[    2.980141] [atbm_log]:CAPABILITIES_LMAC_TPC             [1]
+[    2.985986] [atbm_log]:CAPABILITIES_LMAC_TEMPC           [1]
+[    2.991820] [atbm_log]:CAPABILITIES_CTS_BUG              [0]
+[    2.997669] [atbm_log]:CAPABILITIES_USB_RECOVERY_BUG     [0]
+[    3.003500] [atbm_log]:CAPABILITIES_USE_IPC              [0]
+[    3.009337] [atbm_log]:CAPABILITIES_OUTER_PA             [0]
+[    3.015176] [atbm_log]:CAPABILITIES_POWER_CONSUMPTION    [1]
+[    3.021026] [atbm_log]:CAPABILITIES_RSSI_DECIDE_TXPOWER  [0]
+[    3.026874] [atbm_log]:CAPABILITIES_RTS_LONG_DURATION    [1]
+[    3.032716] [atbm_log]:CAPABILITIES_TX_CFO_PPM_CORRECTION[1]
+[    3.038564] [atbm_log]:CAPABILITIES_SHARE_CRYSTAL       [0]
+[    3.044306] [atbm_log]:CAPABILITIES_HW_CHECKSUM          [0]
+[    3.050154] [atbm_log]:CAPABILITIES_SINGLE_CHANNEL_MULRX [0]
+[    3.055992] [atbm_log]:CAPABILITIES_CFO_DCXO_CORRECTION  [1]
+[    3.061822] [atbm_log]:CONFIG_PRODUCT_TEST_USE_FEATURE_ID [1]
+[    3.067758] [atbm_log]:CONFIG_PRODUCT_TEST_USE_GOLDEN_LED [1]
+[    3.081109] [atbm_log]:set_block_size=256
+[    3.085247] [atbm_log]:mdelay wait wsm_startup_done  !!
+[    3.090682] [atbm_log]:atbm_sdio_tx_thread
+[    3.095230] [atbm_log]:wsm_generic_confirm:status(2)
+[    3.100408] [atbm_log]:<WARNING> wsm_write_mib fail !!! mibId=4132
+[    3.107016] [atbm_log]:apollo wifi : can't open /data/.mac.info
+[    3.113426] [atbm_log]:efuse data is [0x1,0x3b,0x17,0x16,0x19,0x8,0x0,0x0,0xa4:0xef:0x15:0x5f:0xf1:0x32]
+[    3.123263] [atbm_log]:param:delta_gain1:-1 delta_gain2:-1 delta_gain3:-1 dcxo:-1
+b_delta_gain1:10 b_delta_gain2:12 b_delta_gain3:15
+gn_delta_gain1:10 gn_delta_gain2:8 gn_delta_gain3:12
+[    3.140559] [atbm_log]:cmd: set_txpwr_and_dcxo,-1,-1,-1,-1,10,12,15,10,8,12
+[    3.148348] [atbm_log]:0,b_1M_2M=0▒b_5_5M_11M=0▒g_6M_n_6_5M=0▒g_9M=0▒g_12M_n_13M=0▒g_18M_n_19_5M=0▒g_24M_n_26M=0▒g_36M_n_39M=0▒g_48M_n_52M=0▒g_54M_n_58_5M=0▒n_65M=2
+[    3.163554] [atbm_log]:1,b_5_5M_11M=0▒g_6M_n_6_5M=0▒g_9M=0▒g_12M_n_13M=0▒g_18M_n_19_5M=0▒g_24M_n_26M=0▒g_36M_n_39M=0▒g_48M_n_52M=0▒g_54M_n_58_5M=0▒n_65M=2
+[    3.177890] [atbm_log]:2,g_6M_n_6_5M=0▒g_9M=0▒g_12M_n_13M=0▒g_18M_n_19_5M=0▒g_24M_n_26M=0▒g_36M_n_39M=0▒g_48M_n_52M=0▒g_54M_n_58_5M=0▒n_65M=2
+[    3.191020] [atbm_log]:3,g_9M=0▒g_12M_n_13M=0▒g_18M_n_19_5M=0▒g_24M_n_26M=0▒g_36M_n_39M=0▒g_48M_n_52M=0▒g_54M_n_58_5M=0▒n_65M=2
+[    3.202880] [atbm_log]:4,g_12M_n_13M=0▒g_18M_n_19_5M=0▒g_24M_n_26M=0▒g_36M_n_39M=0▒g_48M_n_52M=0▒g_54M_n_58_5M=0▒n_65M=2
+[    3.214147] [atbm_log]:5,g_18M_n_19_5M=0▒g_24M_n_26M=0▒g_36M_n_39M=0▒g_48M_n_52M=0▒g_54M_n_58_5M=0▒n_65M=2
+[    3.224121] [atbm_log]:6,g_24M_n_26M=0▒g_36M_n_39M=0▒g_48M_n_52M=0▒g_54M_n_58_5M=0▒n_65M=2
+[    3.232666] [atbm_log]:7,g_36M_n_39M=0▒g_48M_n_52M=0▒g_54M_n_58_5M=0▒n_65M=2
+[    3.239982] [atbm_log]:8,g_48M_n_52M=0▒g_54M_n_58_5M=0▒n_65M=2
+[    3.246015] [atbm_log]:9,g_54M_n_58_5M=0▒n_65M=2
+[    3.250776] [atbm_log]:10,n_65M=2
+[    3.254798] [atbm_log]:enable sg
+[    3.266547] [atbm_log]:enable sg
+[    3.278250] [atbm_log]:[atbm_wtd]:set wtd_probe = 1
+[    3.595742] [atbm_log]:mmc1 has been attached
+===========welcome to ver-comp tool=========
+[ver-comp]dbg: appver:  3.17.0.51
+[ver-comp]dbg: rootver: 3.17.0.0
+[ver-comp]exec cmd: cp -rf /system/bin/app.ver /configs/
+
+===========welcome to assis process=========
+[Build date] May 18 2023 (08:45:09)
+[threadpool,0142](init_job_node) jobNodeNumMin:6 jobNodeNumMax:9
+[exec-assis:151]: msgSndId:0
+[exec-assis:166]: msgRcvId:32769
+dbg: turn on watchdog success!
+[watchdog.c|assis,0050](assis_wdg_init) OK!
+hlcloud_init,89:[assis] hl_cloud_info.domain: device-api.smarthome.personal.com.ar
+hlcloud_init,90:[assis] hl_cloud_info.cacert: /tmp/cacert.pem
+hlcloud_init,91:[assis] hl_cloud_info.port  : 443
+hlcloud_init,124:hlcloud initialized success
+
+[FC] Test.tar no exist
+[FC] In [user] mode!
+[    4.410617] motor_probe [ChenX @ Hualai Technologies]
+[    4.417287] motor_probe [YuanWP offset = 0 hmax = 2130,vmax = 1600]
+[    4.423808] Hualai motor driver version: MT20180918g
+
+===========welcome to hl_client===========
+[Build date] May 18 2023 (08:45:13)
+
+===========welcome to iCamera_app===========
+[Build date] May 18 2023 (08:45:10)
+[msg:109]log: msg_queue_create() ok  MsgId:65538
+[sdevice_can_work_set_callback]dbg: set ok! have 1 cb
+[msg:538]log: [msg_queue_TUTK_report_module_init]msg_queue_create() ok  MsgId:98307
+init_log_module() ok
+[sdevice_can_work_set_callback]dbg: set ok! have 2 cb
+[exec-iCame:151]: msgSndId:0
+[exec-iCame:166]: msgRcvId:32769
+[exec-iCame,0495](no.300000) cmd:[/system/bin/sysMonitor.sh &]
+[threadpool,0142](init_job_node) jobNodeNumMin:30 jobNodeNumMax:45
+[timer,150]dbg: init complete.
+[debug.c,0190]debug_init() dbgId:0
+watchdog_init() ok  TimerId:1
+
+<Reading> /configs/.product_config
+[exec-assis,0302](no.300000) system ret:[0]
+[product_config.c,0260][PRODUCT] [PRODUCT_TYPE ] [camera]
+[product_config.c,0260][PRODUCT] [PRODUCT_MODEL] [TELEAR_CamPan]
+[product_config.c,0260][PRODUCT] [BOARD_TEST   ] [FFFF]
+[product_config.c,0260][PRODUCT] [FACTORY_TEST ] [0000]
+[product_config.c,0260][PRODUCT] [HARDWARE_VER ] [P02A0000]
+[product_config.c,0260][PRODUCT] [KEY          ] [jVy+Rj4XBvCqLvLfuxsgERRAq357YdbBqySha1fYc60sWsV5f5dIoRufUh4VXcHnLCjwvEU49IG9BeVjTABKcFGwtVyQeUIpuP6GqszSqcqZklOs6B6mb5WBKGQl8qdmNEXYgXIeCwwYeuDZ2PkSr4s64RjznuMMmj9YERa7PZs=AQAB]
+[product_config.c,0260][PRODUCT] [KEY_CHECKSUM ] [000041d9]
+[product_config.c,0260][PRODUCT] [CONFIG_INFO  ] [E4AAECA69937|||0000]
+[product_config.c,0269][PRODUCT] [macAddr      ] [E4AAECA69937]
+
+<Reading> /configs/app.ver
+[product_config.c,0303][PRODUCT] [appver       ] [3.17.0.51]
+
+<Reading> /configs/.user_config
+[user_config.c,0484][USERSET] [indicator    ] [1]
+[user_config.c,0484][USERSET] [nightVision  ] [2]
+[user_config.c,0484][USERSET] [bitRate      ] [120]
+[user_config.c,0484][USERSET] [res          ] [1]
+[user_config.c,0484][USERSET] [fps          ] [20]
+[user_config.c,0484][USERSET] [horSwitch    ] [2]
+[user_config.c,0484][USERSET] [verSwitch    ] [2]
+[user_config.c,0484][USERSET] [osdSwitch    ] [1]
+[user_config.c,0484][USERSET] [logSd        ] [1]
+[user_config.c,0484][USERSET] [logUdisk     ] [1]
+[user_config.c,0484][USERSET] [telntSwitch  ] [2]
+[user_config.c,0484][USERSET] [recordType   ] [1]
+[user_config.c,0484][USERSET] [MASwitch     ] [2]
+[user_config.c,0484][USERSET] [MALevel      ] [5]
+[user_config.c,0484][USERSET] [AASwitch     ] [2]
+[user_config.c,0484][USERSET] [AALevel      ] [5]
+[user_config.c,0484][USERSET] [SASwitch     ] [2]
+[user_config.c,0484][USERSET] [CASwitch     ] [2]
+[user_config.c,0484][USERSET] [TBStart      ] [0]
+[user_config.c,0484][USERSET] [TBDuration   ] [1440]
+[user_config.c,0484][USERSET] [drawBoxSwitch] [1]
+[user_config.c,0484][USERSET] [timezone     ] [-3]
+[user_config.c,0484][USERSET] [MMALevel     ] [128]
+[user_config.c,0484][USERSET] [AMALevel     ] [128]
+[user_config.c,0484][USERSET] [MAT          ] [0]
+[user_config.c,0484][USERSET] [AST          ] [1]
+[user_config.c,0484][USERSET] [motionTrack  ] [1]
+[user_config.c,0484][USERSET] [motionCruisin] [2]
+[user_config.c,0484][USERSET] [AASX         ] [25]
+[user_config.c,0484][USERSET] [AASY         ] [25]
+[user_config.c,0484][USERSET] [AALX         ] [50]
+[user_config.c,0484][USERSET] [AALY         ] [50]
+[user_config.c,0484][USERSET] [motionback   ] [1]
+[user_config.c,0484][USERSET] [slide_x      ] [18000]
+[user_config.c,0484][USERSET] [slide_y      ] [9000]
+[user_config.c,0484][USERSET] [preset_x     ] [0]
+[user_config.c,0484][USERSET] [preset_y     ] [0]
+[user_config.c,0484][USERSET] [ubootflag    ] [0]
+[user_config.c,0484][USERSET] [exposureModel] [0]
+[user_config.c,0484][USERSET] [limit_max_x  ] [0]
+[user_config.c,0484][USERSET] [limit_min_x  ] [0]
+[user_config.c,0484][USERSET] [limit_max_y  ] [0]
+[user_config.c,0484][USERSET] [limit_min_y  ] [0]
+[user_config.c,0484][USERSET] [motor_limit  ] [0]
+[user_config.c,0484][USERSET] [resoluselect ] [1]
+[user_config.c,0484][USERSET] [low_bitrate  ] [30]
+[user_config.c,0484][USERSET] [watermark_flag] [0]
+[user_config.c,0484][USERSET] [speaker_vol  ] [50]
+[user_config.c,0484][USERSET] [pir_alaram   ] [1]
+[user_config.c,0484][USERSET] [nightLight   ] [1]
+[user_config.c,0484][USERSET] [sdeviceExist ] [0]
+[user_config.c,0484][USERSET] [recordNum    ] [0]
+[user_config.c,0484][USERSET] [recordSize   ] [0]
+[user_config.c,0484][USERSET] [dongleLight  ] [1]
+[user_config.c,0484][USERSET] [alarmDate    ] [255]
+[user_config.c,0484][USERSET] [alarmInterval] [300]
+[user_config.c,0484][USERSET] [sdevAction   ] [1]
+[user_config.c,0484][USERSET] [voiceSwitch  ] [2]
+[user_config.c,0484][USERSET] [voiceScene   ] [1]
+[user_config.c,0484][USERSET] [autoBitrate  ] [2]
+[user_config.c,0484][USERSET] [cloudSwitch  ] [1]
+[user_config.c,0484][USERSET] [night_cut_thr] [1]
+[user_config.c,0484][USERSET] [motor_speed  ] [5]
+[user_config.c,0484][USERSET] [TrackSwitch  ] [1]
+[user_config.c,0484][USERSET] [PeopertySwitch] [1]
+[user_conf[    6.688839] name : i2c0 nr : 0
+ig.c,0484][USERSET] [PetsSwitch   ] [0]
+[user_config.c,0484][USERSET] [TotalSwitch  ] [1]
+[user_config.c,0484][USERSET] [secondtimezone] [-10800]
+[user_config.c,0484][USERSET] [kvsModelType ] [0]
+[user_config.c,0484][USERSET] [AlarmVideoType] [1]
+[user_config.c,0484][USERSET] [AlarmRecordTime] [12]
+[user_config.c,0370][USERNET] [ssid         ] []
+[user_config.c,0375][USERNET] [password     ] []
+[user_config.c,0379][USERNET] [wifiType     ] [5]
+[user_config.c,0384][USERNET] [p2pid        ] []
+[user_config.c,0389][USERNET] [r_encr       ] []
+[user_config.c,0393][USERNET] [bindOk       ] [1]
+[sdk,0306]----------------------------------------
+[sdk,0307]    WELCOME TO LOCALSDK      ('_)')
+[sdk,0308]----------------------------------------
+[sdk,0309]    platform: ingenict31x
+[sdk,0313]    version : 1.1.26.40
+[sdk,0314]    update  : Jul 12 2022 (13:54:08)
+[sdk,0315]----------------------------------------
+[sdk,0205]dbg: Pin(48)  Lvl(0)  Dir(out)
+[sdk,0205]dbg: Pin(47)  Lvl(1)  Dir(out)
+[sdk,0205]dbg: Pin(53)  Lvl(0)  D[    6.785661] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+ir(out)
+[sdk,0205]dbg: Pin(52)  Lvl(0)  Dir(out)
+[sdk,0205]dbg[    6.797563] i2c i2c-0: --I2C txabrt:
+: Pin(14)  Lvl(0)  Dir(out)
+[sdk,0205]dbg: Pin(38)  Lvl(1)  Dir[    6.806713] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+(out)
+[sdk,0205]dbg: Pin(7)  Lvl(1)  Dir(in)
+[sdk,0205]dbg: Pi[    6.818881] error: sensor_read,285 ret = -5
+n(50)  Lvl(0)  Dir(in)
+[sdk,0345]dbg: Platform Thread Create OK[    6.828676]  sensor_read: addr=0x3107 value = 0x0
+!  ('_)')
+motorport_open success
+[local_sdk_motor_init]dbg: sd[    6.839080] err sensor read addr = 0x3107, value = 0x0
+kmotor Thread Create OK!  ('_)')
+[sdk,0479]dbg: (local_sdk_set_major_error_callback) Doing...
+[sdk,0225][1.1.26.40]
+init_local_sdk,2092:[init_local_sdk] localsdk version:26
+init_local_sdk,2099:[init_local_sdk] localsdk version:0
+[sdk,0265]dbg: Platform Thread Start...
+[    6.936030]  sensor_read: addr=0xf0 value = 0x20
+[    6.941311]  sensor_read: addr=0xf1 value = 0x53
+[    6.946108] info: success sensor find : gc2053
+[    6.950712] misc sinfo_release
+[sdk,1673]##### sensor type: gc2053 #####
+[sdk,0164]dbg:(softlight_set_sensor) find sensor:gc2053 ok!
+[exec-iCame,0468](no.100000) cmd:[insmod /system/driver/sensor_gc2053_t31.ko data_interface=1]
+[exec-iCame,0471](no.100000) msgque ret:[0]
+[    7.046441] gc2053 chip found @ 0x37 (i2c0) version H20210728a
+---- FPGA board is ready ----
+  Board UID : 30AB6E51
+  Board HW ID : 72000460
+  Board rev.  : 5DE5A975
+  Board date  : 20190326
+-----------------------------
+[sdk,0817]##### sensor fps: 20 #####
+[sdk,0823]##### sensor MaxDGain: 64, AeComp: 128, sensor HiLightDepress: 2 #####
+[sdk,0525]dbg:(local_sdk_video_osd_set_font_bitmap) bitmap addr:[0x56bae0]
+[sdk,1787]dbg:(local_sdk_video_create) apiChn:0, grp:0
+[sdk,1807]dbg: Enc_thread(chn0) create OK!  ('_)')
+[sdk,1893]dbg:(local_sdk_video_set_parameters) apiChn:0, grp:0
+[sdk,0638]dbg:(local_sdk_video_osd_set_parameters) osd set params chn:0, grp:0
+[sdk,0385]dbg: layer[0] is [Enable]...
+[sdk,0385]dbg: layer[1] is [Enable]...
+[sdk,0385]dbg: layer[2] is [Enable]...
+[sdk,0385]dbg: layer[3] is [Enable]...
+[sdk,0385]dbg: layer[4] is [Disable]...
+[sdk,0385]dbg: layer[6] is [Disable]...
+[sdk,0740]dbg:(local_sdk_video_osd_set_parameters) set to paramsok, chn0, grp0
+[sdk,0112]dbg: Set Video Enc Callback Doing... (chn:0)
+[sdk,2117]dbg:(local_sdk_video_start) apiChn:0 grp:0
+[sdk,0917]dbg:(sample_framesource_init) apiChn0, fsChn:0
+[sdk,2138]dbg: IMP_Encoder_CreateGroup(0) ok!
+[sdk,2154]dbg:(local_sdk_video_start) apiChn:0, encChn:0, grp:0
+[sdk,3358]dbg: Encoder apiChn0, encChn:0 Thread Start...
+[sdk,2171]dbg:(local_sdk_video_start) apiChn:0, jpegChn:4, grp:0
+[sdk,2345]dbg: chn[0] grp[0] malloc timestampDataSize:97920! scalNum:1, scalDen:1
+[sdk,2402]dbg: chn[0] grp[0] layer[0] layerHander[0] create OK...
+[sdk,2378]dbg: chn[0] grp[0] malloc logoDataSize:32400! scalNum:1, scalDen:1
+[sdk,2402]dbg: chn[0] grp[0] layer[1] layerHander[1] create OK...
+[sdk,2402]dbg: chn[0] grp[0] layer[2] layerHander[2] create OK...
+[sdk,2395]dbg: chn[0] grp[0] malloc logoDataSize:183600! scalNum:1, scalDen:1
+[sdk,2402]dbg: chn[0] grp[0] layer[3] layerHander[3] create OK...
+[sdk,2567]dbg:(sample_osd_init) groupState set to initok, chn0, grp0
+[sdk,2272]dbg: IMP_System_Bind(chn0) [FS]--bind->[OSD] OK!
+[sdk,2272]dbg: IMP_System_Bind(chn0) [OSD]--bind->[ENC] OK!
+[sdk,2344]dbg:(local_sdk_video_run) apiChn:0, encChn:0, grp:0
+[sdk,2362]dbg: start fsChn0, chn0...
+[sdk,2390]dbg: start encChn0, chn0...
+pRCParam->pMaxPictureSize[AL_SLICE_I]=1920000, pCodecEncode->m_SrcBufPoolConfig.zBufSize * 8 / 1.2=720000
+[sdk,1787]dbg:(local_sdk_video_create) apiChn:1, grp:1
+[sdk,1794]dbg: Yuv_thread(chn1) create OK!  ('_)')
+[sdk,1807]dbg: Enc_thread(chn1) create OK!  ('_)')
+[sdk,1893]dbg:(local_sdk_video_set_parameters) apiChn:1, grp:1
+[sdk,1912]dbg:(local_sdk_video_set_parameters) apiChn:1, grp:1, enable scaler
+[sdk,0638]dbg:(local_sdk_video_osd_set_parameters) osd set params chn:1, grp:1
+[sdk,0385]dbg: layer[0] is [Enable]...
+[sdk,0385]dbg: layer[1] is [Enable]...
+[sdk,0385]dbg: layer[2] is [Enable]...
+[sdk,0385]dbg: layer[3] is [Enable]...
+[sdk,0385]dbg: layer[4] is [Disable]...
+[sdk,0385]dbg: layer[6] is [Disable]...
+[sdk,0740]dbg:(local_sdk_video_osd_set_parameters) set to paramsok, chn1, grp1
+[sdk,0112]dbg: Set Video Enc Callback Doing... (chn:1)
+[sdk,0411]dbg: Set algo_register Callback Doing...
+[sdk,2117]dbg:(local_sdk_video_start) apiChn:1 grp:1
+[sdk,0917]dbg:(sample_framesource_init) apiChn1, fsChn:1
+[sdk,2138]dbg: IMP_Encoder_CreateGroup(1) ok!
+[sdk,3263]dbg: YUV apiChn1 fsChn:1 Thread Start...
+[sdk,3358]dbg: Encoder apiChn1, encChn:1 Thread Start...
+[sdk,2154]dbg:(local_sdk_video_start) apiChn:1, encChn:1, grp:1
+[sdk,2171]dbg:(local_sdk_video_start) apiChn:1, jpegChn:5, grp:1
+[sdk,2345]dbg: chn[1] grp[1] malloc timestampDataSize:10880! scalNum:3, scalDen:1
+[sdk,2402]dbg: chn[1] grp[1] layer[0] layerHander[4] create OK...
+[sdk,2378]dbg: chn[1] grp[1] malloc logoDataSize:3600! scalNum:3, scalDen:1
+[sdk,2402]dbg: chn[1] grp[1] layer[1] layerHander[5] create OK...
+[sdk,2402]dbg: chn[1] grp[1] layer[2] layerHander[6] create OK...
+[sdk,2395]dbg: chn[1] grp[1] malloc logoDataSize:20400! scalNum:3, scalDen:1
+[sdk,2402]dbg: chn[1] grp[1] layer[3] layerHander[7] create OK...
+[sdk,2567]dbg:(sample_osd_init) groupState set to initok, chn1, grp1
+[IVS-PERSONDET]dbg: IMP_IVS_CreateGroup(0) ret:0!
+[sdk,2231]dbg: ivs enable channel:1
+[sdk,2272]dbg: IMP_System_Bind(chn1) [FS]--bind->[IVS] OK!
+[sdk,2272]dbg: IMP_System_Bind(chn1) [IVS]--bind->[OSD] OK!
+[sdk,2272]dbg: IMP_System_Bind(chn1) [OSD]--bind->[ENC] OK!
+[sdk,2344]dbg:(local_sdk_video_run) apiChn:1, encChn:1, grp:1
+[sdk,2362]dbg: start fsChn1, chn1...
+[sdk,2376]dbg: start yuvChn1, chn1...
+[sdk,2390]dbg: start encChn1, chn1...
+pRCParam->pMaxPictureSize[AL_SLICE_I]=640000, pCodecEncode->m_SrcBufPoolConfig.zBufSize * 8 / 1.2=240000
+[sdk,1787]dbg:(local_sdk_video_create) apiChn:2, grp:2
+[sdk,1794]dbg: Yuv_thread(chn2) create OK!  ('_)')
+[sdk,1893]dbg:(local_sdk_video_set_parameters) apiChn:2, grp:2
+[sdk,1912]dbg:(local_sdk_video_set_parameters) apiChn:2, grp:2, enable scaler
+[sdk,2199]dbg:(local_sdk_video_start) apiChn:2, encChn:0, grp:2
+[sdk,0917]dbg:(sample_framesource_init) apiChn2, fsChn:2
+[sdk,2211]dbg: sample_framesource_init(2) ok! (yuv only)
+[sdk,0237]dbg: audio init ok!
+[sdk,0389]dbg: a (chn0) opus_encoder_init ok!
+[sdk,0447]dbg: Audio Thread(chn0) create OK!  ('_)')
+[sdk,0451]dbg: a chn:0 create ok!
+[sdk,0532]dbg: a chn:0 set para ok!
+[sdk,0177]dbg: Set Audio Enc Callback Doing... (chn:0)
+[sdk,1263]dbg: Audio Thread(chn0) Start...
+[sdk,3263]dbg: YUV apiChn2 fsChn:2 Thread Start...
+[    8.025492] codec_set_device: set device: MIC...
+[sdk,0697]dbg: a chn:0 start ok!
+[sdk,0753]dbg: a (chn0) pcm stream run...
+[sdk,0760]dbg: a (chn0) enc stream run...
+[sdk,0451]dbg: a chn:1 create ok!
+[sdk,0532]dbg: a chn:1 set para ok!
+[sdk,0177]dbg: Set Audio Enc Callback Doing... (chn:1)
+[sdk,0623]dbg: a chn:1 start ok!
+[sdk,0760]dbg: a (chn1) enc stream run...
+[sdk,0269]dbg: (local_sdk_speaker_set_parameters) sampleRate   :8000
+[sdk,0270]dbg: (local_sdk_speaker_set_parameters) trackType    :1
+[sdk,0271]dbg: (local_sdk_speaker_set_parameters) gain         :28
+[sdk,0272]dbg: (local_sdk_speaker_set_parameters) volume       :68
+[sdk,0273]dbg: (local_sdk_speaker_set_parameters) pcmBufSize   :640
+[sdk,0274]dbg: (local_sdk_speaker_set_parameters) cacheSec     :1
+[sdk,0275]dbg: (local_sdk_speaker_set_parameters) paMode       :0
+[sdk,0276]dbg: (local_sdk_speaker_set_parameters) paAutoDisable:0
+[sdk,0420]opus decode init ok
+[sdk,1226]dbg: (sdkspeaker_play_monitor_task) thread work...
+[sdk,1275]dbg: (sdkspeaker_play_monitor_task) thread break out...
+[sdk,0834]dbg: IMP_AI_SetChnParam
+[sdk,0844]dbg: IMP_AI_EnableChn
+warn: shm_init,53shm init already
+[sdk,0854]dbg: IMP_AI_SetGain
+[sdk,0877]dbg: IMP_AI_SetVol:87
+[sdk,0948]dbg: IMP_AI_EnableNs:3
+[sdk,0959]dbg: IMP_AI_EnableHpf
+[sdk,1281]dbg: sdkaudio_do_run ok
+[    8.265516] codec_set_device: set device: speaker...
+warn: shm_init,53shm init already
+[sdk,0490]dbg: speaker volume: 6[    8.272442] SPEAKER CTL MODE0 !
+8
+[sdk,0515]dbg: speaker gain: 28
+[sdk,0543]log: local_sdk_speaker_start set speaker ap mode 0 ok...
+[exec-iCame,0468](no.100000) cmd:[cp /system/local/cacert.pem /tmp/cacert.pem]
+[exec-iCame,0471](no.100000) msgque ret:[0]
+[init.c,0878]copy cacery file success !
+[exec-iCame,0428](no.100000) cmd:[echo "# HUALAI DNS #" > /etc/resolv.conf]
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[exec-iCame,0468](no.100000) cmd:[/sbin/ifconfig wlan0 down]
+[exec-iCame,0471](no.100000) msgque ret:[0]
+[exec-iCame,0468](no.100000) cmd:[ifconfig wlan0 hw ether E4:AA:EC:A6:99:37]
+[    8.900208] [atbm_log]:[wlan0] change mac[e4:aa:ec:a6:99:37]
+[    8.916155] [atbm_log]:[p2p0] change mac[e6:aa:ec:a6:99:37]
+[exec-iCame,0471](no.100000) msgque ret:[0]
+[exec-iCame,0468](no.100000) cmd:[/system/bin/restart_wlan0.sh]
+up
+[exec-iCame,0471](no.100000) msgque ret:[0]
+[netServ.c,0260]dbg: Set net_state Callback Doing...
+[init.c,0980]No SSID, waitting here...
+[timezone.c,0478]filePath:[/configs/.timezone_config]
+[exec-iCame,0428](no.100000) cmd:[echo "UTC+3:00:00" > /etc/TZ]
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[sdk,0145]dbg: Set Video YUV Callback Doing... (chn:1)
+[SDK-ALARM]dbg: [algo:2] Thread Create OK!  ('_)')
+[user_config.c,0539]paracfg_set_user_config_item(13, 2) param value equal!
+[videoalarmfunc.c,0106]set apartType:0, startX:25, longX:50, startY:25, longY:50[alarmhandle.c,1708](alarm_multiple_period) multiple period old change:[255] [0]
+[alarmhandle.c,1708](alarm_multiple_period) multiple period old change:[255] [1]
+[alarmhandle.c,1708](alarm_multiple_period) multiple period old change:[255] [2]
+[alarmhandle.c,1708](alarm_multiple_period) multiple period old change:[255] [3]
+[alarmhandle.c,1708](alarm_multiple_period) multiple period old change:[255] [4]
+[alarmhandle.c,1708](alarm_multiple_period) multiple period old change:[255] [5]
+[alarmhandle.c,1708](alarm_multiple_period) multiple period old change:[255] [6]
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_START
+INFO(iaac): iaac version:4_7_2-2.0.0-0x20000002-bd3f4e8-Tue Jun 30 14:37:01 2020 +0800,-tseries, built: Jun 30 2020-14:39:31
+chn_num = 5
+IVS Version:1.0.5 built: Aug  4 2021 15:37:30
+INFO(person_tracker): person_tracker version:0.0.11(00000001)  built:20210804-1537(4.7.2 simd)
+INFO(jzdl): jzdl version:1.3.0(00010300_d1f070f)  built:20210401-1910(4.7.2 simd)
+[sdk,0209]dbg: Set Video PCM Callback Doing... (chn:0)
+[user_config.c,0539]paracfg_set_user_config_item(18, 2) param value equal!
+[user_config.c,0539]paracfg_set_user_config_item(17, 2) param value equal!
+[user_config.c,0539]paracfg_set_user_config_item(15, 2) param value equal!
+[SDK-ALARM]dbg: algo[2] init success, start... version:1.2.43
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_INIT_OK
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_SETTING
+0.00motion_set_algo_persondet_config alarm_switch 1, run_state 0
+**************************[debug_lihx]************************** .sample_ivs_algo_start
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_RESULT
+[handle_video.c,0111]dbg: ##### localsdk alarm switch on, byid:0 #####
+>>> local_sdk_usb_power_off <<<
+>>> local_sdk_usb_power_on <<<
+[sdk,0378]dbg: Set night_state Callback Doing...
+[handle_video.c,0361][night_mode_init]dbg: USER_SWITCH_OFF ...
+[sdk,0225]<>===================< IRcut on >==================<>
+[sdk,0737](local_sdk_close_night_light) stateFlag:2, LastState:0
+[sdk,0145]dbg: Set Video YUV Callback Doing... (chn:2)
+[sdk,0241]dbg: Set setup_keydown Callback Doing...
+[sdk,0273]dbg: Set reset_keydown Callback Doing...
+[sdevice_can_work_set_callback]dbg: set ok! have 3 cb
+# mp4 version is jz-20200423a#
+[sdevice_can_work_set_callback]dbg: set ok! have 4 cb
+[exec-iCame,0428](no.100000) cmd:[cp /usr/www /tmp/ -fr ]
+in:  (night_mode_change_callback) state:[2]
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_SETTING
+0.00motion_set_algo_persondet_config alarm_switch 0, run_state 1
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_IDEL get_algo_result_handle
+[handle_video.c,0121]dbg: ##### localsdk alarm switch off, byid:1 #####
+out: (night_mode_change_callback) state:[2]
+in:  (night_mode_change_callback) state:[1]
+out: (night_mode_change_callb[   10.931442] [motor_speed1086] speed:900, level:15
+ack) state:[1]
+>>> sdkgpio_irled_off <<<
+[sdk,0991](modify_default_irlight_duty) Switch:1, Las[   10.943719] motor_ops_reset966
+tSta:1, dutyDest:0, dutyReal:0
+[sdk,1025](modify_expand_irlight_duty) Switch:1, LastSta:1, dutyDest:0, dutyReal:0
+[sdk,0260]<>[   10.959984] printk [yuan] else
+===================< IRcut off >=================<>
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[timelapsefunc.c,0275](time_lapse_boa_init) boa timer add ok, tmpId:4
+[sdk,0337]dbg: Set Device Monitor Callback Doing...
+[sdk,0337]dbg: Set Device Monitor Callback Doing...
+[sdk,0337]dbg: Set Device Monitor Callback Doing...
+[SDK-ALARM]dbg: Set alarm_state Callback Doing...
+[msg:141]log: msg_queue_create() ok  MsgId:131076
+[msg:150]log: msg_queue_create() ok  MsgId:163845
+[sd_sync_time.c,0162](sd_sync_time_init) in...
+[sdevice_can_work_set_callback]dbg: set ok! have 5 cb
+[cameraworkstate.c,0309][camera_work_state_init]dbg: init ok!
+copy new_task as curr_task.
+motor reseting...
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[   13.851460] motor_ops_goback
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+[mempool_data_write] error: mempool not have free block! please free old data!
+[audio_capture_callback] error: mempool_data_write fail
+motor reset done...
+motor curX:1065  curY:800
+motor maxX:2130  maxY:1600
+[timer]err:(timer_del) id:-1 < 0
+[motor.c,0757]set_cruisin_state:2
+[motor.c,0587]motor_move_latest_positision:1 apartAlarmSwitch:0 motionAlarmSwitch2copy new_task as curr_task.
+motor move abs
+Xstep=15, Ystep=0, speed=9
+[SDK-ALARM]dbg: Set alarm_state Callback Doing...
+[motor.c,0786]set_track_state:1
+[motor.c,0322]set_track_type:1
+[nas.c,2260]samba service init in...
+[sdevice_can_work_set_callback]dbg: set ok! have 6 cb
+webrtc_ctrl_init g_dataChannelId:229383! g_cleanChannelId：196614
+webrtc_ctrl_handler start!
+[init.c,0757]code_test!!!
+webrtc_ctrl_handler start!
+[motor.c,0786]set_track_state:1
+in:  (night_mode_change_callback) state:[3]
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_SETTING
+0.00motion_set_algo_persondet_config alarm_switch 1, run_state 0
+**************************[debug_lihx]************************** .sample_ivs_algo_start
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_RESULT
+[handle_video.c,0111]dbg: ##### localsdk alarm switch on, byid:1 #####
+out: (night_mode_change_callback) state:[3]
+[watchdog]dbg: watchdog_snd_msg_feed [time:30]
+[assis]WDG_CMD_FEED_DOG!!!!
+[watchdog]dbg: watchdog_snd_msg_feed [time:60]
+[assis]WDG_CMD_FEED_DOG!!!!

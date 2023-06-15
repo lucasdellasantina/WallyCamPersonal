@@ -1,0 +1,245 @@
+[motor.c,0786]set_track_state:2
+[user_config.c,0539]paracfg_set_user_config_item(28, 2) param value equal!
+[timer]err:(timer_del) id:-1 < 0
+[motor.c,0757]set_cruisin_state:2
+[binding.c,1109]log: ===== KEY DOWN, to setup =====
+[user_config.c,0854][SET USERNET] [ssid] []
+[user_config.c,0886][SET USERNET] [password] []
+[user_config.c,0822][SET USERNET] [r_encr] []
+[user_config.c,0702][SET USERNET] [p2pid] []
+[user_config.c,0734][SET USERNET] [CRCKey] []
+[exec-iCame,0428](no.100000) cmd:[rm -rf /tmp/aws_iot/cert.pem]
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[exec-iCame,0428](no.100000) cmd:[rm -rf /tmp/aws_iot/privkey.pem]
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[exec-iCame,0428](no.100000) cmd:[rm -rf /tmp/aws_iot/rootCA.crt]
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[exec-iCame,0428](no.100000) cmd:[rm -rf /tmp/aws_iot/rooCAok]
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+killall: HlKvsWebRTC.bin: no process killed
+[sdk,2344]dbg:(local_sdk_video_run) apiChn:2, encChn:0, grp:2
+[[  195.201311] SPEAKER CTL MODE3 !
+sdk,2362]dbg: start fsChn2, chn2...
+[sdk,2376]dbg: start yuvChn2, chn2...
+[prompt]dbg: === SPK READY PLAY === [/usr/share/notify/CN/dang_rd.wav]
+[user_config.c,0539]paracfg_set_user_config_item(34, 18000) param value equal!
+[user_config.c,0539]paracfg_set_user_config_item(35, 9000) param value equal!
+[motor.c,0182]Set last angle:[X:18000  Y:9000]
+[iot.c,3112](iot_module_deinit)doing...
+[sdk,0647]log: set speaker ap mode 3 ok...
+[prompt]dbg: === SPK START PLAY === [/usr/share/notify/CN/dang_rd.wav]
+[exec-iCame,0428](no.100000) cmd:[killall wpa_supplicant]
+[netServ.c,0774]##dbg## (netserv_clean_network) func return...
+[sdk,0737](local_sdk_close_night_light) stateFlag:2, LastState:2
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_SETTING
+0.00motion_set_algo_persondet_config alarm_switch 0, run_state 1
+[SDK-ALARM]dbg: algo[2] state goto: THREAD_STATE_IDEL get_algo_result_handle
+[handle_video.c,0121]dbg: ##### localsdk alarm switch off, byid:2 #####
+[ai_population_statistics.c,0459]AI set the switch state:0
+[ai_population_statistics.c,0446](ai_statistics_time_end) del timer
+[ai_population_statistics.c,0469]AI Statistics start not to work...
+[nas.c,0492]clean samba info
+[exec-iCame,0428](no.100001) cmd:[rm -rf /configs/.nasConfig]
+[exec-assis:263]: (no.100001) popen  ret:[]
+[exec-iCame,0437](no.100001) msgque ret:[0]
+[fm_func.c,1516]FM send msg audio success to kvs!
+[fm_func.c,1606]FM send msg to kvs exit success
+
+testforpeng------------------[full_motion_deinit_action] [1969]----------[5]----------------
+[exec-iCame,0468](no.100001) cmd:[rm /tmp/kvs -rf]
+[threadpool,0084]warring: threadName:[exec-shell-pool]
+[threadpool,0084]warring: threadName:[log-serv]
+[threadpool,0084]warring: threadName:[rcv-msg]
+[threadpool,0084]warring: threadName:[exet-shell]
+[threadpool,0084]warring: threadName:[exet-shell]
+[threadpool,0088]warring: (malloc_job_node) used jobNode more than 5
+[threadpool,0084]warring: threadName:[exec-shell-pool]
+[threadpool,0084]warring: threadName:[log-serv]
+[threadpool,0084]warring: threadName:[rcv-msg]
+[threadpool,0084]warring: threadName:[exet-shell]
+[threadpool,0084]warring: threadName:[exet-shell]
+[threadpool,0088]warring: (malloc_job_node) used jobNode more than 5
+killall: wpa_supplicant: no process killed
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[exec-iCame,0428](no.100000) cmd:[killall udhcpc]
+[threadpool,0084]warring: threadName:[exec-shell-pool]
+[threadpool,0084]warring: threadName:[log-serv]
+[threadpool,0084]warring: threadName:[rcv-msg]
+[threadpool,0084]warring: threadName:[exet-shell]
+[threadpool,0084]warring: threadName:[exet-shell]
+[threadpool,0088]warring: (malloc_job_node) used jobNode more than 5
+[exec-assis,0302](no.11113) system ret:[0]
+[exec-iCame,0471](no.100001) msgque ret:[0]
+[SDK-ALARM]dbg: Clear alarm_state Callback Doing...
+[exec-iCame,0468](no.100001) cmd:[killall -9 kvs_stream]
+killall: udhcpc: no process killed
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[exec-iCame,0428](no.100000) cmd:[killall udhcpd]
+killall: kvs_stream: no process killed
+[exec-iCame[  195.484919] SPEAKER CTL MODE1 !
+,0471](no.100001) msgque ret:[256]
+[fm_func.c,2010]get_full_motion_switch_from_wyzeservice close
+[fm_func.c,2012]kvs deinit success
+killall: udhcpd: no process killed
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[exec-iCame,0428](no.100000) cmd:[killall hostapd]
+mode =1
+killall: hostapd: no process killed
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[exec-iCame,0428](no.100000) cmd:[killall telnetd]
+[sdk,0647]log: set speaker ap mode 1 ok...
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[exec-iCame,0428](no.100000) cmd:[ifconfig wlan0 0.0.0.0]
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+[  195.564880] [atbm_log]:wlan0:free authen bss ++own]
+
+[  195.615647] [atbm_log]:wlan0:free authen bss ++
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+[exec-assis:263]: (no.100000) popen  ret:[]
+[exec-iCame,0437](no.100000) msgque ret:[0]
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+zbar_scan_image try next: 0
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+zbar_scan_image try next: 1
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+zbar_scan_image try next: 2
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+zbar_scan_image try next: 3
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+zbar_scan_image try next: 4
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+[prompt]log: fread len(332) wrong...
+[prompt]dbg: feed buf finish...
+zbar_scan_image try next: 5
+[sdk,1003]dbg: (local_sdk_speaker_finish_buf_data) in...
+zbar_scan_image try next: 6
+zbar_scan_image try next: 7
+zbar_scan_image try next: 8
+zbar_scan_image try next: 9
+zbar_scan_image try next: 10
+zbar_scan_image try next: 11
+zbar_scan_image try next: 12
+[sdk,1030]dbg: (local_sdk_speaker_finish_buf_data) out..
+[prompt]dbg: === SPK END PLAY === [/usr/share/notify/CN/dang_rd.wav]
+zbar_scan_image try next: 13
+zbar_scan_image try next: 14
+zbar_scan_image try next: 15
+zbar_scan_image try next: 16
+zbar_scan_image try next: 17
+zbar_scan_image try next: 18
+mode =0
+[  201.656421] SPEAKER CTL MODE0 !
+[sdk,0647]log: set speaker ap mode 0 ok...
+zbar_scan_image try next: 19
+zbar_scan_image try next: 20
+zbar_scan_image try next: 21
+zbar_scan_image try next: 22
+zbar_scan_image try next: 23
+zbar_scan_image try next: 24
+zbar_scan_image try next: 25
+zbar_scan_image try next: 26
+zbar_scan_image try next: 27
+zbar_scan_image try next: 28
+zbar_scan_image try next: 29
+zbar_scan_image try next: 30
+zbar_scan_image try next: 31
+zbar_scan_image try next: 32
+zbar_scan_image try next: 33
+zbar_scan_image try next: 34
+zbar_scan_image try next: 35
+zbar_scan_image try next: 36
+zbar_scan_image try next: 37
+zbar_scan_image try next: 38
+zbar_scan_image try next: 39
+zbar_scan_image try next: 40
+[binding.c,1033]log: scannFailCount
+[prompt]dbg: === SPK READY PLA[  208.061224] SPEAKER CTL MODE3 !
+Y === [/usr/share/notify/CN/dang.wav]
+[sdk,0647]log: set speaker ap mode 3 ok...
+[prompt]dbg: === SPK START PLAY === [/usr/share/notify/CN/dang.wav]
+mode =1
+[  208.162363] SPEAKER CTL MODE1 !
+[sdk,0647]log: set speaker ap mode 1 ok...
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+zbar_scan_image try next: 0
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+war: Speaker Cache Busy...
+speaker_feed_pcm_data error
+[prompt]log: fread len(164) wrong...
+[prompt]dbg: feed buf finish...
+[sdk,1003]dbg: (local_sdk_speaker_finish_buf_data) in...
+zbar_scan_image try next: 1
+zbar_scan_image try next: 2
+zbar_scan_image try next: 3
+zbar_scan_image try next: 4
+WARNING: decoder/pdf417.c:88: pdf417_decode8: Assertion "g[0] >= 0 && g[1] >= 0 && g[2] >= 0" failed.
+        dir=1 sig=9379 k=3 g0=966 g1=b30 g2=ffffffff buf[0000]=
+zbar_scan_image try next: 5
+[watchdog]dbg: watchdog_snd_msg_feed [time:210]
+[assis]WDG_CMD_FEED_DOG!!!!
+zbar_scan_image try next: 6
+[sdk,1030]dbg: (local_sdk_speaker_finish_buf_data) out..
+[prompt]dbg: === SPK END PLAY === [/usr/share/notify/CN/dang.wav]
+zbar_scan_image try next: 7
+zbar_scan_image try next: 8
+zbar_scan_image try next: 9
+zbar_scan_image try next: 10
+zbar_scan_image try next: 11
+zbar_scan_image try next: 12
+zbar_scan_image try next: 13
+mode =0
+[  212.516543] SPEAKER CTL MODE0 !
+[sdk,0647]log: set speaker ap mode 0 ok...
+zbar_scan_image try next: 14
+zbar_scan_image try next: 15
+zbar_scan_image try next: 16
+WARNING: decoder/pdf417.c:88: pdf417_decode8: Assertion "g[0] >= 0 && g[1] >= 0 && g[2] >= 0" failed.
+        dir=0 sig=16af k=3 g0=0c2 g1=ffffffff g2=438 buf[0000]=
+zbar_scan_image try next: 17
+zbar_scan_image try next: 18
+D▒D
