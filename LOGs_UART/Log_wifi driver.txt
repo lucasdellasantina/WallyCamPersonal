@@ -1,0 +1,1656 @@
+tarting kernel ...
+
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.14__isvp_swan_1.0__ (runner@fv-az574-139) (buildroot-gcc-12.2.0) #2 PREEMPT Wed Jun 14 10:34:45 UTC 2023
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 RESET ERROR PC:50CA24FD
+[    0.000000] CPU0 revision is: 00d00100 (Ingenic Xburst)
+[    0.000000] FPU revision is: 00b70000
+[    0.000000] CCLK:1392MHz L2CLK:696Mhz H0CLK:200MHz H2CLK:200Mhz PCLK:100Mhz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 0053a000 @ 00010000 (usable)
+[    0.000000]  memory: 00036000 @ 0054a000 (usable after init)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 04000000 @ 00000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x03ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x03ffffff]
+[    0.000000] Primary instruction cache 32kB, 8-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 8-way, VIPT, no aliases, linesize 32 bytes
+[    0.000000] pls check processor_id[0x00d00100],sc_jz not support!
+[    0.000000] MIPS secondary cache 128kB, 8-way, linesize 32 bytes.
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 16256
+[    0.000000] Kernel command line: mem=64M rmem=64M@0x4000000 console=ttyS1,115200n8 panic=20 root=/dev/mtdblock3 rootfstype=squashfs init=/init mtdparts=jz_sfc:256k(boot),64k(env),3072k(kernel),10240k(rootfs),-(rootfs_data) nogmac
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Memory: 58896k/65536k available (4006k kernel code, 6640k reserved, 1342k data, 216k init, 0k highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:358
+[    0.000000] clockevents_config_and_register success.
+[    0.000014] Calibrating delay loop... 1391.00 BogoMIPS (lpj=6955008)
+[    0.087831] pid_max: default: 32768 minimum: 301
+[    0.092688] Mount-cache hash table entries: 512
+[    0.097594] Initializing cgroup subsys debug
+[    0.101849] Initializing cgroup subsys freezer
+[    0.107261] devtmpfs: initialized
+[    0.112012] regulator-dummy: no parameters
+[    0.116384] NET: Registered protocol family 16
+[    0.123877] Skipping GMAC GPIO setup
+[    0.145993] bio: create slab <bio-0> at 0
+[    0.156151] jz-dma jz-dma: JZ SoC DMA initialized
+[    0.161925] usbcore: registered new interface driver usbfs
+[    0.167956] usbcore: registered new interface driver hub
+[    0.173460] usbcore: registered new device driver usb
+[    0.179015]  (null): set:249  hold:250 dev=100000000 h=500 l=500
+[    0.186811] Switching to clocksource jz_clocksource
+[    0.193970] jz-dwc2 jz-dwc2: cgu clk gate get error
+[    0.198962] DWC IN OTG MODE
+[    0.202502] dwc2 dwc2: Keep PHY ON
+[    0.205869] dwc2 dwc2: Using Buffer DMA mode
+[    0.210197] dwc2 dwc2: Core Release: 3.00a
+[    0.214458] dwc2 dwc2: DesignWare USB2.0 High-Speed Host Controller
+[    0.220751] dwc2 dwc2: new USB bus registered, assigned bus number 1
+[    0.228318] hub 1-0:1.0: USB hub found
+[    0.232146] hub 1-0:1.0: 1 port detected
+[    0.236145] dwc2 dwc2: DWC2 Host Initialized
+[    0.240672] NET: Registered protocol family 2
+[    0.245585] TCP established hash table entries: 512 (order: 0, 4096 bytes)
+[    0.252610] TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+[    0.258983] TCP: Hash tables configured (established 512 bind 512)
+[    0.265311] TCP: reno registered
+[    0.268516] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.274472] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.280977] NET: Registered protocol family 1
+[    0.285573] RPC: Registered named UNIX socket transport module.
+[    0.291501] RPC: Registered udp transport module.
+[    0.296328] RPC: Registered tcp transport module.
+[    0.301036] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.308180] freq_udelay_jiffys[0].max_num = 10
+[    0.312673] cpufreq  udelay  loops_per_jiffy
+[    0.317028] dwc2 dwc2: ID PIN CHANGED!
+[    0.320854] 12000     59956   59956
+[    0.324107] 24000     119913  119913
+[    0.327526] 60000     299784  299784
+[    0.330968] 120000    599569  599569
+[    0.334582] 200000    999282  999282
+[    0.338033] 300000    1498924         1498924
+[    0.341841] 600000    2997848         2997848
+[    0.345470] 792000    3957159         3957159
+[    0.349178] 1008000   5036385         5036385
+[    0.353005] 1200000   5995696         5995696
+[    0.366424] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.373540] jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+[    0.379592] msgmni has been set to 115
+[    0.384645] io scheduler noop registered
+[    0.388574] io scheduler cfq registered (default)
+[    0.400043] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+[    0.407670] console [ttyS1] enabled, bootconsole disabled
+[    0.407670] console [ttyS1] enabled, bootconsole disabled
+[    0.427302] brd: module loaded
+[    0.434854] loop: module loaded
+[    0.438332] logger: created 256K log 'log_main'
+[    0.445162] jz TCU driver register completed
+[    0.450484] the id code = 5e4018, the flash name is ZB25VQ128
+[    0.456639] JZ SFC Controller for SFC channel 0 driver register
+[    0.462908] 5 cmdlinepart partitions found on MTD device jz_sfc
+[    0.469012] Creating 5 MTD partitions on "jz_sfc":
+[    0.473998] 0x000000000000-0x000000040000 : "boot"
+[    0.479939] 0x000000040000-0x000000050000 : "env"
+[    0.485908] 0x000000050000-0x000000350000 : "kernel"
+[    0.492192] 0x000000350000-0x000000d50000 : "rootfs"
+[    0.498308] 0x000000d50000-0x000001000000 : "rootfs_data"
+[    0.504970] SPI NOR MTD LOAD OK
+[    0.508382] JZ GMAC disabled
+[    0.511348] STA : @@@@@@ rtusb init rt2870 --->
+[    0.516256] usbcore: registered new interface driver rt2870
+[    0.522212] i2c /dev entries driver
+[    0.526970] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+[    0.533107] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+[    0.538454] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+[    0.544672] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+[    0.550431] ipip: IPv4 over IPv4 tunneling driver
+[    0.555946] TCP: cubic registered
+[    0.560388] NET: Registered protocol family 10
+[    0.565787] NET: Registered protocol family 17
+[    0.571562] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.579081] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    0.589753] VFS: Mounted root (squashfs filesystem) readonly on device 31:3.
+[    0.600920] devtmpfs: mounted
+[    0.604366] Freeing unused kernel memory: 216K (8054a000 - 80580000)
+[    1.031723] jzmmc_v1.2 jzmmc_v1.2.0: card inserted, state=0
+[    1.210108] jffs2: notice: (444) jffs2_build_xattr_subsystem: complete building xattr subsystem, 13 of xdatum (0 unchecked, 13 orphan) and 15 of xref (0 dead, 15 orphan) found.
+Wed Jun 14 10:45:00 GMT 2023
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Loading modules:modprobe: module exfat not found in modules.dep
+
+Loading resetd...
+Seeding 2048 bits and crediting
+Saving 2048 bits of creditable seed for next boot
+GPIO not set. Exiting
+Starting rngd: OK
+Starting mdev...
+Starting network: ip: SIOCGIFINDEX: No such device
+Successfully initialized wpa_supplicant
+rfkill: Cannot open RFKILL control device
+nl80211: Could not re-add multicast membership for vendor events: -2 (Interrupted system call)
+
+U-Boot SPL 2013.07-g2762b69-dirty (Apr 19 2023 - 22:02:31)
+Timer init
+CLK stop
+PLL init
+pll_init:366
+pll_cfg.pdiv = 10, pll_cfg.h2div = 5, pll_cfg.h0div = 5, pll_cfg.cdiv = 1, pll_cfg.l2div = 2
+nf=116 nr = 1 od0 = 1 od1 = 2
+cppcr is 07405100
+CPM_CPAPCR 0740510d
+nf=100 nr = 1 od0 = 1 od1 = 2
+cppcr is 06405100
+CPM_CPMPCR 0640510d
+nf=100 nr = 1 od0 = 1 od1 = 2
+cppcr is 06405100
+CPM_CPVPCR 0640510d
+cppcr 0x9a7b5510
+apll_freq 1392000000
+mpll_freq 1200000000
+vpll_freq = 1200000000
+ddr sel mpll, cpu sel apll
+ddrfreq 600000000
+cclk  1392000000
+l2clk 696000000
+h0clk 240000000
+h2clk 240000000
+pclk  120000000
+CLK init
+SDRAM init
+sdram init start
+ddr_inno_phy_init ..!
+phy reg = 0x00000007, CL = 0x00000007
+ddr_inno_phy_init ..! 11:  00000004
+ddr_inno_phy_init ..! 22:  00000006
+ddr_inno_phy_init ..! 33:  00000006
+REG_DDR_LMR: 00000210
+REG_DDR_LMR: 00000310
+REG_DDR_LMR: 00000110
+REG_DDR_LMR, MR0: 00f73011
+T31_0x5: 00000007
+T31_0x15: 0000000c
+T31_0x4: 00000000
+T31_0x14: 00000002
+INNO_TRAINING_CTRL 1: 00000000
+INNO_TRAINING_CTRL 2: 000000a1
+T31_cc: 00000003
+INNO_TRAINING_CTRL 3: 000000a0
+T31_118: 0000003c
+T31_158: 0000003c
+T31_190: 0000001f
+T31_194: 0000001d
+jz-04 :  0x00000051
+jz-08 :  0x000000a0
+jz-28 :  0x00000024
+DDR PHY init OK
+INNO_DQ_WIDTH   :00000003
+INNO_PLL_FBDIV  :00000014
+INNO_PLL_PDIV   :00000005
+INNO_MEM_CFG    :00000051
+INNO_PLL_CTRL   :00000018
+INNO_CHANNEL_EN :0000000d
+INNO_CWL        :00000006
+INNO_CL         :00000007
+DDR Controller init
+DDRC_STATUS         0x80000001
+DDRC_CFG            0x0aa88a42
+DDRC_CTRL           0x0000011c
+DDRC_LMR            0x00400008
+DDRC_DLP            0x00000000
+DDRC_TIMING1        0x050f0a06
+DDRC_TIMING2        0x021c0a07
+DDRC_TIMING3        0x200a0722
+DDRC_TIMING4        0x26240031
+DDRC_TIMING5        0xff060405
+DDRC_TIMING6        0x321c0505
+DDRC_REFCNT         0x00910603
+DDRC_MMAP0          0x000020f8
+DDRC_MMAP1          0x00002800
+DDRC_REMAP1         0x030e0d0c
+DDRC_REMAP2         0x07060504
+DDRC_REMAP3         0x0b0a0908
+DDRC_REMAP4         0x0f020100
+DDRC_REMAP5         0x13121110
+DDRC_AUTOSR_EN      0x00000000
+sdram init finished
+SDRAM init ok
+board_init_r
+image entry point: 0x80100000
+
+
+U-Boot 2013.07-g2762b69-dirty (Apr 19 2023 - 22:02:31)
+
+Board: ISVP (Ingenic XBurst T31 SoC)
+DRAM:  128 MiB
+Top of RAM usable for U-Boot at: 84000000
+Reserving 475k for U-Boot at: 83f88000
+Reserving 32832k for malloc() at: 81f78000
+Reserving 32 Bytes for Board Info at: 81f77fe0
+Reserving 124 Bytes for Global Data at: 81f77f64
+Reserving 256k for boot params() at: 81f37f64
+Stack Pointer at: 81f37f48
+Now running in RAM - U-Boot at: 83f88000
+MMC:   msc: 0
+the manufacturer 5e
+SF: Detected ZB25VQ128
+
+In:    serial
+Out:   serial
+Err:   serial
+gpio_request[hichip_mmc_enable] = 62
+Net:   ====>PHY not found!gpio_request[pps_mmc_enable] = 61
+gpio_request[wyze_mmc_enable] = 48
+Board Net Initialization Failed
+Jz4775-9161
+Autoupdate...
+Card did not respond to voltage select!
+Press Ctrl-c to abort autoboot... 1
+the manufacturer 5e
+SF: Detected ZB25VQ128
+
+--->probe spend 4 ms
+SF: 3145728 bytes @ 0x50000 Read: OK
+--->read spend 1010 ms
+## Booting kernel from Legacy Image at 80600000 ...
+   Image Name:   Linux-3.10.14__isvp_swan_1.0__-t
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    1838572 Bytes = 1.8 MiB
+   Load Address: 80010000
+   Entry Point:  803ecc60
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+
+Starting kernel ...
+
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.14__isvp_swan_1.0__ (runner@fv-az574-139) (buildroot-gcc-12.2.0) #2 PREEMPT Wed Jun 14 10:34:45 UTC 2023
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 RESET ERROR PC:5CC924F7
+[    0.000000] CPU0 revision is: 00d00100 (Ingenic Xburst)
+[    0.000000] FPU revision is: 00b70000
+[    0.000000] CCLK:1392MHz L2CLK:696Mhz H0CLK:200MHz H2CLK:200Mhz PCLK:100Mhz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 0053a000 @ 00010000 (usable)
+[    0.000000]  memory: 00036000 @ 0054a000 (usable after init)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 04000000 @ 00000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x03ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x03ffffff]
+[    0.000000] Primary instruction cache 32kB, 8-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 8-way, VIPT, no aliases, linesize 32 bytes
+[    0.000000] pls check processor_id[0x00d00100],sc_jz not support!
+[    0.000000] MIPS secondary cache 128kB, 8-way, linesize 32 bytes.
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 16256
+[    0.000000] Kernel command line: mem=64M rmem=64M@0x4000000 console=ttyS1,115200n8 panic=20 root=/dev/mtdblock3 rootfstype=squashfs init=/init mtdparts=jz_sfc:256k(boot),64k(env),3072k(kernel),10240k(rootfs),-(rootfs_data) nogmac
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Memory: 58896k/65536k available (4006k kernel code, 6640k reserved, 1342k data, 216k init, 0k highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:358
+[    0.000000] clockevents_config_and_register success.
+[    0.000014] Calibrating delay loop... 1391.00 BogoMIPS (lpj=6955008)
+[    0.087831] pid_max: default: 32768 minimum: 301
+[    0.092688] Mount-cache hash table entries: 512
+[    0.097594] Initializing cgroup subsys debug
+[    0.101850] Initializing cgroup subsys freezer
+[    0.107260] devtmpfs: initialized
+[    0.112010] regulator-dummy: no parameters
+[    0.116381] NET: Registered protocol family 16
+[    0.123876] Skipping GMAC GPIO setup
+[    0.146000] bio: create slab <bio-0> at 0
+[    0.156146] jz-dma jz-dma: JZ SoC DMA initialized
+[    0.161926] usbcore: registered new interface driver usbfs
+[    0.167957] usbcore: registered new interface driver hub
+[    0.173461] usbcore: registered new device driver usb
+[    0.179020]  (null): set:249  hold:250 dev=100000000 h=500 l=500
+[    0.186814] Switching to clocksource jz_clocksource
+[    0.193986] jz-dwc2 jz-dwc2: cgu clk gate get error
+[    0.198978] DWC IN OTG MODE
+[    0.202519] dwc2 dwc2: Keep PHY ON
+[    0.205887] dwc2 dwc2: Using Buffer DMA mode
+[    0.210214] dwc2 dwc2: Core Release: 3.00a
+[    0.214476] dwc2 dwc2: DesignWare USB2.0 High-Speed Host Controller
+[    0.220768] dwc2 dwc2: new USB bus registered, assigned bus number 1
+[    0.228339] hub 1-0:1.0: USB hub found
+[    0.232169] hub 1-0:1.0: 1 port detected
+[    0.236168] dwc2 dwc2: DWC2 Host Initialized
+[    0.240694] NET: Registered protocol family 2
+[    0.245604] TCP established hash table entries: 512 (order: 0, 4096 bytes)
+[    0.252631] TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+[    0.259003] TCP: Hash tables configured (established 512 bind 512)
+[    0.265332] TCP: reno registered
+[    0.268536] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.274491] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.280997] NET: Registered protocol family 1
+[    0.285592] RPC: Registered named UNIX socket transport module.
+[    0.291520] RPC: Registered udp transport module.
+[    0.296348] RPC: Registered tcp transport module.
+[    0.301055] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.308195] freq_udelay_jiffys[0].max_num = 10
+[    0.312689] cpufreq  udelay  loops_per_jiffy
+[    0.317042] dwc2 dwc2: ID PIN CHANGED!
+[    0.320870] 12000     59956   59956
+[    0.324124] 24000     119913  119913
+[    0.327541] 60000     299784  299784
+[    0.330984] 120000    599569  599569
+[    0.334597] 200000    999282  999282
+[    0.338048] 300000    1498924         1498924
+[    0.341855] 600000    2997848         2997848
+[    0.345484] 792000    3957159         3957159
+[    0.349191] 1008000   5036385         5036385
+[    0.353020] 1200000   5995696         5995696
+[    0.366415] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.373530] jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+[    0.379583] msgmni has been set to 115
+[    0.384638] io scheduler noop registered
+[    0.388567] io scheduler cfq registered (default)
+[    0.400031] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+[    0.407658] console [ttyS1] enabled, bootconsole disabled
+[    0.407658] console [ttyS1] enabled, bootconsole disabled
+[    0.427304] brd: module loaded
+[    0.434863] loop: module loaded
+[    0.438334] logger: created 256K log 'log_main'
+[    0.445178] jz TCU driver register completed
+[    0.450504] the id code = 5e4018, the flash name is ZB25VQ128
+[    0.456658] JZ SFC Controller for SFC channel 0 driver register
+[    0.462924] 5 cmdlinepart partitions found on MTD device jz_sfc
+[    0.469026] Creating 5 MTD partitions on "jz_sfc":
+[    0.474014] 0x000000000000-0x000000040000 : "boot"
+[    0.479954] 0x000000040000-0x000000050000 : "env"
+[    0.485911] 0x000000050000-0x000000350000 : "kernel"
+[    0.492204] 0x000000350000-0x000000d50000 : "rootfs"
+[    0.498322] 0x000000d50000-0x000001000000 : "rootfs_data"
+[    0.504986] SPI NOR MTD LOAD OK
+[    0.508396] JZ GMAC disabled
+[    0.511370] STA : @@@@@@ rtusb init rt2870 --->
+[    0.516275] usbcore: registered new interface driver rt2870
+[    0.522232] i2c /dev entries driver
+[    0.526992] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+[    0.533128] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+[    0.538478] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+[    0.544687] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+[    0.550440] ipip: IPv4 over IPv4 tunneling driver
+[    0.555951] TCP: cubic registered
+[    0.560398] NET: Registered protocol family 10
+[    0.565794] NET: Registered protocol family 17
+[    0.571564] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.579083] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    0.589751] VFS: Mounted root (squashfs filesystem) readonly on device 31:3.
+[    0.600926] devtmpfs: mounted
+[    0.604368] Freeing unused kernel memory: 216K (8054a000 - 80580000)
+[    1.031725] jzmmc_v1.2 jzmmc_v1.2.0: card inserted, state=0
+[    1.209954] jffs2: notice: (444) jffs2_build_xattr_subsystem: complete building xattr subsystem, 13 of xdatum (0 unchecked, 13 orphan) and 15 of xref (0 dead, 15 orphan) found.
+Wed Jun 14 10:45:00 GMT 2023
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Loading modules:modprobe: module exfat not found in modules.dep
+
+Loading resetd...
+Seeding 2048 bits and crediting
+Saving 2048 bits of creditable seed for next boot
+GPIO not set. Exiting
+Starting rngd: OK
+Starting mdev...
+Starting network: ip: SIOCGIFINDEX: No such device
+Successfully initialized wpa_supplicant
+rfkill: Cannot open RFKILL control device
+nl80211: Could not re-add multicast membership for vendor events: -2 (Interrupted system call)
+udhcpc: started, v1.36.0
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: broadcasting discover
+udhcpc: no lease, forking to background
+FAIL
+Starting ntpd: OK
+Starting dropbear sshd: OK
+Production mode
+Starting httpd: OK
+Starting mini-snmpd: DISABLED, OK
+Starting telnetd: DISABLED, OK
+Starting crond: OK
+Nothing found.
+ingenic: Warning. Wired network interface has default MAC address, please change it.
+
+Loading of kernel modules...
+ingenic: Get data from environment and set SENSOR as gc2053
+--------------------
+AVPU_PARAM: clk_name=vpll avpu_clk=400000000
+ISP_PARAM: isp_clk=125000000
+SENSOR: gc2053
+SENSOR_PARAM: data_interface=1
+--------------------
+Config file not found.
+Starting motiondetection.sh: OK
+Starting telegram-bot.sh: OK
+ingenic: Loading video system has started...
+Starting majestic: OK
+
+Welcome to OpenIPC
+openipc-t31 login: root
+Password:
+
+    /######                                    /######  /#######    /######
+   /##__  ##                                  |_  ##_/ | ##__  ##  /##__  ##
+  | ##  \ ##   /######    /######   /#######    | ##   | ##  \ ## | ##  \__/
+  | ##  | ##  /##__  ##  /##__  ## | ##__  ##   | ##   | #######/ | ##
+  | ##  | ## | ##  \ ## | ######## | ##  \ ##   | ##   | ##____/  | ##
+  | ##  | ## | ##  | ## | ##_____/ | ##  | ##   | ##   | ##       | ##    ##
+  |  ######/ | #######/ |  ####### | ##  | ##  /###### | ##       |  ######/
+   \______/  | ##____/   \_______/ |__/  |__/ |______/ |__/        \______/
+             | ##
+             | ##                              build
+             |__/                             master+0f529647, 2023-06-14
+
+ Please help the OpenIPC Project to cover the cost of development and
+ long-term maintenance of what we believe is going to become a stable,
+ flexible Open IP Network Camera Framework for users worldwide.
+
+ Your contributions could help us to advance the development and keep
+ you updated on improvements and new features more regularly.
+
+ Please visit https://openipc.org/sponsor/ to learn more. Thank you.
+
+root@openipc-t31:~# ipconfig
+-sh: ipconfig: not found
+root@openipc-t31:~# ifconfig
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:128 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:128 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:9984 (9.7 KiB)  TX bytes:9984 (9.7 KiB)
+
+wlan0     Link encap:Ethernet  HWaddr A4:EF:15:5F:F1:32
+          inet addr:192.168.1.10  Bcast:192.168.1.255  Mask:255.255.255.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+root@openipc-t31:~# ifconfig wlan0
+wlan0     Link encap:Ethernet  HWaddr A4:EF:15:5F:F1:32
+          inet addr:192.168.1.10  Bcast:192.168.1.255  Mask:255.255.255.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+root@openipc-t31:~# print env
+-sh: print: not found
+root@openipc-t31:~# print emv
+-sh: print: not found
+root@openipc-t31:~# ?
+-sh: ?: not found
+root@openipc-t31:~# help
+Built-in commands:
+------------------
+        . : [ [[ alias bg break cd chdir command continue echo eval exec
+        exit export false fg getopts hash help history jobs kill let
+        local printf pwd read readonly return set shift sleep source
+        test times trap true type ulimit umask unalias unset wait
+root@openipc-t31:~# help
+Built-in commands:
+------------------
+        . : [ [[ alias bg break cd chdir command continue echo eval exec
+        exit export false fg getopts hash help history jobs kill let
+        local printf pwd read readonly return set shift sleep source
+        test times trap true type ulimit umask unalias unset wait
+root@openipc-t31:~# help -l
+Built-in commands:
+------------------
+        . : [ [[ alias bg break cd chdir command continue echo eval exec
+        exit export false fg getopts hash help history jobs kill let
+        local printf pwd read readonly return set shift sleep source
+        test times trap true type ulimit umask unalias unset wait
+root@openipc-t31:~# help l
+Built-in commands:
+------------------
+        . : [ [[ alias bg break cd chdir command continue echo eval exec
+        exit export false fg getopts hash help history jobs kill let
+        local printf pwd read readonly return set shift sleep source
+        test times trap true type ulimit umask unalias unset wait
+root@openipc-t31:~# ip
+BusyBox v1.36.0 (2023-06-14 10:26:09 UTC) multi-call binary.
+
+Usage: ip [OPTIONS] address|route|link|tunnel|neigh|rule [ARGS]
+
+OPTIONS := -f[amily] inet|inet6|link | -o[neline]
+
+ip addr add|del IFADDR dev IFACE | show|flush [dev IFACE] [to PREFIX]
+ip route list|flush|add|del|change|append|replace|test ROUTE
+ip link set IFACE [up|down] [arp on|off] [multicast on|off]
+        [promisc on|off] [mtu NUM] [name NAME] [qlen NUM] [address MAC]
+        [master IFACE | nomaster] [netns PID]
+ip tunnel add|change|del|show [NAME]
+        [mode ipip|gre|sit] [remote ADDR] [local ADDR] [ttl TTL]
+ip neigh show|flush [to PREFIX] [dev DEV] [nud STATE]
+ip rule [list] | add|del SELECTOR ACTION
+root@openipc-t31:~# wlan
+-sh: wlan: not found
+root@openipc-t31:~# wifi
+-sh: wifi: not found
+root@openipc-t31:~# wlan0
+-sh: wlan0: not found
+root@openipc-t31:~# ls
+root@openipc-t31:~# ls usb
+ls: usb: No such file or directory
+root@openipc-t31:~# lsusb
+Bus 001 Device 001: ID 1d6b:0002
+root@openipc-t31:~# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: tunl0: <NOARP> mtu 0 qdisc noop state DOWN
+    link/ipip 0.0.0.0 brd 0.0.0.0
+3: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN qlen 1000
+    link/ether a4:ef:15:5f:f1:32 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.10/24 brd 192.168.1.255 scope global wlan0
+       valid_lft forever preferred_lft forever
+4: p2p0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN qlen 1000
+    link/ether a6:ef:15:5f:f1:32 brd ff:ff:ff:ff:ff:ff
+root@openipc-t31:~# dmg
+-sh: dmg: not found
+root@openipc-t31:~# dmesg
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.14__isvp_swan_1.0__ (runner@fv-az574-139) (buildroot-gcc-12.2.0) #2 PREEMPT Wed Jun 14 10:34:45 UTC 2023
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 RESET ERROR PC:5CC924F7
+[    0.000000] CPU0 revision is: 00d00100 (Ingenic Xburst)
+[    0.000000] FPU revision is: 00b70000
+[    0.000000] cgu_get_rate, parent = 1392000000, rate = 0, m = 129, n = 255, reg val = 0x081000ff
+[    0.000000] cgu_get_rate, parent = 1392000000, rate = 0, m = 129, n = 255, reg val = 0x081000ff
+[    0.000000] CCLK:1392MHz L2CLK:696Mhz H0CLK:200MHz H2CLK:200Mhz PCLK:100Mhz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 0053a000 @ 00010000 (usable)
+[    0.000000]  memory: 00036000 @ 0054a000 (usable after init)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 04000000 @ 00000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x03ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x03ffffff]
+[    0.000000] On node 0 totalpages: 16384
+[    0.000000] free_area_init_node: node 0, pgdat 80548030, node_mem_map 81000000
+[    0.000000]   Normal zone: 128 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 16384 pages, LIFO batch:3
+[    0.000000] Primary instruction cache 32kB, 8-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 8-way, VIPT, no aliases, linesize 32 bytes
+[    0.000000] pls check processor_id[0x00d00100],sc_jz not support!
+[    0.000000] MIPS secondary cache 128kB, 8-way, linesize 32 bytes.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 16256
+[    0.000000] Kernel command line: mem=64M rmem=64M@0x4000000 console=ttyS1,115200n8 panic=20 root=/dev/mtdblock3 rootfstype=squashfs init=/init mtdparts=jz_sfc:256k(boot),64k(env),3072k(kernel),10240k(rootfs),-(rootfs_data) nogmac
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Memory: 58896k/65536k available (4006k kernel code, 6640k reserved, 1342k data, 216k init, 0k highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:358
+[    0.000000] clockevents_config_and_register success.
+[    0.000014] Calibrating delay loop... 1391.00 BogoMIPS (lpj=6955008)
+[    0.087831] pid_max: default: 32768 minimum: 301
+[    0.092688] Mount-cache hash table entries: 512
+[    0.097594] Initializing cgroup subsys debug
+[    0.101850] Initializing cgroup subsys freezer
+[    0.107260] devtmpfs: initialized
+[    0.112010] regulator-dummy: no parameters
+[    0.116381] NET: Registered protocol family 16
+[    0.123876] Skipping GMAC GPIO setup
+[    0.128043] set gpio strength: 32-2
+[    0.128052] set gpio strength: 33-2set gpio strength: 34-2
+[    0.128062] set gpio strength: 35-2set gpio strength: 36-2
+[    0.128069] set gpio strength: 37-2set gpio pull: 59-90
+[    0.146000] bio: create slab <bio-0> at 0
+[    0.156146] jz-dma jz-dma: JZ SoC DMA initialized
+[    0.161926] usbcore: registered new interface driver usbfs
+[    0.167957] usbcore: registered new interface driver hub
+[    0.173461] usbcore: registered new device driver usb
+[    0.179020]  (null): set:249  hold:250 dev=100000000 h=500 l=500
+[    0.186814] Switching to clocksource jz_clocksource
+[    0.193959] dwc2 otg probe start
+[    0.193986] jz-dwc2 jz-dwc2: cgu clk gate get error
+[    0.198978] DWC IN OTG MODE
+[    0.202519] dwc2 dwc2: Keep PHY ON
+[    0.205887] dwc2 dwc2: Using Buffer DMA mode
+[    0.210214] dwc2 dwc2: Core Release: 3.00a
+[    0.214476] dwc2 dwc2: DesignWare USB2.0 High-Speed Host Controller
+[    0.220768] dwc2 dwc2: new USB bus registered, assigned bus number 1
+[    0.228339] hub 1-0:1.0: USB hub found
+[    0.232169] hub 1-0:1.0: 1 port detected
+[    0.236168] dwc2 dwc2: DWC2 Host Initialized
+[    0.240452] dwc2 otg probe success
+[    0.240694] NET: Registered protocol family 2
+[    0.245604] TCP established hash table entries: 512 (order: 0, 4096 bytes)
+[    0.252631] TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+[    0.259003] TCP: Hash tables configured (established 512 bind 512)
+[    0.265332] TCP: reno registered
+[    0.268536] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.274491] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.280997] NET: Registered protocol family 1
+[    0.285592] RPC: Registered named UNIX socket transport module.
+[    0.291520] RPC: Registered udp transport module.
+[    0.296348] RPC: Registered tcp transport module.
+[    0.301055] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.308195] freq_udelay_jiffys[0].max_num = 10
+[    0.312689] cpufreq  udelay  loops_per_jiffy
+[    0.317042] dwc2 dwc2: ID PIN CHANGED!
+[    0.320870] 12000     59956   59956
+[    0.324124] 24000     119913  119913
+[    0.327541] 60000     299784  299784
+[    0.330984] 120000    599569  599569
+[    0.334597] 200000    999282  999282
+[    0.338048] 300000    1498924         1498924
+[    0.341855] 600000    2997848         2997848
+[    0.345484] 792000    3957159         3957159
+[    0.349191] 1008000   5036385         5036385
+[    0.353020] 1200000   5995696         5995696
+[    0.366415] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.373530] jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+[    0.379583] msgmni has been set to 115
+[    0.384638] io scheduler noop registered
+[    0.388567] io scheduler cfq registered (default)
+[    0.400031] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+[    0.407658] console [ttyS1] enabled, bootconsole disabled
+[    0.427304] brd: module loaded
+[    0.434863] loop: module loaded
+[    0.438334] logger: created 256K log 'log_main'
+[    0.445178] jz TCU driver register completed
+[    0.450504] the id code = 5e4018, the flash name is ZB25VQ128
+[    0.456658] JZ SFC Controller for SFC channel 0 driver register
+[    0.462924] 5 cmdlinepart partitions found on MTD device jz_sfc
+[    0.469026] Creating 5 MTD partitions on "jz_sfc":
+[    0.474014] 0x000000000000-0x000000040000 : "boot"
+[    0.479954] 0x000000040000-0x000000050000 : "env"
+[    0.485911] 0x000000050000-0x000000350000 : "kernel"
+[    0.492204] 0x000000350000-0x000000d50000 : "rootfs"
+[    0.498322] 0x000000d50000-0x000001000000 : "rootfs_data"
+[    0.504986] SPI NOR MTD LOAD OK
+[    0.508396] JZ GMAC disabled
+[    0.511370] STA : @@@@@@ rtusb init rt2870 --->
+[    0.516275] usbcore: registered new interface driver rt2870
+[    0.522232] i2c /dev entries driver
+[    0.526992] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+[    0.533128] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+[    0.538478] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+[    0.544687] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+[    0.550440] ipip: IPv4 over IPv4 tunneling driver
+[    0.555951] TCP: cubic registered
+[    0.560398] NET: Registered protocol family 10
+[    0.565794] NET: Registered protocol family 17
+[    0.571564] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.579083] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    0.589751] VFS: Mounted root (squashfs filesystem) readonly on device 31:3.
+[    0.600926] devtmpfs: mounted
+[    0.604368] Freeing unused kernel memory: 216K (8054a000 - 80580000)
+[    1.031725] jzmmc_v1.2 jzmmc_v1.2.0: card inserted, state=0
+[    1.209954] jffs2: notice: (444) jffs2_build_xattr_subsystem: complete building xattr subsystem, 13 of xdatum (0 unchecked, 13 orphan) and 15 of xref (0 dead, 15 orphan) found.
+[    1.524506] [resetd] GPIO undefined in /usr/sbin/resetd
+[    1.805686] cfg80211: Calling CRDA to update world regulatory domain
+[    2.235043] mmc0: error -1 whilst initialising SD card
+[    2.458307] mmc0: error -1 whilst initialising SD card
+[    2.678305] mmc0: error -1 whilst initialising SD card
+[    3.129317] [atbm_log]:SVN_VER=18363,DPLL_CLOCK=24,BUILD_TIME=[===== =====]
+[    3.129329] [atbm_log]:----drvier RATEPOLCIY=OLD
+[    3.412596] mmc1: new SDIO card at address 0001
+[    3.415561] [atbm_log]:Probe called
+[    3.415621] [atbm_log]:atbm_sdio_probe:v12
+[    3.415657] [atbm_log]:Allocated hw_priv @ 824c0d20
+[    3.418142] [atbm_log]:[BH] register.
+[    3.418246] [atbm_log]:atbmwifi INIT_WORK enable
+[    3.418303] [atbm_log]:atbmwifi INIT_WORK enable
+[    3.418362] [atbm_log]:atbm_before_load_firmware++
+[    3.418461] [atbm_log]:atbm_before_load_firmware:0xab0016c = [34800000]
+[    3.418591] [atbm_log]:atbm_before_load_firmware:0xab0016c = [34800000]
+[    3.418673] [atbm_log]:atbm_before_load_firmware:do not set config to smu
+[    3.422475] [atbm_log]:atbm_sdio_rx_thread
+[    3.451734] [atbm_log]:rx timeout
+[    3.452003] [atbm_log]:mmc1 has been attached
+[    3.527255] [atbm_log]:atbm_before_load_firmware:read [0x16100074]=[0],ret(0)
+[    3.527317] [atbm_log]:atbm_before_load_firmware:write [0x16100074]=[1],ret(0)
+[    3.627630] [atbm_log]:atbm_start_load_firmware++
+[    3.627640] [atbm_log]:used firmware.h=
+[    3.627645] [atbm_log]:START DOWNLOAD ICCM=========
+[    3.627653] [atbm_log]:atbm_load_firmware_generic: addr 10000: len 22000
+[    3.671150] [atbm_log]:START DOWNLOAD DCCM=========
+[    3.671167] [atbm_log]:atbm_load_firmware_generic: addr 800000: len 9000
+[    3.683300] [atbm_log]:atbm_after_load_firmware++
+[    3.696839] [atbm_log]:firmwareCap f5ad
+[    3.696849] [atbm_log]:firmwareCap2 51a4
+[    3.696855] [atbm_log]:wsm_caps.firmwareCap 51a4f5ad
+[    3.696871] [atbm_log]:apollo wifi WSM init done.
+[    3.696871]    Input buffers: 42 x 1728 bytes
+[    3.696871]    Hardware: 7.1280
+[    3.696871]    WSM firmware [=MODEM=RF=Ares_AX  2GHZ May  6 2021 18:33:52NOTXConfrim], ver: 12040, build: 2749, api: 1060, cap: 0x51A4F5AD Config[30008]  expection 900b80c, ep0 cmd addr 901d3f8 NumOfStations[8] NumOfInterfaces[3]
+[    3.696885] [atbm_log]:EFUSE(8)                              [0]
+[    3.696891] [atbm_log]:EFUSE(I)                                      [1]
+[    3.696895] [atbm_log]:EFUSE(B)                      [0]
+[    3.696901] [atbm_log]:CAPABILITIES_ATBM_PRIVATE_IE      [0]
+[    3.696906] [atbm_log]:CAPABILITIES_NVR_IPC              [1]
+[    3.696911] [atbm_log]:CAPABILITIES_NO_CONFIRM           [1]
+[    3.696917] [atbm_log]:CAPABILITIES_SDIO_PATCH           [0]
+[    3.696923] [atbm_log]:CAPABILITIES_NO_BACKOFF           [1]
+[    3.696928] [atbm_log]:CAPABILITIES_CFO                  [0]
+[    3.696933] [atbm_log]:CAPABILITIES_AGC                  [1]
+[    3.696939] [atbm_log]:CAPABILITIES_TXCAL                [1]
+[    3.696944] [atbm_log]:CAPABILITIES_MONITOR              [0]
+[    3.696949] [atbm_log]:CAPABILITIES_CUSTOM               [1]
+[    3.696955] [atbm_log]:CAPABILITIES_SMARTCONFIG          [0]
+[    3.696961] [atbm_log]:CAPABILITIES_ETF                  [1]
+[    3.696966] [atbm_log]:CAPABILITIES_LMAC_RATECTL         [1]
+[    3.696971] [atbm_log]:CAPABILITIES_LMAC_TPC             [1]
+[    3.696977] [atbm_log]:CAPABILITIES_LMAC_TEMPC           [1]
+[    3.696982] [atbm_log]:CAPABILITIES_CTS_BUG              [0]
+[    3.696987] [atbm_log]:CAPABILITIES_USB_RECOVERY_BUG     [0]
+[    3.696993] [atbm_log]:CAPABILITIES_USE_IPC              [0]
+[    3.696999] [atbm_log]:CAPABILITIES_OUTER_PA             [0]
+[    3.697004] [atbm_log]:CAPABILITIES_POWER_CONSUMPTION    [1]
+[    3.697009] [atbm_log]:CAPABILITIES_RSSI_DECIDE_TXPOWER  [0]
+[    3.697015] [atbm_log]:CAPABILITIES_RTS_LONG_DURATION    [1]
+[    3.697020] [atbm_log]:CAPABILITIES_TX_CFO_PPM_CORRECTION[1]
+[    3.697025] [atbm_log]:CAPABILITIES_SHARE_CRYSTAL       [0]
+[    3.697031] [atbm_log]:CAPABILITIES_HW_CHECKSUM          [0]
+[    3.697037] [atbm_log]:CAPABILITIES_SINGLE_CHANNEL_MULRX [0]
+[    3.697042] [atbm_log]:CAPABILITIES_CFO_DCXO_CORRECTION  [1]
+[    3.697047] [atbm_log]:CONFIG_PRODUCT_TEST_USE_FEATURE_ID [1]
+[    3.697052] [atbm_log]:CONFIG_PRODUCT_TEST_USE_GOLDEN_LED [1]
+[    3.706785] [atbm_log]:set_block_size=256
+[    3.706795] [atbm_log]:mdelay wait wsm_startup_done  !!
+[    3.706833] [atbm_log]:atbm_sdio_tx_thread
+[    3.707163] [atbm_log]:wsm_generic_confirm:status(2)
+[    3.707214] [atbm_log]:<WARNING> wsm_write_mib fail !!! mibId=4132
+[    3.707465] [atbm_log]:apollo wifi : can't open /data/.mac.info
+[    3.707784] [atbm_log]:efuse data is [0x1,0x3b,0x17,0x16,0x19,0x8,0x0,0x0,0xa4:0xef:0x15:0x5f:0xf1:0x32]
+[    3.707807] [atbm_log]:apollo wifi : can't open /tmp/atbm_txpwer_dcxo_cfg.txt
+[    3.707820] [atbm_log]:apollo wifi : can't open /tmp/set_rate_power.txt
+[    3.708413] [atbm_log]:enable sg
+[    3.722141] [atbm_log]:enable sg
+[    3.735870] [atbm_log]:[atbm_wtd]:set wtd_probe = 1
+[    4.714760] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[    5.003483] [atbm_log]:atbm_hw_scan:if_id(0)
+[    5.003736] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[    5.003937] [atbm_log]:scan start band(0),(14)
+[    6.260419] [atbm_log]:hw_priv->scan.status 0
+[    6.260679] [atbm_log]:atbm_scan_work:end(0)
+[   11.271767] [atbm_log]:atbm_hw_scan:if_id(0)
+[   11.272009] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   11.272567] [atbm_log]:scan start band(0),(14)
+[   12.559020] [atbm_log]:hw_priv->scan.status 0
+[   12.559282] [atbm_log]:atbm_scan_work:end(0)
+[   14.281582] @@@@ tx-isp-probe ok(version H20221206a), compiler date=Dec  6 2022 @@@@@
+[   14.324426] request spk en gpio 63 ok!
+[   14.324438] jz_codec_register: probe() successful!
+[   14.324520] cgu_set_rate, parent = 1392000000, rate = 2048000, n = 10875, reg val = 0x01002a7b
+[   14.324530] cgu_enable,cgu_i2s_spk reg val = 0x21002a7b
+[   14.324548] cgu_set_rate, parent = 1392000000, rate = 2048000, n = 10875, reg val = 0x01002a7b
+[   14.324555] cgu_enable,cgu_i2s_mic reg val = 0x21002a7b
+[   14.731922] dma dma0chan24: Channel 24 have been requested.(phy id 7,type 0x06 desc a28a5000)
+[   14.732205] dma dma0chan25: Channel 25 have been requested.(phy id 6,type 0x06 desc a1638000)
+[   14.732528] dma dma0chan26: Channel 26 have been requested.(phy id 5,type 0x04 desc a155e000)
+[   14.757979] Ingenic GPIO claim module (c) OpenIPC.org
+[   15.856783] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.856803] i2c i2c-0: --I2C txabrt:
+[   15.856813] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.856990] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.856999] i2c i2c-0: --I2C txabrt:
+[   15.857007] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.857183] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.857228] i2c i2c-0: --I2C txabrt:
+[   15.857237] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.857415] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.857424] i2c i2c-0: --I2C txabrt:
+[   15.857433] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.857607] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.857618] i2c i2c-0: --I2C txabrt:
+[   15.857627] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.857801] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.857810] i2c i2c-0: --I2C txabrt:
+[   15.857819] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.857992] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.858003] i2c i2c-0: --I2C txabrt:
+[   15.858011] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.858187] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.858196] i2c i2c-0: --I2C txabrt:
+[   15.858204] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.858378] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.858389] i2c i2c-0: --I2C txabrt:
+[   15.858397] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.858571] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.858583] i2c i2c-0: --I2C txabrt:
+[   15.858591] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.858766] i2c i2c-0: i2c_jz_irq 441, I2C transfer error, ABORT interrupt
+[   15.858777] i2c i2c-0: --I2C txabrt:
+[   15.858785] i2c i2c-0: --I2C TXABRT[0]=I2C_TXABRT_ABRT_7B_ADDR_NOACK
+[   15.939091] wait stable.[289][cgu_cim]
+[   15.939106] probe ok ------->gc2053
+[   16.012193] -----gc2053_detect: 1127 ret = 0, v = 0x20
+[   16.012685] -----gc2053_detect: 1133 ret = 0, v = 0x53
+[   16.012695] gc2053 chip found @ 0x37 (i2c0) version H20211111a
+[   16.259731] gc2053 stream on
+[   16.337534] codec_codec_ctl: set sample rate...
+[   16.337626] codec_codec_ctl: set device...
+[   16.791700] codec_set_device: set device: MIC...
+[   16.832417] codec_codec_ctl: set repaly channel...
+[   16.832436] codec_codec_ctl: set sample rate...
+[   16.832489] codec_codec_ctl: set device...
+[   17.071720] codec_set_device: set device: speaker...
+[   17.568496] [atbm_log]:atbm_hw_scan:if_id(0)
+[   17.568781] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   17.569586] [atbm_log]:scan start band(0),(14)
+[   18.877489] [atbm_log]:hw_priv->scan.status 0
+[   18.877748] [atbm_log]:atbm_scan_work:end(0)
+[   23.890697] [atbm_log]:atbm_hw_scan:if_id(0)
+[   23.890960] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   23.891593] [atbm_log]:scan start band(0),(14)
+[   25.208248] [atbm_log]:hw_priv->scan.status 0
+[   25.208510] [atbm_log]:atbm_scan_work:end(0)
+[   30.219311] [atbm_log]:atbm_hw_scan:if_id(0)
+[   30.219569] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   30.220082] [atbm_log]:scan start band(0),(14)
+[   31.491062] [atbm_log]:hw_priv->scan.status 0
+[   31.491336] [atbm_log]:atbm_scan_work:end(0)
+[   36.497529] [atbm_log]:atbm_hw_scan:if_id(0)
+[   36.497791] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   36.498307] [atbm_log]:scan start band(0),(14)
+[   37.763563] [atbm_log]:hw_priv->scan.status 0
+[   37.763833] [atbm_log]:atbm_scan_work:end(0)
+[   42.772098] [atbm_log]:atbm_hw_scan:if_id(0)
+[   42.772362] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   42.772873] [atbm_log]:scan start band(0),(14)
+[   44.020710] [atbm_log]:hw_priv->scan.status 0
+[   44.020968] [atbm_log]:atbm_scan_work:end(0)
+[   49.029948] [atbm_log]:atbm_hw_scan:if_id(0)
+[   49.030208] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   49.030701] [atbm_log]:scan start band(0),(14)
+[   50.293341] [atbm_log]:hw_priv->scan.status 0
+[   50.293607] [atbm_log]:atbm_scan_work:end(0)
+[   55.298625] [atbm_log]:atbm_hw_scan:if_id(0)
+[   55.298887] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   55.299398] [atbm_log]:scan start band(0),(14)
+[   56.544736] [atbm_log]:hw_priv->scan.status 0
+[   56.544998] [atbm_log]:atbm_scan_work:end(0)
+[   61.552057] [atbm_log]:atbm_hw_scan:if_id(0)
+[   61.552322] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   61.552815] [atbm_log]:scan start band(0),(14)
+[   62.818444] [atbm_log]:hw_priv->scan.status 0
+[   62.818701] [atbm_log]:atbm_scan_work:end(0)
+[   67.826995] [atbm_log]:atbm_hw_scan:if_id(0)
+[   67.827262] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   67.827863] [atbm_log]:scan start band(0),(14)
+[   69.087422] [atbm_log]:hw_priv->scan.status 0
+[   69.087684] [atbm_log]:atbm_scan_work:end(0)
+[   74.097810] [atbm_log]:atbm_hw_scan:if_id(0)
+[   74.098069] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   74.098598] [atbm_log]:scan start band(0),(14)
+[   75.364132] [atbm_log]:hw_priv->scan.status 0
+[   75.364386] [atbm_log]:atbm_scan_work:end(0)
+[   80.373843] [atbm_log]:atbm_hw_scan:if_id(0)
+[   80.374231] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   80.374758] [atbm_log]:scan start band(0),(14)
+[   81.628111] [atbm_log]:hw_priv->scan.status 0
+[   81.628369] [atbm_log]:atbm_scan_work:end(0)
+[   86.638579] [atbm_log]:atbm_hw_scan:if_id(0)
+[   86.638838] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   86.639340] [atbm_log]:scan start band(0),(14)
+[   87.860048] [atbm_log]:hw_priv->scan.status 0
+[   87.860310] [atbm_log]:atbm_scan_work:end(0)
+[   92.870003] [atbm_log]:atbm_hw_scan:if_id(0)
+[   92.870590] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   92.871504] [atbm_log]:scan start band(0),(14)
+[   94.136859] [atbm_log]:hw_priv->scan.status 0
+[   94.137192] [atbm_log]:atbm_scan_work:end(0)
+[   99.142054] [atbm_log]:atbm_hw_scan:if_id(0)
+[   99.142316] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[   99.142840] [atbm_log]:scan start band(0),(14)
+[  100.399474] [atbm_log]:hw_priv->scan.status 0
+[  100.399761] [atbm_log]:atbm_scan_work:end(0)
+[  105.406077] [atbm_log]:atbm_hw_scan:if_id(0)
+[  105.406337] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  105.406911] [atbm_log]:scan start band(0),(14)
+[  106.670542] [atbm_log]:hw_priv->scan.status 0
+[  106.670797] [atbm_log]:atbm_scan_work:end(0)
+[  111.679195] [atbm_log]:atbm_hw_scan:if_id(0)
+[  111.679533] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  111.680200] [atbm_log]:scan start band(0),(14)
+[  112.956151] [atbm_log]:hw_priv->scan.status 0
+[  112.956421] [atbm_log]:atbm_scan_work:end(0)
+[  117.966123] [atbm_log]:atbm_hw_scan:if_id(0)
+[  117.966386] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  117.966888] [atbm_log]:scan start band(0),(14)
+[  119.250743] [atbm_log]:hw_priv->scan.status 0
+[  119.251004] [atbm_log]:atbm_scan_work:end(0)
+[  124.261526] [atbm_log]:atbm_hw_scan:if_id(0)
+[  124.262026] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  124.262564] [atbm_log]:scan start band(0),(14)
+[  125.515726] [atbm_log]:hw_priv->scan.status 0
+[  125.515987] [atbm_log]:atbm_scan_work:end(0)
+[  130.522646] [atbm_log]:atbm_hw_scan:if_id(0)
+[  130.523040] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  130.523587] [atbm_log]:scan start band(0),(14)
+[  131.821419] [atbm_log]:hw_priv->scan.status 0
+[  131.821679] [atbm_log]:atbm_scan_work:end(0)
+[  136.831272] [atbm_log]:atbm_hw_scan:if_id(0)
+[  136.831558] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  136.832280] [atbm_log]:scan start band(0),(14)
+[  138.181686] [atbm_log]:hw_priv->scan.status 0
+[  138.182106] [atbm_log]:atbm_scan_work:end(0)
+[  143.192159] [atbm_log]:atbm_hw_scan:if_id(0)
+[  143.192438] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  143.193077] [atbm_log]:scan start band(0),(14)
+[  144.457259] [atbm_log]:hw_priv->scan.status 0
+[  144.457520] [atbm_log]:atbm_scan_work:end(0)
+[  149.462339] [atbm_log]:atbm_hw_scan:if_id(0)
+[  149.463136] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  149.463870] [atbm_log]:scan start band(0),(14)
+[  150.717271] [atbm_log]:hw_priv->scan.status 0
+[  150.717528] [atbm_log]:atbm_scan_work:end(0)
+[  155.722062] [atbm_log]:atbm_hw_scan:if_id(0)
+[  155.722322] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  155.722784] [atbm_log]:scan start band(0),(14)
+[  156.975079] [atbm_log]:hw_priv->scan.status 0
+[  156.975341] [atbm_log]:atbm_scan_work:end(0)
+[  161.982107] [atbm_log]:atbm_hw_scan:if_id(0)
+[  161.982611] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  161.983048] [atbm_log]:scan start band(0),(14)
+[  163.258359] [atbm_log]:hw_priv->scan.status 0
+[  163.258619] [atbm_log]:atbm_scan_work:end(0)
+[  168.267797] [atbm_log]:atbm_hw_scan:if_id(0)
+[  168.268073] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  168.268623] [atbm_log]:scan start band(0),(14)
+[  168.311760] [atbm_log]:atbm_sdio_irq_period:Miss
+[  169.555440] [atbm_log]:hw_priv->scan.status 0
+[  169.555702] [atbm_log]:atbm_scan_work:end(0)
+[  174.562031] [atbm_log]:atbm_hw_scan:if_id(0)
+[  174.562293] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  174.562903] [atbm_log]:scan start band(0),(14)
+[  175.821213] [atbm_log]:hw_priv->scan.status 0
+[  175.821488] [atbm_log]:atbm_scan_work:end(0)
+[  180.831972] [atbm_log]:atbm_hw_scan:if_id(0)
+[  180.832244] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  180.832698] [atbm_log]:scan start band(0),(14)
+[  182.079220] [atbm_log]:hw_priv->scan.status 0
+[  182.079478] [atbm_log]:atbm_scan_work:end(0)
+[  187.086580] [atbm_log]:atbm_hw_scan:if_id(0)
+[  187.086840] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  187.087298] [atbm_log]:scan start band(0),(14)
+[  188.338752] [atbm_log]:hw_priv->scan.status 0
+[  188.339279] [atbm_log]:atbm_scan_work:end(0)
+[  193.349463] [atbm_log]:atbm_hw_scan:if_id(0)
+[  193.349807] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  193.350614] [atbm_log]:scan start band(0),(14)
+[  194.641943] [atbm_log]:hw_priv->scan.status 0
+[  194.642203] [atbm_log]:atbm_scan_work:end(0)
+[  199.651235] [atbm_log]:atbm_hw_scan:if_id(0)
+[  199.651500] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  199.652041] [atbm_log]:scan start band(0),(14)
+[  200.908559] [atbm_log]:hw_priv->scan.status 0
+[  200.909377] [atbm_log]:atbm_scan_work:end(0)
+[  205.915019] [atbm_log]:atbm_hw_scan:if_id(0)
+[  205.915277] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  205.915753] [atbm_log]:scan start band(0),(14)
+[  207.198327] [atbm_log]:hw_priv->scan.status 0
+[  207.198602] [atbm_log]:atbm_scan_work:end(0)
+[  212.204581] [atbm_log]:atbm_hw_scan:if_id(0)
+[  212.204965] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  212.205508] [atbm_log]:scan start band(0),(14)
+[  213.525114] [atbm_log]:hw_priv->scan.status 0
+[  213.525367] [atbm_log]:atbm_scan_work:end(0)
+[  218.532028] [atbm_log]:atbm_hw_scan:if_id(0)
+[  218.532288] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  218.532764] [atbm_log]:scan start band(0),(14)
+[  219.817489] [atbm_log]:hw_priv->scan.status 0
+[  219.817745] [atbm_log]:atbm_scan_work:end(0)
+[  224.826468] [atbm_log]:atbm_hw_scan:if_id(0)
+[  224.826895] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  224.827461] [atbm_log]:scan start band(0),(14)
+[  226.101841] [atbm_log]:hw_priv->scan.status 0
+[  226.102117] [atbm_log]:atbm_scan_work:end(0)
+[  231.112022] [atbm_log]:atbm_hw_scan:if_id(0)
+[  231.112282] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  231.112762] [atbm_log]:scan start band(0),(14)
+[  232.383863] [atbm_log]:hw_priv->scan.status 0
+[  232.384152] [atbm_log]:atbm_scan_work:end(0)
+[  237.389727] [atbm_log]:atbm_hw_scan:if_id(0)
+[  237.389988] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  237.390445] [atbm_log]:scan start band(0),(14)
+[  238.683957] [atbm_log]:hw_priv->scan.status 0
+[  238.684221] [atbm_log]:atbm_scan_work:end(0)
+[  243.692970] [atbm_log]:atbm_hw_scan:if_id(0)
+[  243.693217] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  243.693673] [atbm_log]:scan start band(0),(14)
+[  244.945532] [atbm_log]:hw_priv->scan.status 0
+[  244.945793] [atbm_log]:atbm_scan_work:end(0)
+[  249.953884] [atbm_log]:atbm_hw_scan:if_id(0)
+[  249.954142] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  249.954733] [atbm_log]:scan start band(0),(14)
+[  251.216960] [atbm_log]:hw_priv->scan.status 0
+[  251.217254] [atbm_log]:atbm_scan_work:end(0)
+[  256.225493] [atbm_log]:atbm_hw_scan:if_id(0)
+[  256.225757] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  256.226219] [atbm_log]:scan start band(0),(14)
+[  257.492718] [atbm_log]:hw_priv->scan.status 0
+[  257.492973] [atbm_log]:atbm_scan_work:end(0)
+[  262.502098] [atbm_log]:atbm_hw_scan:if_id(0)
+[  262.502359] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  262.502820] [atbm_log]:scan start band(0),(14)
+[  263.765882] [atbm_log]:hw_priv->scan.status 0
+[  263.766150] [atbm_log]:atbm_scan_work:end(0)
+[  268.772011] [atbm_log]:atbm_hw_scan:if_id(0)
+[  268.772259] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  268.772687] [atbm_log]:scan start band(0),(14)
+[  270.054234] [atbm_log]:hw_priv->scan.status 0
+[  270.054507] [atbm_log]:atbm_scan_work:end(0)
+[  275.059486] [atbm_log]:atbm_hw_scan:if_id(0)
+[  275.060258] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  275.060774] [atbm_log]:scan start band(0),(14)
+[  276.349858] [atbm_log]:hw_priv->scan.status 0
+[  276.350119] [atbm_log]:atbm_scan_work:end(0)
+[  281.358046] [atbm_log]:atbm_hw_scan:if_id(0)
+[  281.358307] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  281.358784] [atbm_log]:scan start band(0),(14)
+[  282.634278] [atbm_log]:hw_priv->scan.status 0
+[  282.634545] [atbm_log]:atbm_scan_work:end(0)
+[  287.639362] [atbm_log]:atbm_hw_scan:if_id(0)
+[  287.639746] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  287.640285] [atbm_log]:scan start band(0),(14)
+[  288.051786] [atbm_log]:atbm_sdio_irq_period:Miss
+[  288.903387] [atbm_log]:hw_priv->scan.status 0
+[  288.903649] [atbm_log]:atbm_scan_work:end(0)
+[  293.912022] [atbm_log]:atbm_hw_scan:if_id(0)
+[  293.912279] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  293.912744] [atbm_log]:scan start band(0),(14)
+[  295.224630] [atbm_log]:hw_priv->scan.status 0
+[  295.224891] [atbm_log]:atbm_scan_work:end(0)
+[  300.232025] [atbm_log]:atbm_hw_scan:if_id(0)
+[  300.232286] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  300.232761] [atbm_log]:scan start band(0),(14)
+[  301.492625] [atbm_log]:hw_priv->scan.status 0
+[  301.492912] [atbm_log]:atbm_scan_work:end(0)
+[  306.499667] [atbm_log]:atbm_hw_scan:if_id(0)
+[  306.499924] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  306.500382] [atbm_log]:scan start band(0),(14)
+[  307.755570] [atbm_log]:hw_priv->scan.status 0
+[  307.755828] [atbm_log]:atbm_scan_work:end(0)
+[  312.762036] [atbm_log]:atbm_hw_scan:if_id(0)
+[  312.762797] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  312.763776] [atbm_log]:scan start band(0),(14)
+[  314.000507] [atbm_log]:hw_priv->scan.status 0
+[  314.000812] [atbm_log]:atbm_scan_work:end(0)
+[  319.009798] [atbm_log]:atbm_hw_scan:if_id(0)
+[  319.010279] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  319.010935] [atbm_log]:scan start band(0),(14)
+[  320.280791] [atbm_log]:hw_priv->scan.status 0
+[  320.281111] [atbm_log]:atbm_scan_work:end(0)
+[  325.286147] [atbm_log]:atbm_hw_scan:if_id(0)
+[  325.286394] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  325.286935] [atbm_log]:scan start band(0),(14)
+[  326.553887] [atbm_log]:hw_priv->scan.status 0
+[  326.554151] [atbm_log]:atbm_scan_work:end(0)
+[  331.562099] [atbm_log]:atbm_hw_scan:if_id(0)
+[  331.562381] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  331.562898] [atbm_log]:scan start band(0),(14)
+[  332.814482] [atbm_log]:hw_priv->scan.status 0
+[  332.814741] [atbm_log]:atbm_scan_work:end(0)
+[  337.822032] [atbm_log]:atbm_hw_scan:if_id(0)
+[  337.822296] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  337.822751] [atbm_log]:scan start band(0),(14)
+[  339.094342] [atbm_log]:hw_priv->scan.status 0
+[  339.094613] [atbm_log]:atbm_scan_work:end(0)
+[  344.102012] [atbm_log]:atbm_hw_scan:if_id(0)
+[  344.102276] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  344.102773] [atbm_log]:scan start band(0),(14)
+[  345.362991] [atbm_log]:hw_priv->scan.status 0
+[  345.363265] [atbm_log]:atbm_scan_work:end(0)
+[  350.372023] [atbm_log]:atbm_hw_scan:if_id(0)
+[  350.372283] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  350.372738] [atbm_log]:scan start band(0),(14)
+[  351.645281] [atbm_log]:hw_priv->scan.status 0
+[  351.645653] [atbm_log]:atbm_scan_work:end(0)
+[  356.652056] [atbm_log]:atbm_hw_scan:if_id(0)
+[  356.652320] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  356.652776] [atbm_log]:scan start band(0),(14)
+[  357.910644] [atbm_log]:hw_priv->scan.status 0
+[  357.910904] [atbm_log]:atbm_scan_work:end(0)
+[  362.922019] [atbm_log]:atbm_hw_scan:if_id(0)
+[  362.922296] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  362.922920] [atbm_log]:scan start band(0),(14)
+[  364.188741] [atbm_log]:hw_priv->scan.status 0
+[  364.189003] [atbm_log]:atbm_scan_work:end(0)
+[  369.201673] [atbm_log]:atbm_hw_scan:if_id(0)
+[  369.202100] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  369.202628] [atbm_log]:scan start band(0),(14)
+[  370.481119] [atbm_log]:hw_priv->scan.status 0
+[  370.481396] [atbm_log]:atbm_scan_work:end(0)
+[  375.489056] [atbm_log]:atbm_hw_scan:if_id(0)
+[  375.489314] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  375.489776] [atbm_log]:scan start band(0),(14)
+[  376.748016] [atbm_log]:hw_priv->scan.status 0
+[  376.748300] [atbm_log]:atbm_scan_work:end(0)
+[  381.761200] [atbm_log]:atbm_hw_scan:if_id(0)
+[  381.761489] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  381.762076] [atbm_log]:scan start band(0),(14)
+[  383.045134] [atbm_log]:hw_priv->scan.status 0
+[  383.045429] [atbm_log]:atbm_scan_work:end(0)
+[  388.052020] [atbm_log]:atbm_hw_scan:if_id(0)
+[  388.052277] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  388.052776] [atbm_log]:scan start band(0),(14)
+[  389.345157] [atbm_log]:hw_priv->scan.status 0
+[  389.345416] [atbm_log]:atbm_scan_work:end(0)
+[  394.352027] [atbm_log]:atbm_hw_scan:if_id(0)
+[  394.352271] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  394.352823] [atbm_log]:scan start band(0),(14)
+[  395.613383] [atbm_log]:hw_priv->scan.status 0
+[  395.613643] [atbm_log]:atbm_scan_work:end(0)
+[  400.622020] [atbm_log]:atbm_hw_scan:if_id(0)
+[  400.622280] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  400.622736] [atbm_log]:scan start band(0),(14)
+[  401.041802] [atbm_log]:atbm_sdio_irq_period:Miss
+[  401.887912] [atbm_log]:hw_priv->scan.status 0
+[  401.888174] [atbm_log]:atbm_scan_work:end(0)
+[  406.895362] [atbm_log]:atbm_hw_scan:if_id(0)
+[  406.895618] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  406.896096] [atbm_log]:scan start band(0),(14)
+[  408.190838] [atbm_log]:hw_priv->scan.status 0
+[  408.191101] [atbm_log]:atbm_scan_work:end(0)
+[  413.200852] [atbm_log]:atbm_hw_scan:if_id(0)
+[  413.201208] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  413.202619] [atbm_log]:scan start band(0),(14)
+[  414.476633] [atbm_log]:hw_priv->scan.status 0
+[  414.476941] [atbm_log]:atbm_scan_work:end(0)
+[  419.487803] [atbm_log]:atbm_hw_scan:if_id(0)
+[  419.488138] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  419.488596] [atbm_log]:scan start band(0),(14)
+[  420.789393] [atbm_log]:hw_priv->scan.status 0
+[  420.789650] [atbm_log]:atbm_scan_work:end(0)
+[  425.794663] [atbm_log]:atbm_hw_scan:if_id(0)
+[  425.794941] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  425.795454] [atbm_log]:scan start band(0),(14)
+[  427.055530] [atbm_log]:hw_priv->scan.status 0
+[  427.055790] [atbm_log]:atbm_scan_work:end(0)
+[  432.062026] [atbm_log]:atbm_hw_scan:if_id(0)
+[  432.062289] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  432.062816] [atbm_log]:scan start band(0),(14)
+[  433.337680] [atbm_log]:hw_priv->scan.status 0
+[  433.337944] [atbm_log]:atbm_scan_work:end(0)
+[  438.342002] [atbm_log]:atbm_hw_scan:if_id(0)
+[  438.342264] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  438.342736] [atbm_log]:scan start band(0),(14)
+[  439.617753] [atbm_log]:hw_priv->scan.status 0
+[  439.618009] [atbm_log]:atbm_scan_work:end(0)
+[  444.627999] [atbm_log]:atbm_hw_scan:if_id(0)
+[  444.628290] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  444.628790] [atbm_log]:scan start band(0),(14)
+[  445.898376] [atbm_log]:hw_priv->scan.status 0
+[  445.898644] [atbm_log]:atbm_scan_work:end(0)
+[  450.908024] [atbm_log]:atbm_hw_scan:if_id(0)
+[  450.908272] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  450.908695] [atbm_log]:scan start band(0),(14)
+[  452.226999] [atbm_log]:hw_priv->scan.status 0
+[  452.227256] [atbm_log]:atbm_scan_work:end(0)
+[  457.235547] [atbm_log]:atbm_hw_scan:if_id(0)
+[  457.236403] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  457.236895] [atbm_log]:scan start band(0),(14)
+[  458.508027] [atbm_log]:hw_priv->scan.status 0
+[  458.508299] [atbm_log]:atbm_scan_work:end(0)
+[  463.518240] [atbm_log]:atbm_hw_scan:if_id(0)
+[  463.518501] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  463.519073] [atbm_log]:scan start band(0),(14)
+[  464.823284] [atbm_log]:hw_priv->scan.status 0
+[  464.823762] [atbm_log]:atbm_scan_work:end(0)
+[  469.832190] [atbm_log]:atbm_hw_scan:if_id(0)
+[  469.832515] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  469.833134] [atbm_log]:scan start band(0),(14)
+[  471.081742] [atbm_log]:atbm_sdio_irq_period:Miss
+[  471.081850] [atbm_log]:hw_priv->scan.status 0
+[  471.082109] [atbm_log]:atbm_scan_work:end(0)
+[  476.087775] [atbm_log]:atbm_hw_scan:if_id(0)
+[  476.088036] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  476.088497] [atbm_log]:scan start band(0),(14)
+[  476.421825] [atbm_log]:atbm_sdio_irq_period:Miss
+[  477.353930] [atbm_log]:hw_priv->scan.status 0
+[  477.354204] [atbm_log]:atbm_scan_work:end(0)
+[  482.362011] [atbm_log]:atbm_hw_scan:if_id(0)
+[  482.362269] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  482.362816] [atbm_log]:scan start band(0),(14)
+[  483.645542] [atbm_log]:hw_priv->scan.status 0
+[  483.645802] [atbm_log]:atbm_scan_work:end(0)
+[  488.652018] [atbm_log]:atbm_hw_scan:if_id(0)
+[  488.652277] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  488.652734] [atbm_log]:scan start band(0),(14)
+[  489.915321] [atbm_log]:hw_priv->scan.status 0
+[  489.915583] [atbm_log]:atbm_scan_work:end(0)
+[  494.922032] [atbm_log]:atbm_hw_scan:if_id(0)
+[  494.922294] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  494.922896] [atbm_log]:scan start band(0),(14)
+[  496.179431] [atbm_log]:hw_priv->scan.status 0
+[  496.179963] [atbm_log]:atbm_scan_work:end(0)
+[  501.189662] [atbm_log]:atbm_hw_scan:if_id(0)
+[  501.189919] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  501.190370] [atbm_log]:scan start band(0),(14)
+[  502.471442] [atbm_log]:hw_priv->scan.status 0
+[  502.471941] [atbm_log]:atbm_scan_work:end(0)
+[  507.478250] [atbm_log]:atbm_hw_scan:if_id(0)
+[  507.478513] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  507.478977] [atbm_log]:scan start band(0),(14)
+[  508.743151] [atbm_log]:hw_priv->scan.status 0
+[  508.743405] [atbm_log]:atbm_scan_work:end(0)
+[  513.752058] [atbm_log]:atbm_hw_scan:if_id(0)
+[  513.752318] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  513.752777] [atbm_log]:scan start band(0),(14)
+[  515.020211] [atbm_log]:hw_priv->scan.status 0
+[  515.020486] [atbm_log]:atbm_scan_work:end(0)
+[  520.031367] [atbm_log]:atbm_hw_scan:if_id(0)
+[  520.031627] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  520.032139] [atbm_log]:scan start band(0),(14)
+[  521.295121] [atbm_log]:hw_priv->scan.status 0
+[  521.295438] [atbm_log]:atbm_scan_work:end(0)
+[  526.302089] [atbm_log]:atbm_hw_scan:if_id(0)
+[  526.302378] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  526.303024] [atbm_log]:scan start band(0),(14)
+[  527.566359] [atbm_log]:hw_priv->scan.status 0
+[  527.566619] [atbm_log]:atbm_scan_work:end(0)
+[  532.572012] [atbm_log]:atbm_hw_scan:if_id(0)
+[  532.572273] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  532.572730] [atbm_log]:scan start band(0),(14)
+[  533.830968] [atbm_log]:hw_priv->scan.status 0
+[  533.831229] [atbm_log]:atbm_scan_work:end(0)
+[  538.839854] [atbm_log]:atbm_hw_scan:if_id(0)
+[  538.840112] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  538.840569] [atbm_log]:scan start band(0),(14)
+[  540.110153] [atbm_log]:hw_priv->scan.status 0
+[  540.110417] [atbm_log]:atbm_scan_work:end(0)
+[  545.115396] [atbm_log]:atbm_hw_scan:if_id(0)
+[  545.115654] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  545.116132] [atbm_log]:scan start band(0),(14)
+[  546.421632] [atbm_log]:hw_priv->scan.status 0
+[  546.421947] [atbm_log]:atbm_scan_work:end(0)
+[  551.430755] [atbm_log]:atbm_hw_scan:if_id(0)
+[  551.431013] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  551.431473] [atbm_log]:scan start band(0),(14)
+[  552.692787] [atbm_log]:hw_priv->scan.status 0
+[  552.693068] [atbm_log]:atbm_scan_work:end(0)
+[  557.699909] [atbm_log]:atbm_hw_scan:if_id(0)
+[  557.700167] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  557.700642] [atbm_log]:scan start band(0),(14)
+[  558.994884] [atbm_log]:hw_priv->scan.status 0
+[  558.995142] [atbm_log]:atbm_scan_work:end(0)
+[  564.002017] [atbm_log]:atbm_hw_scan:if_id(0)
+[  564.002277] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  564.002868] [atbm_log]:scan start band(0),(14)
+[  565.269514] [atbm_log]:hw_priv->scan.status 0
+[  565.269770] [atbm_log]:atbm_scan_work:end(0)
+[  570.280098] [atbm_log]:atbm_hw_scan:if_id(0)
+[  570.280355] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  570.280827] [atbm_log]:scan start band(0),(14)
+[  571.530672] [atbm_log]:hw_priv->scan.status 0
+[  571.530942] [atbm_log]:atbm_scan_work:end(0)
+[  576.536680] [atbm_log]:atbm_hw_scan:if_id(0)
+[  576.536936] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  576.537373] [atbm_log]:scan start band(0),(14)
+[  577.811746] [atbm_log]:hw_priv->scan.status 0
+[  577.812032] [atbm_log]:atbm_scan_work:end(0)
+[  582.822055] [atbm_log]:atbm_hw_scan:if_id(0)
+[  582.822311] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  582.822765] [atbm_log]:scan start band(0),(14)
+[  584.109707] [atbm_log]:hw_priv->scan.status 0
+[  584.109965] [atbm_log]:atbm_scan_work:end(0)
+[  589.119385] [atbm_log]:atbm_hw_scan:if_id(0)
+[  589.119646] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  589.120109] [atbm_log]:scan start band(0),(14)
+[  590.416282] [atbm_log]:hw_priv->scan.status 0
+[  590.416577] [atbm_log]:atbm_scan_work:end(0)
+[  595.422054] [atbm_log]:atbm_hw_scan:if_id(0)
+[  595.422312] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  595.422770] [atbm_log]:scan start band(0),(14)
+[  596.701755] [atbm_log]:atbm_sdio_irq_period:Miss
+[  596.701867] [atbm_log]:hw_priv->scan.status 0
+[  596.702133] [atbm_log]:atbm_scan_work:end(0)
+[  601.711298] [atbm_log]:atbm_hw_scan:if_id(0)
+[  601.711556] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  601.712102] [atbm_log]:scan start band(0),(14)
+[  602.975251] [atbm_log]:hw_priv->scan.status 0
+[  602.975593] [atbm_log]:atbm_scan_work:end(0)
+[  607.982046] [atbm_log]:atbm_hw_scan:if_id(0)
+[  607.982311] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  607.982926] [atbm_log]:scan start band(0),(14)
+[  609.267394] [atbm_log]:hw_priv->scan.status 0
+[  609.267744] [atbm_log]:atbm_scan_work:end(0)
+[  614.277655] [atbm_log]:atbm_hw_scan:if_id(0)
+[  614.277917] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  614.278391] [atbm_log]:scan start band(0),(14)
+[  615.533948] [atbm_log]:hw_priv->scan.status 0
+[  615.534207] [atbm_log]:atbm_scan_work:end(0)
+[  620.542034] [atbm_log]:atbm_hw_scan:if_id(0)
+[  620.542291] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  620.542746] [atbm_log]:scan start band(0),(14)
+[  621.798293] [atbm_log]:hw_priv->scan.status 0
+[  621.798555] [atbm_log]:atbm_scan_work:end(0)
+[  626.807154] [atbm_log]:atbm_hw_scan:if_id(0)
+[  626.807411] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  626.807855] [atbm_log]:scan start band(0),(14)
+[  628.064773] [atbm_log]:hw_priv->scan.status 0
+[  628.065068] [atbm_log]:atbm_scan_work:end(0)
+[  633.072001] [atbm_log]:atbm_hw_scan:if_id(0)
+[  633.072261] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  633.072723] [atbm_log]:scan start band(0),(14)
+[  634.352987] [atbm_log]:hw_priv->scan.status 0
+[  634.353247] [atbm_log]:atbm_scan_work:end(0)
+[  639.362099] [atbm_log]:atbm_hw_scan:if_id(0)
+[  639.362380] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  639.362884] [atbm_log]:scan start band(0),(14)
+[  640.620453] [atbm_log]:hw_priv->scan.status 0
+[  640.620716] [atbm_log]:atbm_scan_work:end(0)
+[  645.625483] [atbm_log]:atbm_hw_scan:if_id(0)
+[  645.625739] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  645.626344] [atbm_log]:scan start band(0),(14)
+[  646.887509] [atbm_log]:hw_priv->scan.status 0
+[  646.887791] [atbm_log]:atbm_scan_work:end(0)
+[  651.898771] [atbm_log]:atbm_hw_scan:if_id(0)
+[  651.899028] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  651.899490] [atbm_log]:scan start band(0),(14)
+[  653.162164] [atbm_log]:hw_priv->scan.status 0
+[  653.162438] [atbm_log]:atbm_scan_work:end(0)
+[  658.168058] [atbm_log]:atbm_hw_scan:if_id(0)
+[  658.168420] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  658.169035] [atbm_log]:scan start band(0),(14)
+[  659.433146] [atbm_log]:hw_priv->scan.status 0
+[  659.433404] [atbm_log]:atbm_scan_work:end(0)
+[  664.442096] [atbm_log]:atbm_hw_scan:if_id(0)
+[  664.442378] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  664.442882] [atbm_log]:scan start band(0),(14)
+[  665.291778] [atbm_log]:atbm_sdio_irq_period:Miss
+[  665.727283] [atbm_log]:hw_priv->scan.status 0
+[  665.727577] [atbm_log]:atbm_scan_work:end(0)
+[  670.738658] [atbm_log]:atbm_hw_scan:if_id(0)
+[  670.738918] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  670.739374] [atbm_log]:scan start band(0),(14)
+[  671.996912] [atbm_log]:hw_priv->scan.status 0
+[  671.997724] [atbm_log]:atbm_scan_work:end(0)
+[  677.004982] [atbm_log]:atbm_hw_scan:if_id(0)
+[  677.005419] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  677.006014] [atbm_log]:scan start band(0),(14)
+[  678.253143] [atbm_log]:hw_priv->scan.status 0
+[  678.253405] [atbm_log]:atbm_scan_work:end(0)
+[  683.262022] [atbm_log]:atbm_hw_scan:if_id(0)
+[  683.262285] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  683.262877] [atbm_log]:scan start band(0),(14)
+[  684.537471] [atbm_log]:hw_priv->scan.status 0
+[  684.537736] [atbm_log]:atbm_scan_work:end(0)
+[  689.542037] [atbm_log]:atbm_hw_scan:if_id(0)
+[  689.542296] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  689.542752] [atbm_log]:scan start band(0),(14)
+[  690.591745] [atbm_log]:atbm_sdio_irq_period:Miss
+[  690.806971] [atbm_log]:hw_priv->scan.status 0
+[  690.807237] [atbm_log]:atbm_scan_work:end(0)
+[  695.812023] [atbm_log]:atbm_hw_scan:if_id(0)
+[  695.812285] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  695.812792] [atbm_log]:scan start band(0),(14)
+[  697.056916] [atbm_log]:hw_priv->scan.status 0
+[  697.057178] [atbm_log]:atbm_scan_work:end(0)
+[  702.068017] [atbm_log]:atbm_hw_scan:if_id(0)
+[  702.068281] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  702.068742] [atbm_log]:scan start band(0),(14)
+[  703.308767] [atbm_log]:hw_priv->scan.status 0
+[  703.309024] [atbm_log]:atbm_scan_work:end(0)
+[  708.317841] [atbm_log]:atbm_hw_scan:if_id(0)
+[  708.318123] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  708.318617] [atbm_log]:scan start band(0),(14)
+[  709.546863] [atbm_log]:hw_priv->scan.status 0
+[  709.547121] [atbm_log]:atbm_scan_work:end(0)
+[  714.558682] [atbm_log]:atbm_hw_scan:if_id(0)
+[  714.558960] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  714.559492] [atbm_log]:scan start band(0),(14)
+[  715.814514] [atbm_log]:hw_priv->scan.status 0
+[  715.814772] [atbm_log]:atbm_scan_work:end(0)
+[  720.822018] [atbm_log]:atbm_hw_scan:if_id(0)
+[  720.822281] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  720.822754] [atbm_log]:scan start band(0),(14)
+[  722.078015] [atbm_log]:hw_priv->scan.status 0
+[  722.078284] [atbm_log]:atbm_scan_work:end(0)
+[  727.085443] [atbm_log]:atbm_hw_scan:if_id(0)
+[  727.085705] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  727.086304] [atbm_log]:scan start band(0),(14)
+[  728.312858] [atbm_log]:hw_priv->scan.status 0
+[  728.313112] [atbm_log]:atbm_scan_work:end(0)
+[  733.322055] [atbm_log]:atbm_hw_scan:if_id(0)
+[  733.322314] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  733.322787] [atbm_log]:scan start band(0),(14)
+[  734.578828] [atbm_log]:hw_priv->scan.status 0
+[  734.579088] [atbm_log]:atbm_scan_work:end(0)
+[  739.588996] [atbm_log]:atbm_hw_scan:if_id(0)
+[  739.589245] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  739.589748] [atbm_log]:scan start band(0),(14)
+[  740.867633] [atbm_log]:hw_priv->scan.status 0
+[  740.868475] [atbm_log]:atbm_scan_work:end(0)
+[  745.875207] [atbm_log]:atbm_hw_scan:if_id(0)
+[  745.875496] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  745.876085] [atbm_log]:scan start band(0),(14)
+[  747.131834] [atbm_log]:hw_priv->scan.status 0
+[  747.132098] [atbm_log]:atbm_scan_work:end(0)
+[  752.141914] [atbm_log]:atbm_hw_scan:if_id(0)
+[  752.142169] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  752.142647] [atbm_log]:scan start band(0),(14)
+[  753.386532] [atbm_log]:hw_priv->scan.status 0
+[  753.386819] [atbm_log]:atbm_scan_work:end(0)
+[  758.394438] [atbm_log]:atbm_hw_scan:if_id(0)
+[  758.394786] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  758.395396] [atbm_log]:scan start band(0),(14)
+[  759.637267] [atbm_log]:hw_priv->scan.status 0
+[  759.637528] [atbm_log]:atbm_scan_work:end(0)
+[  764.642052] [atbm_log]:atbm_hw_scan:if_id(0)
+[  764.642308] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  764.642870] [atbm_log]:scan start band(0),(14)
+[  765.880337] [atbm_log]:hw_priv->scan.status 0
+[  765.880595] [atbm_log]:atbm_scan_work:end(0)
+[  770.890176] [atbm_log]:atbm_hw_scan:if_id(0)
+[  770.890433] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  770.890913] [atbm_log]:scan start band(0),(14)
+[  772.153669] [atbm_log]:hw_priv->scan.status 0
+[  772.153964] [atbm_log]:atbm_scan_work:end(0)
+[  777.161391] [atbm_log]:atbm_hw_scan:if_id(0)
+[  777.161654] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  777.162170] [atbm_log]:scan start band(0),(14)
+[  778.412746] [atbm_log]:hw_priv->scan.status 0
+[  778.413007] [atbm_log]:atbm_scan_work:end(0)
+[  783.422026] [atbm_log]:atbm_hw_scan:if_id(0)
+[  783.422661] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  783.423641] [atbm_log]:scan start band(0),(14)
+[  784.663084] [atbm_log]:hw_priv->scan.status 0
+[  784.663359] [atbm_log]:atbm_scan_work:end(0)
+[  789.672186] [atbm_log]:atbm_hw_scan:if_id(0)
+[  789.672529] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  789.673144] [atbm_log]:scan start band(0),(14)
+[  789.991746] [atbm_log]:atbm_sdio_irq_period:Miss
+[  790.910627] [atbm_log]:hw_priv->scan.status 0
+[  790.910911] [atbm_log]:atbm_scan_work:end(0)
+[  795.917290] [atbm_log]:atbm_hw_scan:if_id(0)
+[  795.917548] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  795.918009] [atbm_log]:scan start band(0),(14)
+[  795.961789] [atbm_log]:atbm_sdio_irq_period:Miss
+[  797.186465] [atbm_log]:hw_priv->scan.status 0
+[  797.186715] [atbm_log]:atbm_scan_work:end(0)
+[  802.192113] [atbm_log]:atbm_hw_scan:if_id(0)
+[  802.192884] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  802.193504] [atbm_log]:scan start band(0),(14)
+[  803.455530] [atbm_log]:hw_priv->scan.status 0
+[  803.455791] [atbm_log]:atbm_scan_work:end(0)
+[  808.462015] [atbm_log]:atbm_hw_scan:if_id(0)
+[  808.462263] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  808.462686] [atbm_log]:scan start band(0),(14)
+[  809.723820] [atbm_log]:hw_priv->scan.status 0
+[  809.724080] [atbm_log]:atbm_scan_work:end(0)
+[  814.732022] [atbm_log]:atbm_hw_scan:if_id(0)
+[  814.732286] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  814.732743] [atbm_log]:scan start band(0),(14)
+[  815.991403] [atbm_log]:hw_priv->scan.status 0
+[  815.991666] [atbm_log]:atbm_scan_work:end(0)
+[  821.001245] [atbm_log]:atbm_hw_scan:if_id(0)
+[  821.001503] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  821.002041] [atbm_log]:scan start band(0),(14)
+[  822.277914] [atbm_log]:hw_priv->scan.status 0
+[  822.278172] [atbm_log]:atbm_scan_work:end(0)
+[  827.284909] [atbm_log]:atbm_hw_scan:if_id(0)
+[  827.285169] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  827.285635] [atbm_log]:scan start band(0),(14)
+[  828.553841] [atbm_log]:hw_priv->scan.status 0
+[  828.554098] [atbm_log]:atbm_scan_work:end(0)
+[  833.562015] [atbm_log]:atbm_hw_scan:if_id(0)
+[  833.562276] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  833.562755] [atbm_log]:scan start band(0),(14)
+[  834.800814] [atbm_log]:hw_priv->scan.status 0
+[  834.801072] [atbm_log]:atbm_scan_work:end(0)
+[  839.810388] [atbm_log]:atbm_hw_scan:if_id(0)
+[  839.810771] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  839.811259] [atbm_log]:scan start band(0),(14)
+[  841.065018] [atbm_log]:hw_priv->scan.status 0
+[  841.065304] [atbm_log]:atbm_scan_work:end(0)
+[  846.072072] [atbm_log]:atbm_hw_scan:if_id(0)
+[  846.072337] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  846.072924] [atbm_log]:scan start band(0),(14)
+[  847.304981] [atbm_log]:hw_priv->scan.status 0
+[  847.305268] [atbm_log]:atbm_scan_work:end(0)
+[  852.314498] [atbm_log]:atbm_hw_scan:if_id(0)
+[  852.314784] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  852.315246] [atbm_log]:scan start band(0),(14)
+[  853.546144] [atbm_log]:hw_priv->scan.status 0
+[  853.546406] [atbm_log]:atbm_scan_work:end(0)
+[  858.552057] [atbm_log]:atbm_hw_scan:if_id(0)
+[  858.552316] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  858.552773] [atbm_log]:scan start band(0),(14)
+[  859.802000] [atbm_log]:hw_priv->scan.status 0
+[  859.802256] [atbm_log]:atbm_scan_work:end(0)
+[  864.811533] [atbm_log]:atbm_hw_scan:if_id(0)
+[  864.812426] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  864.813406] [atbm_log]:scan start band(0),(14)
+[  866.054497] [atbm_log]:hw_priv->scan.status 0
+[  866.054844] [atbm_log]:atbm_scan_work:end(0)
+[  871.062159] [atbm_log]:atbm_hw_scan:if_id(0)
+[  871.062483] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  871.063098] [atbm_log]:scan start band(0),(14)
+[  872.309081] [atbm_log]:hw_priv->scan.status 0
+[  872.309349] [atbm_log]:atbm_scan_work:end(0)
+[  877.316503] [atbm_log]:atbm_hw_scan:if_id(0)
+[  877.316763] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  877.317219] [atbm_log]:scan start band(0),(14)
+[  878.588991] [atbm_log]:hw_priv->scan.status 0
+[  878.589262] [atbm_log]:atbm_scan_work:end(0)
+[  883.600196] [atbm_log]:atbm_hw_scan:if_id(0)
+[  883.600456] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  883.600920] [atbm_log]:scan start band(0),(14)
+[  884.889752] [atbm_log]:hw_priv->scan.status 0
+[  884.890045] [atbm_log]:atbm_scan_work:end(0)
+[  889.899530] [atbm_log]:atbm_hw_scan:if_id(0)
+[  889.899852] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  889.900628] [atbm_log]:scan start band(0),(14)
+[  891.147915] [atbm_log]:hw_priv->scan.status 0
+[  891.148176] [atbm_log]:atbm_scan_work:end(0)
+[  896.154807] [atbm_log]:atbm_hw_scan:if_id(0)
+[  896.155063] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  896.155516] [atbm_log]:scan start band(0),(14)
+[  897.414275] [atbm_log]:hw_priv->scan.status 0
+[  897.414547] [atbm_log]:atbm_scan_work:end(0)
+[  902.422020] [atbm_log]:atbm_hw_scan:if_id(0)
+[  902.422278] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  902.422729] [atbm_log]:scan start band(0),(14)
+[  903.721459] [atbm_log]:hw_priv->scan.status 0
+[  903.721937] [atbm_log]:atbm_scan_work:end(0)
+[  908.732081] [atbm_log]:atbm_hw_scan:if_id(0)
+[  908.732365] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  908.732883] [atbm_log]:scan start band(0),(14)
+[  910.017834] [atbm_log]:hw_priv->scan.status 0
+[  910.018123] [atbm_log]:atbm_scan_work:end(0)
+[  915.024104] [atbm_log]:atbm_hw_scan:if_id(0)
+[  915.024390] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  915.024916] [atbm_log]:scan start band(0),(14)
+[  915.811779] [atbm_log]:atbm_sdio_irq_period:Miss
+[  916.316946] [atbm_log]:hw_priv->scan.status 0
+[  916.317204] [atbm_log]:atbm_scan_work:end(0)
+[  921.322019] [atbm_log]:atbm_hw_scan:if_id(0)
+[  921.322281] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  921.322761] [atbm_log]:scan start band(0),(14)
+[  922.582131] [atbm_log]:hw_priv->scan.status 0
+[  922.582391] [atbm_log]:atbm_scan_work:end(0)
+[  927.589517] [atbm_log]:atbm_hw_scan:if_id(0)
+[  927.589778] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  927.590256] [atbm_log]:scan start band(0),(14)
+[  928.906616] [atbm_log]:hw_priv->scan.status 0
+[  928.906875] [atbm_log]:atbm_scan_work:end(0)
+[  933.914134] [atbm_log]:atbm_hw_scan:if_id(0)
+[  933.914472] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  933.915066] [atbm_log]:scan start band(0),(14)
+[  935.180059] [atbm_log]:hw_priv->scan.status 0
+[  935.180324] [atbm_log]:atbm_scan_work:end(0)
+[  940.190523] [atbm_log]:atbm_hw_scan:if_id(0)
+[  940.190777] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  940.191251] [atbm_log]:scan start band(0),(14)
+[  941.485469] [atbm_log]:hw_priv->scan.status 0
+[  941.485744] [atbm_log]:atbm_scan_work:end(0)
+[  946.492083] [atbm_log]:atbm_hw_scan:if_id(0)
+[  946.492416] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  946.493003] [atbm_log]:scan start band(0),(14)
+[  947.798507] [atbm_log]:hw_priv->scan.status 0
+[  947.798768] [atbm_log]:atbm_scan_work:end(0)
+[  952.809247] [atbm_log]:atbm_hw_scan:if_id(0)
+[  952.809515] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  952.809971] [atbm_log]:scan start band(0),(14)
+[  954.096463] [atbm_log]:hw_priv->scan.status 0
+[  954.096741] [atbm_log]:atbm_scan_work:end(0)
+[  959.102142] [atbm_log]:atbm_hw_scan:if_id(0)
+[  959.102405] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  959.102884] [atbm_log]:scan start band(0),(14)
+[  960.370281] [atbm_log]:hw_priv->scan.status 0
+[  960.370565] [atbm_log]:atbm_scan_work:end(0)
+[  965.375791] [atbm_log]:atbm_hw_scan:if_id(0)
+[  965.376044] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  965.376502] [atbm_log]:scan start band(0),(14)
+[  966.661190] [atbm_log]:hw_priv->scan.status 0
+[  966.661450] [atbm_log]:atbm_scan_work:end(0)
+[  971.671347] [atbm_log]:atbm_hw_scan:if_id(0)
+[  971.671604] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  971.672174] [atbm_log]:scan start band(0),(14)
+[  972.935515] [atbm_log]:hw_priv->scan.status 0
+[  972.935773] [atbm_log]:atbm_scan_work:end(0)
+[  977.942010] [atbm_log]:atbm_hw_scan:if_id(0)
+[  977.942272] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  977.942730] [atbm_log]:scan start band(0),(14)
+[  979.217144] [atbm_log]:hw_priv->scan.status 0
+[  979.217407] [atbm_log]:atbm_scan_work:end(0)
+[  984.225333] [atbm_log]:atbm_hw_scan:if_id(0)
+[  984.225594] [atbm_log]:atbm_hw_scan:scan, delay suspend
+[  984.226057] [atbm_log]:scan start band(0),(14)
+root@openipc-t31:~#
