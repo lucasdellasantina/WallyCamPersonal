@@ -1,0 +1,43 @@
+  PID USER       VSZ STAT COMMAND
+    1 root      1600 S    {linuxrc} init
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    4 root         0 SW   [kworker/0:0]
+    5 root         0 SW<  [kworker/0:0H]
+    6 root         0 SW   [kworker/u2:0]
+    7 root         0 SW   [rcu_preempt]
+    8 root         0 SW   [rcu_bh]
+    9 root         0 SW   [rcu_sched]
+   10 root         0 SW   [watchdog/0]
+   11 root         0 SW<  [khelper]
+   12 root         0 SW<  [writeback]
+   13 root         0 SW<  [bioset]
+   14 root         0 SW<  [kblockd]
+   15 root         0 SW   [khubd]
+   16 root         0 SW   [kworker/0:1]
+   17 root         0 SW<  [cfg80211]
+   18 root         0 SW<  [rpciod]
+   19 root         0 SW   [kworker/0:2]
+   20 root         0 SW   [kswapd0]
+   21 root         0 SW   [fsnotify_mark]
+   22 root         0 SW<  [nfsiod]
+   23 root         0 SW<  [crypto]
+   37 root         0 SW   [kworker/u2:1]
+   38 root         0 SW   [kworker/u2:2]
+   39 root         0 SW<  [deferwq]
+   40 root         0 SW<  [kworker/0:1H]
+   53 root      1588 S    telnetd
+   55 root         0 SWN  [jffs2_gcd_mtd6]
+   57 root      1600 S    /sbin/getty -L console 115200 vt100
+   62 root         0 SW   [irq/37-isp-m0]
+   64 root         0 SW   [irq/38-isp-w02]
+  109 root         0 SW   [kworker/u2:3]
+  117 root         0 SW<  [phy0-atbm_wq]
+  118 root         0 SW   [phy0-atbm_bh]
+  119 root         0 SW   [phy0-sdio_tx]
+  120 root         0 SW   [phy0-sdio_rx]
+  122 root         0 SW   [mmcqd/0]
+  126 root         0 SW   [ksdioirqd/mmc1]
+  168 root      1600 S    {test.sh} /bin/sh /tmp/Test/test.sh
+  186 root     63616 S    /system/bin/assis
+  205 root      1592 R    ps

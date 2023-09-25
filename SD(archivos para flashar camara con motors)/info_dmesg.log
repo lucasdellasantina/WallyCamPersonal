@@ -1,0 +1,258 @@
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.14__isvp_swan_1.0__ (mango@mango-ZhaoYang-K4e-IIL) (gcc version 4.7.2 (Ingenic r2.3.3 2016.12) ) #7 PREEMPT Fri Oct 8 19:03:36 CST 2021
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 RESET ERROR PC:D0000017
+[    0.000000] CPU0 revision is: 00d00100 (Ingenic Xburst)
+[    0.000000] FPU revision is: 00b70000
+[    0.000000] cgu_get_rate, parent = 1392000000, rate = 0, m = 0, n = 0, reg val = 0x081000ff
+[    0.000000] cgu_get_rate, parent = 1392000000, rate = 0, m = 0, n = 0, reg val = 0x081000ff
+[    0.000000] CCLK:1392MHz L2CLK:696Mhz H0CLK:200MHz H2CLK:200Mhz PCLK:100Mhz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 00516000 @ 00010000 (usable)
+[    0.000000]  memory: 0003a000 @ 00526000 (usable after init)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 05000000 @ 00000000 (usable)
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x04ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x04ffffff]
+[    0.000000] On node 0 totalpages: 20480
+[    0.000000] free_area_init_node: node 0, pgdat 80523590, node_mem_map 81000000
+[    0.000000]   Normal zone: 160 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 20480 pages, LIFO batch:3
+[    0.000000] Primary instruction cache 32kB, 8-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 8-way, VIPT, no aliases, linesize 32 bytes
+[    0.000000] pls check processor_id[0x00d00100],sc_jz not support!
+[    0.000000] MIPS secondary cache 128kB, 8-way, linesize 32 bytes.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 20320
+[    0.000000] Kernel command line: console=ttyS1,115200n8 mem=80M@0x0 rmem=48M@0x5000000 init=/linuxrc rootfstype=squashfs root=/dev/mtdblock2 rw mtdparts=jz_sfc:256K(boot),1984K(kernel),3904K(rootfs),3904K(app),1984K(kback),3904K(aback),384K(cfg),64K(para)
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 74852k/81920k available (3944k kernel code, 7068k reserved, 1263k data, 232k init, 0k highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:358
+[    0.000000] clockevents_config_and_register success.
+[    0.000014] Calibrating delay loop... 1391.00 BogoMIPS (lpj=6955008)
+[    0.087832] pid_max: default: 32768 minimum: 301
+[    0.092686] Mount-cache hash table entries: 512
+[    0.097596] Initializing cgroup subsys debug
+[    0.101852] Initializing cgroup subsys freezer
+[    0.108016] regulator-dummy: no parameters
+[    0.112208] NET: Registered protocol family 16
+[    0.126876] bio: create slab <bio-0> at 0
+[    0.132328] jz-dma jz-dma: JZ SoC DMA initialized
+[    0.137398] SCSI subsystem initialized
+[    0.141256] usbcore: registered new interface driver usbfs
+[    0.146800] usbcore: registered new interface driver hub
+[    0.152214] usbcore: registered new device driver usb
+[    0.157397]  (null): set:249  hold:250 dev=100000000 h=500 l=500
+[    0.163474] media: Linux media interface: v0.10
+[    0.168060] Linux video capture interface: v2.00
+[    0.174072] Switching to clocksource jz_clocksource
+[    0.179002] cfg80211: Calling CRDA to update world regulatory domain
+[    0.185844] dwc2 otg probe start
+[    0.185873] jz-dwc2 jz-dwc2: cgu clk gate get error
+[    0.190754] DWC IN OTG MODE
+[    0.194184] dwc2 dwc2: Keep PHY ON
+[    0.197590] dwc2 dwc2: Using Buffer DMA mode
+[    0.201877] dwc2 dwc2: Core Release: 3.00a
+[    0.206071] dwc2 dwc2: DesignWare USB2.0 High-Speed Host Controller
+[    0.212397] dwc2 dwc2: new USB bus registered, assigned bus number 1
+[    0.219455] hub 1-0:1.0: USB hub found
+[    0.223188] hub 1-0:1.0: 1 port detected
+[    0.227272] dwc2 dwc2: DWC2 Host Initialized
+[    0.231558] dwc2 otg probe success
+[    0.231690] NET: Registered protocol family 2
+[    0.236452] TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.243461] TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.249935] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.256384] TCP: reno registered
+[    0.259601] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.265542] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.272057] NET: Registered protocol family 1
+[    0.276668] RPC: Registered named UNIX socket transport module.
+[    0.282595] RPC: Registered udp transport module.
+[    0.287411] RPC: Registered tcp transport module.
+[    0.292130] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.298994] freq_udelay_jiffys[0].max_num = 10
+[    0.303418] cpufreq 	udelay 	loops_per_jiffy	
+[    0.307874] dwc2 dwc2: ID PIN CHANGED!
+[    0.311678] 12000	 59956	 59956	
+[    0.314897] 24000	 119913	 119913	
+[    0.318353] 60000	 299784	 299784	
+[    0.321783] 120000	 599569	 599569	
+[    0.325315] 200000	 999282	 999282	
+[    0.328932] 300000	 1498924	 1498924	
+[    0.332560] 600000	 2997848	 2997848	
+[    0.336342] 792000	 3957159	 3957159	
+[    0.339976] 1008000	 5036385	 5036385	
+[    0.343773] 1200000	 5995696	 5995696	
+[    0.351303] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.357856] jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+[    0.363582] msgmni has been set to 146
+[    0.368307] io scheduler noop registered
+[    0.372228] io scheduler cfq registered (default)
+[    0.378137] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+[    0.385737] console [ttyS1] enabled, bootconsole disabled
+[    0.399390] brd: module loaded
+[    0.403878] loop: module loaded
+[    0.407660] zram: Created 2 device(s) ...
+[    0.411846] logger: created 256K log 'log_main'
+[    0.417077] jz TCU driver register completed
+[    0.421862] the id code = 5e4018, the flash name is ZB25VQ128
+[    0.427850] JZ SFC Controller for SFC channel 0 driver register
+[    0.433976] 8 cmdlinepart partitions found on MTD device jz_sfc
+[    0.440102] Creating 8 MTD partitions on "jz_sfc":
+[    0.445051] 0x000000000000-0x000000040000 : "boot"
+[    0.450402] 0x000000040000-0x000000230000 : "kernel"
+[    0.455902] 0x000000230000-0x000000600000 : "rootfs"
+[    0.461365] 0x000000600000-0x0000009d0000 : "app"
+[    0.466620] 0x0000009d0000-0x000000bc0000 : "kback"
+[    0.471999] 0x000000bc0000-0x000000f90000 : "aback"
+[    0.477434] 0x000000f90000-0x000000ff0000 : "cfg"
+[    0.482634] 0x000000ff0000-0x000001000000 : "para"
+[    0.487977] SPI NOR MTD LOAD OK
+[    0.491264] tun: Universal TUN/TAP device driver, 1.6
+[    0.496501] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.502969] usbcore: registered new interface driver zd1201
+[    0.508770] usbcore: registered new interface driver r8152
+[    0.514470] usbcore: registered new interface driver asix
+[    0.520139] usbcore: registered new interface driver usb-storage
+[    0.526441] usbcore: registered new interface driver usbserial
+[    0.532500] usbcore: registered new interface driver usb_ch34x
+[    0.538542] ch34x: USB to serial driver for USB to serial chip ch340, ch341, etc.
+[    0.546268] ch34x: V1.16 On 2020.12.23
+[    0.550154] usbcore: registered new interface driver ch37x
+[    0.555840] usbcore: registered new interface driver pl2303
+[    0.561606] usbserial: USB Serial support registered for pl2303
+[    0.567958] wait stable.[289][cgu_msc0]
+[    0.571926] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+[    0.577990] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+[    0.583333] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+[    0.589334] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+[    0.594728] hidraw: raw HID events driver (C) Jiri Kosina
+[    0.600518] usbcore: registered new interface driver usbhid
+[    0.606320] usbhid: USB HID core driver
+[    0.610458] TCP: cubic registered
+[    0.613876] NET: Registered protocol family 17
+[    0.619108] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.626248] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    0.636766] VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+[    0.644354] Freeing unused kernel memory: 232K (80526000 - 80560000)
+[    1.075470] jzmmc_v1.2 jzmmc_v1.2.0: card inserted, state=0
+[    1.336077] @@@@ tx-isp-probe ok(version H20211020a-noeprint), compiler date=Oct 20 2021 @@@@@
+[    1.374708] exFAT: Version 1.2.9
+[    1.401767] jz_codec_register: probe() successful!
+[    1.408222] cgu_set_rate, parent = 1392000000, rate = 2048000, n = 10875, reg val = 0x01002a7b
+[    1.408234] cgu_enable,cgu_i2s_spk reg val = 0x21002a7b
+[    1.408254] cgu_set_rate, parent = 1392000000, rate = 2048000, n = 10875, reg val = 0x01002a7b
+[    1.408262] cgu_enable,cgu_i2s_mic reg val = 0x21002a7b
+[    1.815746] dma dma0chan24: Channel 24 have been requested.(phy id 7,type 0x06 desc a06af000)
+[    1.824850] dma dma0chan25: Channel 25 have been requested.(phy id 6,type 0x06 desc a2560000)
+[    1.834034] dma dma0chan26: Channel 26 have been requested.(phy id 5,type 0x04 desc a243c000)
+[    1.886957] jz_pwm_probe[212] d_name = tcu_chn0
+[    1.893210] The version of PWM driver is H20180309a
+[    1.903726] request pwm channel 0 successfully
+[    1.910092] pwm-jz pwm-jz: jz_pwm_probe register ok !
+[    1.940279] __init
+[    2.116179] mmc1: new SDIO card at address 0001
+[    2.352429] [atbm_log]:SVN_VER=18363,DPLL_CLOCK=24,BUILD_TIME=[===== =====]
+[    2.361125] [atbm_log]:----drvier RATEPOLCIY=OLD
+[    2.366022] [atbm_log]:Probe called
+[    2.369665] [atbm_log]:atbm_sdio_probe:v12
+[    2.373899] [atbm_log]:Allocated hw_priv @ 82046d20
+[    2.379129] [atbm_log]:[BH] register.
+[    2.383034] [atbm_log]:atbmwifi INIT_WORK enable
+[    2.387930] [atbm_log]:atbmwifi INIT_WORK enable
+[    2.392747] [atbm_log]:atbm_sdio_rx_thread
+[    2.397006] [atbm_log]:atbm_before_load_firmware++
+[    2.402041] [atbm_log]:atbm_before_load_firmware:0xab0016c = [34800000]
+[    2.409055] [atbm_log]:atbm_before_load_firmware:0xab0016c = [34800000]
+[    2.416005] [atbm_log]:atbm_before_load_firmware:do not set config to smu
+[    2.435440] [atbm_log]:rx timeout
+[    2.527219] [atbm_log]:atbm_before_load_firmware:read [0x16100074]=[0],ret(0)
+[    2.534637] [atbm_log]:atbm_before_load_firmware:write [0x16100074]=[1],ret(0)
+[    2.585462] mmc0: new SD card at address aaaa
+[    2.597111] mmcblk0: mmc0:aaaa SU02G 1.84 GiB 
+[    2.617927]  mmcblk0: p1
+[    2.661655] [atbm_log]:atbm_start_load_firmware++
+[    2.666533] [atbm_log]:used firmware.h=
+[    2.670479] [atbm_log]:START DOWNLOAD ICCM=========
+[    2.675545] [atbm_log]:atbm_load_firmware_generic: addr 10000: len 22000
+[    2.727165] [atbm_log]:START DOWNLOAD DCCM=========
+[    2.732198] [atbm_log]:atbm_load_firmware_generic: addr 800000: len 9000
+[    2.751300] [atbm_log]:atbm_after_load_firmware++
+[    2.769530] [atbm_log]:firmwareCap f5af
+[    2.773491] [atbm_log]:firmwareCap2 5184
+[    2.777557] [atbm_log]:wsm_caps.firmwareCap 5184f5af
+[    2.782511] [atbm_log]:apollo wifi WSM init done.
+[    2.782511]    Input buffers: 42 x 1728 bytes
+[    2.782511]    Hardware: 7.1280
+[    2.782511]    WSM firmware [=MODEM=RF=Ares_AX  2GHZ Apr  9 2021 16:47:02NOTXConfrim], ver: 11896, build: 2756, api: 1060, cap: 0x5184F5AF Config[30008]  expection 900b80c, ep0 cmd addr 901d3f8 NumOfStations[8] NumOfInterfaces[3]
+[    2.816264] [atbm_log]:EFUSE(8)				[0]
+[    2.820125] [atbm_log]:EFUSE(I)					[1]
+[    2.824073] [atbm_log]:EFUSE(B)			[0]
+[    2.827857] [atbm_log]:CAPABILITIES_ATBM_PRIVATE_IE      [1]
+[    2.833687] [atbm_log]:CAPABILITIES_NVR_IPC              [1]
+[    2.839534] [atbm_log]:CAPABILITIES_NO_CONFIRM           [1]
+[    2.845371] [atbm_log]:CAPABILITIES_SDIO_PATCH           [0]
+[    2.851219] [atbm_log]:CAPABILITIES_NO_BACKOFF           [1]
+[    2.857066] [atbm_log]:CAPABILITIES_CFO                  [0]
+[    2.862902] [atbm_log]:CAPABILITIES_AGC                  [1]
+[    2.868748] [atbm_log]:CAPABILITIES_TXCAL                [1]
+[    2.874579] [atbm_log]:CAPABILITIES_MONITOR              [0]
+[    2.880427] [atbm_log]:CAPABILITIES_CUSTOM               [1]
+[    2.886274] [atbm_log]:CAPABILITIES_SMARTCONFIG          [0]
+[    2.892108] [atbm_log]:CAPABILITIES_ETF                  [1]
+[    2.897956] [atbm_log]:CAPABILITIES_LMAC_RATECTL         [1]
+[    2.903789] [atbm_log]:CAPABILITIES_LMAC_TPC             [1]
+[    2.909637] [atbm_log]:CAPABILITIES_LMAC_TEMPC           [1]
+[    2.915486] [atbm_log]:CAPABILITIES_CTS_BUG              [0]
+[    2.921326] [atbm_log]:CAPABILITIES_USB_RECOVERY_BUG     [0]
+[    2.927161] [atbm_log]:CAPABILITIES_USE_IPC              [0]
+[    2.932992] [atbm_log]:CAPABILITIES_OUTER_PA             [0]
+[    2.938829] [atbm_log]:CAPABILITIES_POWER_CONSUMPTION    [0]
+[    2.944661] [atbm_log]:CAPABILITIES_RSSI_DECIDE_TXPOWER  [0]
+[    2.950508] [atbm_log]:CAPABILITIES_RTS_LONG_DURATION    [1]
+[    2.956348] [atbm_log]:CAPABILITIES_TX_CFO_PPM_CORRECTION[1]
+[    2.962180] [atbm_log]:CAPABILITIES_SHARE_CRYSTAL       [0]
+[    2.967936] [atbm_log]:CAPABILITIES_HW_CHECKSUM          [0]
+[    2.973768] [atbm_log]:CAPABILITIES_SINGLE_CHANNEL_MULRX [0]
+[    2.979615] [atbm_log]:CAPABILITIES_CFO_DCXO_CORRECTION  [1]
+[    2.985453] [atbm_log]:CONFIG_PRODUCT_TEST_USE_FEATURE_ID [1]
+[    2.991380] [atbm_log]:CONFIG_PRODUCT_TEST_USE_GOLDEN_LED [1]
+[    3.004678] [atbm_log]:set_block_size=256
+[    3.008826] [atbm_log]:mdelay wait wsm_startup_done  !!
+[    3.014254] [atbm_log]:atbm_sdio_tx_thread
+[    3.018825] [atbm_log]:wsm_generic_confirm:status(2)
+[    3.023985] [atbm_log]:<WARNING> wsm_write_mib fail !!! mibId=4132
+[    3.030593] [atbm_log]:apollo wifi : can't open /data/.mac.info
+[    3.037026] [atbm_log]:efuse data is [0x1,0x3b,0x1e,0x1e,0x1,0xa,0x0,0x0,0xa4:0xef:0x15:0x97:0xf1:0xc1]
+[    3.046790] [atbm_log]:param:delta_gain1:-1 delta_gain2:-1 delta_gain3:-1 dcxo:-1
+[    3.046790] b_delta_gain1:10 b_delta_gain2:12 b_delta_gain3:15
+[    3.046790] gn_delta_gain1:10 gn_delta_gain2:8 gn_delta_gain3:12
+[    3.064036] [atbm_log]:cmd: set_txpwr_and_dcxo,-1,-1,-1,-1,10,12,15,10,8,12 
+[    3.071855] [atbm_log]:0,b_1M_2M=0
+[    3.075360] [atbm_log]:1,b_5_5M_11M=0
+[    3.079161] [atbm_log]:2,g_6M_n_6_5M=0
+[    3.083026] [atbm_log]:3,g_9M=0
+[    3.086272] [atbm_log]:4,g_12M_n_13M=0
+[    3.090135] [atbm_log]:5,g_18M_n_19_5M=0
+[    3.094176] [atbm_log]:6,g_24M_n_26M=0
+[    3.098083] [atbm_log]:7,g_36M_n_39M=0
+[    3.101948] [atbm_log]:8,g_48M_n_52M=0
+[    3.105817] [atbm_log]:9,g_54M_n_58_5M=0
+[    3.109856] [atbm_log]:10,n_65M=2
+[    3.113854] [atbm_log]:enable sg
+[    3.125552] [atbm_log]:enable sg
+[    3.137240] [atbm_log]:[atbm_wtd]:set wtd_probe = 1
+[    3.455733] [atbm_log]:mmc0 has been attached
+[    5.638699] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    9.571784] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.

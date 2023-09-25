@@ -1,0 +1,9 @@
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 3.8M      3.8M         0 100% /
+tmpfs                    36.7M         0     36.7M   0% /dev
+tmpfs                    36.7M     32.0K     36.6M   0% /tmp
+tmpfs                    36.7M         0     36.7M   0% /run
+media                    36.7M         0     36.7M   0% /media
+/dev/mtdblock3            3.8M      3.8M         0 100% /system
+/dev/mtdblock6          384.0K    112.0K    272.0K  29% /configs
+/dev/mmcblk0p1            1.8G     57.9M      1.8G   3% /media/mmc
